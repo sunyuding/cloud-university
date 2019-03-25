@@ -123,3 +123,9 @@ Behind everything our users see online is the architecture built by the Technica
 <img src="/devops_roadmap.png">  
 
 Image Credits: https://github.com/kamranahmedse/developer-roadmap
+
+# Reference
+- Interested in becoming a Site Reliability Engineer?: https://medium.com/@tammybutow/graduating-from-bootcamp-and-interested-in-becoming-a-site-reliability-engineer-b69a38ce858b
+- So you want to be an SRE?: https://hackernoon.com/so-you-want-to-be-an-sre-34e832357a8c
+- https://github.com/andrealmar/sre-university
+- https://github.com/maruina/devops-university
