@@ -43,9 +43,12 @@ Behind everything our users see online is the architecture built by the Technica
 # Community
 - Chaos Engineering Slack Community: https://chaosengineering.slack.com/
 
+# Version Control
+- Git
+- Apache Subversion
+
 # Operating Systems
 - (Course) Introduction to Operating Systems - https://br.udacity.com/course/introduction-to-operating-systems--ud923/
-
 - (Course) Advanced Operating Systems - https://br.udacity.com/course/advanced-operating-systems--ud189/
 
 # Automation 
@@ -61,6 +64,7 @@ Behind everything our users see online is the architecture built by the Technica
 - (Book) Understanding Linux Network Internals - http://shop.oreilly.com/product/9780596002558.do
 
 # Programming Languages
+## Java
 
 ## Python
 
@@ -100,12 +104,16 @@ Behind everything our users see online is the architecture built by the Technica
 
 # Cloud
 
-## Amazon AWS
+## Amazon Web Service
 - (Tutorial) Amazon AWS - https://aws.amazon.com/getting-started/tutorials/
 
-## Post-Mortem
+## Microsoft Azure
 
-## Blogs
+## Google Cloud Platform
+
+# Post-Mortem
+
+# Blogs
 
 - http://highscalability.com
 - https://medium.com/production-ready
