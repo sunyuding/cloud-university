@@ -41,7 +41,7 @@ Behind everything our users see online is the architecture built by the Technica
 - (Course) Measuring and Managing Reliability - https://www.coursera.org/learn/site-reliability-engineering-slos
 
 # Community
-- Chaos Engineering Slack Community: tinyurl.com/chaoseng
+- Chaos Engineering Slack Community: https://chaosengineering.slack.com
 
 # Operating Systems
 - (Course) Introduction to Operating Systems - https://br.udacity.com/course/introduction-to-operating-systems--ud923/
