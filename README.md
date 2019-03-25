@@ -112,6 +112,6 @@ Behind everything our users see online is the architecture built by the Technica
 
 # DevOps | SRE Roadmap
 
-<img src="/images/devops_roadmap.png">  
+<img src="/devops_roadmap.png">  
 
 Image Credits: https://github.com/kamranahmedse/developer-roadmap
