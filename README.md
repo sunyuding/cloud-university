@@ -3,15 +3,15 @@ Software Engineer, Site Reliability Engineering
 
 ## Minimum qualifications:
 
-Bachelor's degree in Computer Science, a related technical field involving coding (e.g., Physics or Mathematics) or equivalent practical experience.
-Experience in one or more of the following: C, C++, Java, Python, Go, Perl or Ruby.
-Experience with algorithms, data structures, complexity analysis and software design.
+- Bachelor's degree in Computer Science, a related technical field involving coding (e.g., Physics or Mathematics) or equivalent practical experience.
+- Experience in one or more of the following: C, C++, Java, Python, Go, Perl or Ruby.
+- Experience with algorithms, data structures, complexity analysis and software design.
 
 ## Preferred qualifications:
 
-Interest in designing, analyzing and troubleshooting large-scale distributed systems.
-Ability to debug and optimize code and to automate routine tasks.
-Systematic problem-solving approach, coupled with effective communication skills and a sense of ownership and drive.
+- Interest in designing, analyzing and troubleshooting large-scale distributed systems.
+- Ability to debug and optimize code and to automate routine tasks.
+- Systematic problem-solving approach, coupled with effective communication skills and a sense of ownership and drive.
 
 ## About the job
 Hope is not a strategy. Engineering solutions to design, build, and maintain efficient large-scale systems is a true strategy, and a good one.
@@ -27,11 +27,11 @@ To learn more: check out Site Reliability Engineering, written by Google SREs, w
 Behind everything our users see online is the architecture built by the Technical Infrastructure team to keep it running. From developing and maintaining our data centers to building the next generation of Google platforms, we make Google's product portfolio possible. We're proud to be our engineers' engineers and love voiding warranties by taking things apart so we can rebuild them. We're always on call to keep our networks up and running, ensuring our users have the best and fastest experience possible.
 
 ## Responsibilities
-Engage in and improve the whole lifecycle of service, from inception and design, through to deployment, operation and refinement.
-Support services before they go live through activities such as system design consulting, developing software platforms and frameworks, capacity planning and launch reviews.
-Maintain services once they are live by measuring and monitoring availability, latency and overall system health.
-Scale systems sustainably through mechanisms like automation and evolve systems by pushing for changes that improve reliability and velocity.
-Practice sustainable incident response and blameless postmortems.
+- Engage in and improve the whole lifecycle of service, from inception and design, through to deployment, operation and refinement.
+- Support services before they go live through activities such as system design consulting, developing software platforms and frameworks, capacity planning and launch reviews.
+- Maintain services once they are live by measuring and monitoring availability, latency and overall system health.
+- Scale systems sustainably through mechanisms like automation and evolve systems by pushing for changes that improve reliability and velocity.
+- Practice sustainable incident response and blameless postmortems.
 
 # Introduction
 
@@ -39,6 +39,9 @@ Practice sustainable incident response and blameless postmortems.
 - (Course) Intro to DevOps - https://br.udacity.com/course/intro-to-devops--ud611/
 - (Course) Google Cloud Platform for Systems Operations - https://www.coursera.org/specializations/gcp-sysops
 - (Course) Measuring and Managing Reliability - https://www.coursera.org/learn/site-reliability-engineering-slos
+
+# Community
+- Chaos Engineering Slack Community: tinyurl.com/chaoseng
 
 # Operating Systems
 - (Course) Introduction to Operating Systems - https://br.udacity.com/course/introduction-to-operating-systems--ud923/
