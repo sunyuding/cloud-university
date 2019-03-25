@@ -98,9 +98,9 @@ Behind everything our users see online is the architecture built by the Technica
 - (Tutorial) Kubernetes Bootcamp - https://kubernetesbootcamp.github.io/kubernetes-bootcamp/index.html
 - (Course) Scalable Microservices with Kubernetes - https://br.udacity.com/course/scalable-microservices-with-kubernetes--ud615/
 
-## Cloud
+# Cloud
 
-# Amazon AWS
+## Amazon AWS
 - (Tutorial) Amazon AWS - https://aws.amazon.com/getting-started/tutorials/
 
 ## Post-Mortem
@@ -112,6 +112,6 @@ Behind everything our users see online is the architecture built by the Technica
 
 # DevOps | SRE Roadmap
 
-<img src="/images/devops_roadmap.png">  
+<img src="/devops_roadmap.png">  
 
 Image Credits: https://github.com/kamranahmedse/developer-roadmap
