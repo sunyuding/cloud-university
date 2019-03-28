@@ -67,7 +67,7 @@ Behind everything our users see online is the architecture built by the Technica
 ## Java
 
 ## Python
-
+file://Python.md
 - (Book) Learn Python 3 The Hard Way - https://learnpythonthehardway.org/python3/
 - (Course) Developing Scalable Apps in Python - https://br.udacity.com/course/developing-scalable-apps-in-python--ud858/
 
