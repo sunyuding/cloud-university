@@ -67,7 +67,7 @@ Behind everything our users see online is the architecture built by the Technica
 ## Java
 
 ## Python
-[]Python.md
+[this Python](/Python.md)
 
 
       
