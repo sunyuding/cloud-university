@@ -64,13 +64,9 @@
 - (Course) Scalable Microservices with Kubernetes - https://br.udacity.com/course/scalable-microservices-with-kubernetes--ud615/
 
 # Cloud
-
-## Amazon Web Service
-- (Tutorial) Amazon AWS - https://aws.amazon.com/getting-started/tutorials/
-
-## Microsoft Azure
-
-## Google Cloud Platform
+- [Amazon Web Service](/AWS.md)
+- [Microsoft Azure](Azure.md)
+- [Google Cloud Platform](GCP.md)
 
 # Post-Mortem
 
