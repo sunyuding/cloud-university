@@ -19,6 +19,7 @@
 - (Course) Introduction to Operating Systems - https://br.udacity.com/course/introduction-to-operating-systems--ud923/
 - (Course) Advanced Operating Systems - https://br.udacity.com/course/advanced-operating-systems--ud189/
 - [Linux](/Linux.md)
+- [Windows](/Windows.md)
 
 # Automation 
 - (Tutorial) Ansible - https://www.digitalocean.com/community/tutorials/configuration-management-101-writing-ansible-playbooks
@@ -50,16 +51,16 @@
 - (Course) Continuous Deliver Better Software - https://www.udemy.com/learn-devops-continuously-deliver-better-software
 
 # Containers
-- (Course) Docker for Devops - https://www.udemy.com/docker-tutorial-for-devops-run-docker-containers
+- [Docker](/Docker.md)
 
-## Web Servers
+# Web Servers
 
-# Nginx
+## Nginx
 - (Course) Nginx Fundamentals - https://www.udemy.com/nginx-fundamentals/
 
 ## Cluster Management
 
-# Kubernetes 
+## Kubernetes 
 - (Tutorial) Kubernetes Bootcamp - https://kubernetesbootcamp.github.io/kubernetes-bootcamp/index.html
 - (Course) Scalable Microservices with Kubernetes - https://br.udacity.com/course/scalable-microservices-with-kubernetes--ud615/
 
