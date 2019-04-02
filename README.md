@@ -12,8 +12,8 @@
 - Chaos Engineering Slack Community: https://chaosengineering.slack.com/
 
 # Version Control
-- Git
-- Apache Subversion
+- [Git](/Git.md)
+- [Apache Subversion](/Subversion.md)
 
 # Operating Systems
 - (Course) Introduction to Operating Systems - https://br.udacity.com/course/introduction-to-operating-systems--ud923/
