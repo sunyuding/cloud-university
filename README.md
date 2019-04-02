@@ -33,15 +33,9 @@
 - (Book) Understanding Linux Network Internals - http://shop.oreilly.com/product/9780596002558.do
 
 # Programming Languages
-## Java
-
-## Python
-[this Python](/Python.md)
-
-## Go
-- (Book) The Go Programming Language - https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440
-
-- (Webinar) https://www.youtube.com/watch?v=Q_H4hrUez80 (Go Language for Ops and Site Reliability Engineering)
+- [Java](/Java.md)
+- [Python](/Python.md)
+- [Go](/Go.md)
 
 # Production Web App
 - (Tutorial) https://www.digitalocean.com/community/tutorial_series/building-for-production-web-applications
