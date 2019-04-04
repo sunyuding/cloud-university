@@ -1,4 +1,9 @@
 # Linux
+## Certificate
+- [Red Hat Certified System Administrator](https://www.redhat.com/en/services/certification/rhcsa)
+
+
+
 
 - [Computer Science from the Bottom Up](https://www.bottomupcs.com/) :books:
 - [Understanding the Linux kernel](http://shop.oreilly.com/product/9780596005658.do) :books:
