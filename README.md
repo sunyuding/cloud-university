@@ -1,4 +1,4 @@
-# DevOps & Site-Reliability-Engineering
+# DevOps & Site Reliability Engineering
 
 
 # Introduction
@@ -81,6 +81,9 @@
 <img src="/devops_roadmap.png">  
 
 Image Credits: https://github.com/kamranahmedse/developer-roadmap
+
+# Questions to ask
+-[Questions to ask](https://github.com/sunyuding/sre-interview/blob/master/questions-to-ask-interviewers.md)
 
 # Reference
 - Interested in becoming a Site Reliability Engineer?: https://medium.com/@tammybutow/graduating-from-bootcamp-and-interested-in-becoming-a-site-reliability-engineer-b69a38ce858b
