@@ -78,7 +78,7 @@
 
 # DevOps | SRE Roadmap
 
-<img src="/devops_roadmap.png">  
+<img src="https://github.com/sunyuding/sre-university/blob/master/images/devops_roadmap.png">  
 
 Image Credits: https://github.com/kamranahmedse/developer-roadmap
 
