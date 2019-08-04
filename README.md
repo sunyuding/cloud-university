@@ -2,7 +2,7 @@
 
 
 # Introduction
-[Description](/Description.md)
+- [Description](/Description.md)
 - (Book) Site Reliability Engineering - https://landing.google.com/sre/books/
 - (Course) Intro to DevOps - https://br.udacity.com/course/intro-to-devops--ud611/
 - (Course) Google Cloud Platform for Systems Operations - https://www.coursera.org/specializations/gcp-sysops
@@ -19,6 +19,11 @@
 - (Course) Introduction to Operating Systems - https://br.udacity.com/course/introduction-to-operating-systems--ud923/
 - (Course) Advanced Operating Systems - https://br.udacity.com/course/advanced-operating-systems--ud189/
 - [Linux](/Linux.md)
+Unix/Linux Systems:
+Know what's happening under the hood!
+Sample questions: Kernel, Libraries, System Calls, Memory Management
+Online book - The Art of Unix Programming: http://www.faqs.org/docs/artu/index.html
+Book - Advanced Programming in the Unix Environment: https://play.google.com/store/books/details?pcampaignid=books_read_action&id=kCTMFpEcIOwC
 - [Windows](/Windows.md)
 
 # Automation 
@@ -26,12 +31,12 @@
 - (Course) Terraform - https://www.udemy.com/learn-devops-infrastructure-automation-with-terraform/learn
 
 # Distributed Systems
-
 - (Tutorial) Introduction to Distributed Systems Design - http://www.hpcs.cs.tsukuba.ac.jp/~tatebe/lecture/h23/dsys/dsd-tutorial.html
 
 # Networking
-
 - (Book) Understanding Linux Network Internals - http://shop.oreilly.com/product/9780596002558.do
+- What happens when ...: https://github.com/sunyuding/what-happens-when
+
 
 # Programming Languages
 - [Java](/Java.md)
