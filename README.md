@@ -11,8 +11,6 @@
 
 This is a study plan for going from a new grad to a Cloud/DevOps/Infrastructure/SRE Engineer for a large company.
 
-![Coding at the whiteboard - from HBO's Silicon Valley](https://dng5l3qzreal6.cloudfront.net/2016/Aug/coding_board_small-1470866369118.jpg)
-
 This is meant for **new software engineers** or those switching from
 software/web development to Cloud/DevOps/Infrastructure/SRE Engineer (where a wide range of computer science knowledge is required). If you have
 many years of experience and are claiming many years of software engineering experience, expect a harder interview.
@@ -26,119 +24,143 @@ If you want to be a Cloud/DevOps/Infrastructure/SRE Engineer, study more from th
 
 ## Table of Contents
 
-- [What is it?](#what-is-it)
-- [Why use it?](#why-use-it)
-- [How to use it](#how-to-use-it)
-- [Don't feel you aren't smart enough](#dont-feel-you-arent-smart-enough)
-- [About Video Resources](#about-video-resources)
-- [Interview Process & General Interview Prep](#interview-process--general-interview-prep)
-- [Pick One Language for the Interview](#pick-one-language-for-the-interview)
-- [Book List](#book-list)
-- [Before you Get Started](#before-you-get-started)
-- [What you Won't See Covered](#what-you-wont-see-covered)
-- [Prerequisite Knowledge](#prerequisite-knowledge)
-- [The Daily Plan](#the-daily-plan)
-- [Algorithmic complexity / Big-O / Asymptotic analysis](#algorithmic-complexity--big-o--asymptotic-analysis)
-- [Data Structures](#data-structures)
-    - [Arrays](#arrays)
-    - [Linked Lists](#linked-lists)
-    - [Stack](#stack)
-    - [Queue](#queue)
-    - [Hash table](#hash-table)
-- [More Knowledge](#more-knowledge)
-    - [Binary search](#binary-search)
-    - [Bitwise operations](#bitwise-operations)
-- [Trees](#trees)
-    - [Trees - Notes & Background](#trees---notes--background)
-    - [Binary search trees: BSTs](#binary-search-trees-bsts)
-    - [Heap / Priority Queue / Binary Heap](#heap--priority-queue--binary-heap)
-    - balanced search trees (general concept, not details)
-    - traversals: preorder, inorder, postorder, BFS, DFS
-- [Sorting](#sorting)
-    - selection
-    - insertion
-    - heapsort
-    - quicksort
-    - merge sort
-- [Graphs](#graphs)
-    - directed
-    - undirected
-    - adjacency matrix
-    - adjacency list
-    - traversals: BFS, DFS
-- [Even More Knowledge](#even-more-knowledge)
-    - [Recursion](#recursion)
-    - [Dynamic Programming](#dynamic-programming)
-    - [Object-Oriented Programming](#object-oriented-programming)
-    - [Design Patterns](#design-patterns)
-    - [Combinatorics (n choose k) & Probability](#combinatorics-n-choose-k--probability)
-    - [NP, NP-Complete and Approximation Algorithms](#np-np-complete-and-approximation-algorithms)
-    - [Caches](#caches)
-    - [Processes and Threads](#processes-and-threads)
-    - [Papers](#papers)
-    - [Testing](#testing)
-    - [Scheduling](#scheduling)
-    - [Implement system routines](#implement-system-routines)
-    - [String searching & manipulations](#string-searching--manipulations)
-    - [Tries](#tries)
-    - [Floating Point Numbers](#floating-point-numbers)
-    - [Unicode](#unicode)
-    - [Endianness](#endianness)
-- [Networking](#networking)
-- [System Design, Scalability, Data Handling](#system-design-scalability-data-handling) (if you have 4+ years experience)
-- [Final Review](#final-review)
-- [Coding Question Practice](#coding-question-practice)
-- [Coding exercises/challenges](#coding-exerciseschallenges)
-- [Once you're closer to the interview](#once-youre-closer-to-the-interview)
-- [Your Resume](#your-resume)
-- [Be thinking of for when the interview comes](#be-thinking-of-for-when-the-interview-comes)
-- [Have questions for the interviewer](#have-questions-for-the-interviewer)
-- [Once You've Got The Job](#once-youve-got-the-job)
+- [Cloud/DevOps/Infrastructure/SRE University](#clouddevopsinfrastructuresre-university)
+  - [What is it?](#what-is-it)
+  - [Table of Contents](#table-of-contents)
+  - [Why use it?](#why-use-it)
+  - [How to use it](#how-to-use-it)
+  - [Don't feel you aren't smart enough](#dont-feel-you-arent-smart-enough)
+  - [About Video Resources](#about-video-resources)
+  - [Interview Process & General Interview Prep](#interview-process--general-interview-prep)
+  - [Pick One Language for the Interview](#pick-one-language-for-the-interview)
+  - [Book List](#book-list)
+    - [Interview Prep](#interview-prep)
+    - [Computer Architecture](#computer-architecture)
+    - [Language Specific](#language-specific)
+    - [C++](#c)
+    - [Java](#java)
+    - [Python](#python)
+    - [Optional Books](#optional-books)
+  - [Before you Get Started](#before-you-get-started)
+    - [1. You Won't Remember it All](#1-you-wont-remember-it-all)
+    - [2. Use Flashcards](#2-use-flashcards)
+    - [3. Review, review, review](#3-review-review-review)
+    - [4. Focus](#4-focus)
+  - [What you won't see covered](#what-you-wont-see-covered)
+  - [The Daily Plan](#the-daily-plan)
+  - [Prerequisite Knowledge](#prerequisite-knowledge)
+  - [Algorithmic complexity / Big-O / Asymptotic analysis](#algorithmic-complexity--big-o--asymptotic-analysis)
+  - [Data Structures](#data-structures)
+  - [More Knowledge](#more-knowledge)
+  - [Trees](#trees)
+  - [Sorting](#sorting)
+  - [Graphs](#graphs)
+  - [Even More Knowledge](#even-more-knowledge)
+  - [System Design, Scalability, Data Handling](#system-design-scalability-data-handling)
+  - [Final Review](#final-review)
+  - [Coding Question Practice](#coding-question-practice)
+  - [Coding exercises/challenges](#coding-exerciseschallenges)
+  - [Troubleshooting](#troubleshooting)
+  - [Non-Tech Skills](#non-tech-skills)
+  - [Once you're closer to the interview](#once-youre-closer-to-the-interview)
+  - [Your Resume](#your-resume)
+  - [Be thinking of for when the interview comes](#be-thinking-of-for-when-the-interview-comes)
+  - [Have questions for the interviewer](#have-questions-for-the-interviewer)
+  - [Once You've Got The Job](#once-youve-got-the-job)
+  - [Additional Books](#additional-books)
+  - [Additional Learning](#additional-learning)
+  - [Additional Detail on Some Subjects](#additional-detail-on-some-subjects)
+  - [Video Series](#video-series)
+  - [Computer Science Courses](#computer-science-courses)
+- [Introduction](#introduction)
+- [Community](#community)
+- [Version Control](#version-control)
+- [Automation](#automation)
+- [Distributed Systems](#distributed-systems)
+- [Production Web App](#production-web-app)
+- [Monitoring and Logging](#monitoring-and-logging)
+- [Continuous Integration | Continuous Delivery](#continuous-integration--continuous-delivery)
+- [Containers](#containers)
+- [Web Servers](#web-servers)
+  - [Nginx](#nginx)
+  - [Cluster Management](#cluster-management)
+  - [Kubernetes](#kubernetes)
+- [Cloud](#cloud)
+- [Post-Mortem](#post-mortem)
+- [Blogs](#blogs)
+- [DevOps | SRE Roadmap](#devops--sre-roadmap)
+- [Questions to ask](#questions-to-ask)
+- [Reference](#reference)
 
 ---------------- Everything below this point is optional ----------------
 
-- [Additional Books](#additional-books)
-- [Additional Learning](#additional-learning)
-    - [Compilers](#compilers)
-    - [Emacs and vi(m)](#emacs-and-vim)
-    - [Unix command line tools](#unix-command-line-tools)
-    - [Information theory](#information-theory-videos)
-    - [Parity & Hamming Code](#parity--hamming-code-videos)
-    - [Entropy](#entropy)
-    - [Cryptography](#cryptography)
-    - [Compression](#compression)
-    - [Computer Security](#computer-security)
-    - [Garbage collection](#garbage-collection)
-    - [Parallel Programming](#parallel-programming)
-    - [Messaging, Serialization, and Queueing Systems](#messaging-serialization-and-queueing-systems)
-    - [A*](#a)
-    - [Fast Fourier Transform](#fast-fourier-transform)
-    - [Bloom Filter](#bloom-filter)
-    - [HyperLogLog](#hyperloglog)
-    - [Locality-Sensitive Hashing](#locality-sensitive-hashing)
-    - [van Emde Boas Trees](#van-emde-boas-trees)
-    - [Augmented Data Structures](#augmented-data-structures)
-    - [Balanced search trees](#balanced-search-trees)
-        - AVL trees
-        - Splay trees
-        - Red/black trees
-        - 2-3 search trees
-        - 2-3-4 Trees (aka 2-4 trees)
-        - N-ary (K-ary, M-ary) trees
-        - B-Trees
-    - [k-D Trees](#k-d-trees)
-    - [Skip lists](#skip-lists)
-    - [Network Flows](#network-flows)
-    - [Disjoint Sets & Union Find](#disjoint-sets--union-find)
-    - [Math for Fast Processing](#math-for-fast-processing)
-    - [Treap](#treap)
-    - [Linear Programming](#linear-programming-videos)
-    - [Geometry, Convex hull](#geometry-convex-hull-videos)
-    - [Discrete math](#discrete-math)
-    - [Machine Learning](#machine-learning)
-- [Additional Detail on Some Subjects](#additional-detail-on-some-subjects)
-- [Video Series](#video-series)
-- [Computer Science Courses](#computer-science-courses)
+- [Cloud/DevOps/Infrastructure/SRE University](#clouddevopsinfrastructuresre-university)
+  - [What is it?](#what-is-it)
+  - [Table of Contents](#table-of-contents)
+  - [Why use it?](#why-use-it)
+  - [How to use it](#how-to-use-it)
+  - [Don't feel you aren't smart enough](#dont-feel-you-arent-smart-enough)
+  - [About Video Resources](#about-video-resources)
+  - [Interview Process & General Interview Prep](#interview-process--general-interview-prep)
+  - [Pick One Language for the Interview](#pick-one-language-for-the-interview)
+  - [Book List](#book-list)
+    - [Interview Prep](#interview-prep)
+    - [Computer Architecture](#computer-architecture)
+    - [Language Specific](#language-specific)
+    - [C++](#c)
+    - [Java](#java)
+    - [Python](#python)
+    - [Optional Books](#optional-books)
+  - [Before you Get Started](#before-you-get-started)
+    - [1. You Won't Remember it All](#1-you-wont-remember-it-all)
+    - [2. Use Flashcards](#2-use-flashcards)
+    - [3. Review, review, review](#3-review-review-review)
+    - [4. Focus](#4-focus)
+  - [What you won't see covered](#what-you-wont-see-covered)
+  - [The Daily Plan](#the-daily-plan)
+  - [Prerequisite Knowledge](#prerequisite-knowledge)
+  - [Algorithmic complexity / Big-O / Asymptotic analysis](#algorithmic-complexity--big-o--asymptotic-analysis)
+  - [Data Structures](#data-structures)
+  - [More Knowledge](#more-knowledge)
+  - [Trees](#trees)
+  - [Sorting](#sorting)
+  - [Graphs](#graphs)
+  - [Even More Knowledge](#even-more-knowledge)
+  - [System Design, Scalability, Data Handling](#system-design-scalability-data-handling)
+  - [Final Review](#final-review)
+  - [Coding Question Practice](#coding-question-practice)
+  - [Coding exercises/challenges](#coding-exerciseschallenges)
+  - [Troubleshooting](#troubleshooting)
+  - [Non-Tech Skills](#non-tech-skills)
+  - [Once you're closer to the interview](#once-youre-closer-to-the-interview)
+  - [Your Resume](#your-resume)
+  - [Be thinking of for when the interview comes](#be-thinking-of-for-when-the-interview-comes)
+  - [Have questions for the interviewer](#have-questions-for-the-interviewer)
+  - [Once You've Got The Job](#once-youve-got-the-job)
+  - [Additional Books](#additional-books)
+  - [Additional Learning](#additional-learning)
+  - [Additional Detail on Some Subjects](#additional-detail-on-some-subjects)
+  - [Video Series](#video-series)
+  - [Computer Science Courses](#computer-science-courses)
+- [Introduction](#introduction)
+- [Community](#community)
+- [Version Control](#version-control)
+- [Automation](#automation)
+- [Distributed Systems](#distributed-systems)
+- [Production Web App](#production-web-app)
+- [Monitoring and Logging](#monitoring-and-logging)
+- [Continuous Integration | Continuous Delivery](#continuous-integration--continuous-delivery)
+- [Containers](#containers)
+- [Web Servers](#web-servers)
+  - [Nginx](#nginx)
+  - [Cluster Management](#cluster-management)
+  - [Kubernetes](#kubernetes)
+- [Cloud](#cloud)
+- [Post-Mortem](#post-mortem)
+- [Blogs](#blogs)
+- [DevOps | SRE Roadmap](#devops--sre-roadmap)
+- [Questions to ask](#questions-to-ask)
+- [Reference](#reference)
 
 ---
 
@@ -987,6 +1009,20 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
         - [ ] [MIT 6.004 L15: The Memory Hierarchy (video)](https://www.youtube.com/watch?v=vjYF_fAZI5E&list=PLrRW1w6CGAcXbMtDFj205vALOGmiRc82-&index=24)
         - [ ] [MIT 6.004 L16: Cache Issues (video)](https://www.youtube.com/watch?v=ajgC3-pyGlk&index=25&list=PLrRW1w6CGAcXbMtDFj205vALOGmiRc82-)
 
+
+- ### Operating Systems
+- (Course) Introduction to Operating Systems - https://br.udacity.com/course/introduction-to-operating-systems--ud923/
+- (Course) Advanced Operating Systems - https://br.udacity.com/course/advanced-operating-systems--ud189/
+- [Linux](/Linux.md)
+Unix/Linux Systems:
+Know what's happening under the hood!
+Sample questions: Kernel, Libraries, System Calls, Memory Management
+Online book - The Art of Unix Programming: http://www.faqs.org/docs/artu/index.html
+Book - Advanced Programming in the Unix Environment: https://play.google.com/store/books/details?pcampaignid=books_read_action&id=kCTMFpEcIOwC
+- [Windows](/Windows.md)
+
+- ### 
+
 - ### Processes and Threads
     - [ ] Computer Science 162 - Operating Systems (25 videos):
         - for processes and threads see videos 1-11
@@ -1144,6 +1180,9 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
     - [ ] Sockets:
         - [ ] [Java - Sockets - Introduction (video)](https://www.youtube.com/watch?v=6G_W54zuadg&t=6s)
         - [ ] [Socket Programming (video)](https://www.youtube.com/watch?v=G75vN2mnJeQ)
+    - [ ] (Book) [Understanding Linux Network Internals](http://shop.oreilly.com/product/9780596002558.do)
+    - [ ] [What happens when ...](https://github.com/sunyuding/what-happens-when)
+    
 
 ## System Design, Scalability, Data Handling
 - **You can expect system design questions if you have 4+ years of experience.**
@@ -1384,6 +1423,23 @@ Mock Interviews:
 - [Pramp: Mock interviews from/with peers](https://www.pramp.com/) - peer-to-peer model of practice interviews
 - [Refdash: Mock interviews and expedited interviews](https://refdash.com/) - also help candidates fast track by skipping multiple interviews with tech companies.
 
+## Troubleshooting
+["A distributed system is one in which the failure of a computer you didn’t even know existed can render your own computer unusable." - Leslie Lamport](https://www.microsoft.com/en-us/research/publication/distribution/)
+- SRE/TSE/TSDs are looking for a logical and structured approach to problem solving through distributed systems, network and web scenarios. Make sure you understand the questions and ask appropriate follow-up questions to the interviewer when needed. A big part is finding out what the actual problem is and breaking it down into specifics. Check out [Life in App Engine Production​](https://www.youtube.com/watch?v=rgQm1KEIIuc) for a troubleshooting example.
+- Master/Slave
+- "Truse, but verify."
+  - Strong checksums at many layers of the stack are best
+- Any given datacenter can be rendered unreachable or unfit for serving at any time, without warning
+  - Un-isolated traffic can degrade performance
+  - Power failure
+  - Network partition
+  - Infrastructure corrupts or isolates data
+- “To expect the unexpected shows a thoroughly modern intellect.” - Oscar Wilde
+- A service running in a given datacenter can be no more reliable than the least reliable component it utilizes
+
+## Non-Tech Skills
+- [Google Interview Prep Guide Business Interviews](https://drive.google.com/drive/u/1/folders/1EexCycNQOgdiMg-DEmC-iVq7iVRWYOSS)
+
 ## Once you're closer to the interview
 
 - [ ] Cracking The Coding Interview Set 2 (videos):
@@ -1393,7 +1449,6 @@ Mock Interviews:
 ## Your Resume
 
 - See Resume prep items in Cracking The Coding Interview and back of Programming Interviews Exposed
-
 
 ## Be thinking of for when the interview comes
 
@@ -1950,16 +2005,7 @@ Sit back and enjoy. "Netflix and skill" :P
 - [Git](/Git.md)
 - [Apache Subversion](/Subversion.md)
 
-# Operating Systems
-- (Course) Introduction to Operating Systems - https://br.udacity.com/course/introduction-to-operating-systems--ud923/
-- (Course) Advanced Operating Systems - https://br.udacity.com/course/advanced-operating-systems--ud189/
-- [Linux](/Linux.md)
-Unix/Linux Systems:
-Know what's happening under the hood!
-Sample questions: Kernel, Libraries, System Calls, Memory Management
-Online book - The Art of Unix Programming: http://www.faqs.org/docs/artu/index.html
-Book - Advanced Programming in the Unix Environment: https://play.google.com/store/books/details?pcampaignid=books_read_action&id=kCTMFpEcIOwC
-- [Windows](/Windows.md)
+
 
 # Automation 
 - (Tutorial) Ansible - https://www.digitalocean.com/community/tutorials/configuration-management-101-writing-ansible-playbooks
@@ -1968,15 +2014,7 @@ Book - Advanced Programming in the Unix Environment: https://play.google.com/sto
 # Distributed Systems
 - (Tutorial) Introduction to Distributed Systems Design - http://www.hpcs.cs.tsukuba.ac.jp/~tatebe/lecture/h23/dsys/dsd-tutorial.html
 
-# Networking
-- (Book) Understanding Linux Network Internals - http://shop.oreilly.com/product/9780596002558.do
-- What happens when ...: https://github.com/sunyuding/what-happens-when
 
-
-# Programming Languages
-- [Java](/Java.md)
-- [Python](/Python.md)
-- [Go](/Go.md)
 
 # Production Web App
 - (Tutorial) https://www.digitalocean.com/community/tutorial_series/building-for-production-web-applications
