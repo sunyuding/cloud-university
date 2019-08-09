@@ -61,6 +61,9 @@ If you want to be a Cloud/DevOps/Infrastructure/SRE Engineer, study more from th
   - [Coding Question Practice](#coding-question-practice)
   - [Coding exercises/challenges](#coding-exerciseschallenges)
   - [Troubleshooting](#troubleshooting)
+  - [Operating Systems](#operating-systems)
+  - [Unix/Linux Internals](#unixlinux-internals)
+  - [Web Technologies](#web-technologies)
   - [Non-Tech Skills](#non-tech-skills)
   - [Once you're closer to the interview](#once-youre-closer-to-the-interview)
   - [Your Resume](#your-resume)
@@ -131,6 +134,9 @@ If you want to be a Cloud/DevOps/Infrastructure/SRE Engineer, study more from th
   - [Coding Question Practice](#coding-question-practice)
   - [Coding exercises/challenges](#coding-exerciseschallenges)
   - [Troubleshooting](#troubleshooting)
+  - [Operating Systems](#operating-systems)
+  - [Unix/Linux Internals](#unixlinux-internals)
+  - [Web Technologies](#web-technologies)
   - [Non-Tech Skills](#non-tech-skills)
   - [Once you're closer to the interview](#once-youre-closer-to-the-interview)
   - [Your Resume](#your-resume)
@@ -501,7 +507,7 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
     watch the discrete mathematics videos to get the background knowledge.
 
 ## Data Structures
-
+You should study up on as many data structures as possible. Data structures most frequently used are arrays, linked lists, stacks, queues, hashsets, hashmaps, hash tables, dictionaries, trees and binary trees. You should know the data structure inside out, and what algorithms tend to go along with each data structure.
 - ### Arrays
     - Implement an automatically resizing vector.
     - [ ] Description:
@@ -1010,18 +1016,8 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
         - [ ] [MIT 6.004 L16: Cache Issues (video)](https://www.youtube.com/watch?v=ajgC3-pyGlk&index=25&list=PLrRW1w6CGAcXbMtDFj205vALOGmiRc82-)
 
 
-- ### Operating Systems
-- (Course) Introduction to Operating Systems - https://br.udacity.com/course/introduction-to-operating-systems--ud923/
-- (Course) Advanced Operating Systems - https://br.udacity.com/course/advanced-operating-systems--ud189/
-- [Linux](/Linux.md)
-Unix/Linux Systems:
-Know what's happening under the hood!
-Sample questions: Kernel, Libraries, System Calls, Memory Management
-Online book - The Art of Unix Programming: http://www.faqs.org/docs/artu/index.html
-Book - Advanced Programming in the Unix Environment: https://play.google.com/store/books/details?pcampaignid=books_read_action&id=kCTMFpEcIOwC
-- [Windows](/Windows.md)
 
-- ### 
+
 
 - ### Processes and Threads
     - [ ] Computer Science 162 - Operating Systems (25 videos):
@@ -1167,6 +1163,8 @@ Book - Advanced Programming in the Unix Environment: https://play.google.com/sto
 - ### Networking
     - **if you have networking experience or want to be a reliability engineer or operations engineer, expect questions**
     - otherwise, this is just good to know
+    - S​how off yourdepthofknowledgeandunderstandingofnetworktheory, like different protocols (TCP/IP, UDP, ICMP, etc), MAC addresses, IP packets, DNS, OSI layers, and load balancing. 
+    - [ ] Check out [C​omputer Networking: A Top-Down Approach](https://www.bau.edu.jo/UserPortal/UserProfile/PostsAttach/10617_1870_1.pdf).
     - [ ] [Khan Academy](https://www.khanacademy.org/computing/computer-science/internet-intro)
     - [ ] [UDP and TCP: Comparison of Transport Protocols](https://www.youtube.com/watch?v=Vdc8TCESIg8)
     - [ ] [TCP/IP and the OSI Model Explained!](https://www.youtube.com/watch?v=e5DEVa9eSN0)
@@ -1182,7 +1180,6 @@ Book - Advanced Programming in the Unix Environment: https://play.google.com/sto
         - [ ] [Socket Programming (video)](https://www.youtube.com/watch?v=G75vN2mnJeQ)
     - [ ] (Book) [Understanding Linux Network Internals](http://shop.oreilly.com/product/9780596002558.do)
     - [ ] [What happens when ...](https://github.com/sunyuding/what-happens-when)
-    
 
 ## System Design, Scalability, Data Handling
 - **You can expect system design questions if you have 4+ years of experience.**
@@ -1425,7 +1422,7 @@ Mock Interviews:
 
 ## Troubleshooting
 ["A distributed system is one in which the failure of a computer you didn’t even know existed can render your own computer unusable." - Leslie Lamport](https://www.microsoft.com/en-us/research/publication/distribution/)
-- SRE/TSE/TSDs are looking for a logical and structured approach to problem solving through distributed systems, network and web scenarios. Make sure you understand the questions and ask appropriate follow-up questions to the interviewer when needed. A big part is finding out what the actual problem is and breaking it down into specifics. Check out [Life in App Engine Production​](https://www.youtube.com/watch?v=rgQm1KEIIuc) for a troubleshooting example.
+-  Interviewers are looking for a logical and structured approach to problem solving through distributed systems, network and web scenarios. Make sure you understand the questions and ask appropriate follow-up questions to the interviewer when needed. A big part is finding out what the actual problem is and breaking it down into specifics. Check out [Life in App Engine Production​](https://www.youtube.com/watch?v=rgQm1KEIIuc) for a troubleshooting example.
 - Master/Slave
 - "Truse, but verify."
   - Strong checksums at many layers of the stack are best
@@ -1437,7 +1434,37 @@ Mock Interviews:
 - “To expect the unexpected shows a thoroughly modern intellect.” - Oscar Wilde
 - A service running in a given datacenter can be no more reliable than the least reliable component it utilizes
 
+## Operating Systems
+- You should understand processes, threads, concurrency issues, locks, mutexes, semaphores, monitors and how they all work. 
+- Understand deadlock, livelock and how to avoid them. 
+- Know what resources a process needs and a thread needs. 
+- Understand how context switching works, how it's initiated by the operating system and underlying hardware. 
+- Know about scheduling and the fundamentals of "modern" concurrency constructs.
+- (Course) Introduction to Operating Systems - https://br.udacity.com/course/introduction-to-operating-systems--ud923/
+- (Course) Advanced Operating Systems - https://br.udacity.com/course/advanced-operating-systems--ud189/
+- [Linux](/Linux.md)
+Unix/Linux Systems:
+Know what's happening under the hood!
+Sample questions: Kernel, Libraries, System Calls, Memory Management
+Online book - The Art of Unix Programming: http://www.faqs.org/docs/artu/index.html
+Book - Advanced Programming in the Unix Environment: https://play.google.com/store/books/details?pcampaignid=books_read_action&id=kCTMFpEcIOwC
+- [Windows](/Windows.md)
+
+## Unix/Linux Internals
+- Know what’s happening under the hood. 
+- Understand kernels, libraries, system calls, memory management, permissions, file systems, client-server protocols and the shell.
+- Check out these online books:​ [The Art of UNIX Programming​​](https://books.google.ie/books/about/The_Art_of_UNIX_Programming.html?id=H4q1t-jAcBIC&hl=en) and​ [Advanced Programming in the Unix Environment](https://books.google.ie/books/about/Advanced_Programming_in_the_Unix_Environ.html?id=D_VQAAAAMAAJ&redir_esc=y)
+
+## Web Technologies
+- Know your network protocols and how the browser works, the HTTP protocol, cookies, general web troubleshooting (ability to diagnose issues step-by-step), JavascriptandHTML.
+- Brush up on HTTP Protocol basics: [PartI​](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177),​ [PartII](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-2--net-31155)
+
 ## Non-Tech Skills
+In addition to your technical skills, when you meet with your interviewer, they’ll be assessing you based on four attributes using a mix of behavioral and hypothetical questions:
+- General Cognitive Ability: W​e ask open-ended questions to learn how you approach and solve problems. And there’s no one right answer—your ability to explain your thought process and how you use data to inform decisions is what’s most important.
+- Leadership:​ ​Be prepared to discuss how you have used your communication and decision-making skills to mobilize others. This might be by stepping up to a leadership role at work or with an organization, or by helping a team succeed even when you weren’t officially the leader.
+- Role-related knowledge:​ ​We’re interested in how your individual strengths combine with your experience to drive impact. We don’t just look for how you can contribute today, but how you can grow into different roles—including ones that haven’t even been invented yet.
+- Googleyness:​ Share how you work individually and on a team, how you help others, how you navigate ambiguity, and how you push yourself to grow outside of your comfort zone.
 - [Google Interview Prep Guide Business Interviews](https://drive.google.com/drive/u/1/folders/1EexCycNQOgdiMg-DEmC-iVq7iVRWYOSS)
 
 ## Once you're closer to the interview
@@ -1986,7 +2013,6 @@ Sit back and enjoy. "Netflix and skill" :P
 - [ ] [SRE prep](https://www.youtube.com/watch?v=3EvjwlQ43_4&list=PLNlEYP0PrDt1WS4dHr_RHAKsPDE91xHkz)
 
 ## Computer Science Courses
-
 - [Directory of Online CS Courses](https://github.com/open-source-society/computer-science)
 - [Directory of CS Courses (many with online lectures)](https://github.com/prakhar1989/awesome-courses)
 
@@ -2005,16 +2031,12 @@ Sit back and enjoy. "Netflix and skill" :P
 - [Git](/Git.md)
 - [Apache Subversion](/Subversion.md)
 
-
-
 # Automation 
 - (Tutorial) Ansible - https://www.digitalocean.com/community/tutorials/configuration-management-101-writing-ansible-playbooks
 - (Course) Terraform - https://www.udemy.com/learn-devops-infrastructure-automation-with-terraform/learn
 
 # Distributed Systems
 - (Tutorial) Introduction to Distributed Systems Design - http://www.hpcs.cs.tsukuba.ac.jp/~tatebe/lecture/h23/dsys/dsd-tutorial.html
-
-
 
 # Production Web App
 - (Tutorial) https://www.digitalocean.com/community/tutorial_series/building-for-production-web-applications
@@ -2050,12 +2072,10 @@ Sit back and enjoy. "Netflix and skill" :P
 # Post-Mortem
 
 # Blogs
-
 - http://highscalability.com
 - https://medium.com/production-ready
 
 # DevOps | SRE Roadmap
-
 <img src="https://github.com/sunyuding/sre-university/blob/master/images/devops_roadmap.png">  
 
 Image Credits: https://github.com/kamranahmedse/developer-roadmap
