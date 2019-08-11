@@ -1134,27 +1134,6 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
         - Very technical talk for kernel devs. Don't worry if most is over your head.
         - The first half is enough.
 
-- ### Networking
-    - **if you have networking experience or want to be a reliability engineer or operations engineer, expect questions**
-    - otherwise, this is just good to know
-    - S​how off yourdepthofknowledgeandunderstandingofnetworktheory, like different protocols (TCP/IP, UDP, ICMP, etc), MAC addresses, IP packets, DNS, OSI layers, and load balancing. 
-    - [ ] Check out [C​omputer Networking: A Top-Down Approach](https://www.bau.edu.jo/UserPortal/UserProfile/PostsAttach/10617_1870_1.pdf).
-    - [ ] [Khan Academy](https://www.khanacademy.org/computing/computer-science/internet-intro)
-    - [ ] [UDP and TCP: Comparison of Transport Protocols](https://www.youtube.com/watch?v=Vdc8TCESIg8)
-    - [ ] [TCP/IP and the OSI Model Explained!](https://www.youtube.com/watch?v=e5DEVa9eSN0)
-    - [ ] [Packet Transmission across the Internet. Networking & TCP/IP tutorial.](https://www.youtube.com/watch?v=nomyRJehhnM)
-    - [ ] [HTTP](https://www.youtube.com/watch?v=WGJrLqtX7As)
-    - [ ] [SSL and HTTPS](https://www.youtube.com/watch?v=S2iBR2ZlZf0)
-    - [ ] [SSL/TLS](https://www.youtube.com/watch?v=Rp3iZUvXWlM)
-    - [ ] [HTTP 2.0](https://www.youtube.com/watch?v=E9FxNzv1Tr8)
-    - [ ] [Video Series (21 videos)](https://www.youtube.com/playlist?list=PLEbnTDJUr_IegfoqO4iPnPYQui46QqT0j)
-    - [ ] [Subnetting Demystified - Part 5 CIDR Notation](https://www.youtube.com/watch?v=t5xYI0jzOf4)
-    - [ ] Sockets:
-        - [ ] [Java - Sockets - Introduction (video)](https://www.youtube.com/watch?v=6G_W54zuadg&t=6s)
-        - [ ] [Socket Programming (video)](https://www.youtube.com/watch?v=G75vN2mnJeQ)
-    - [ ] (Book) [Understanding Linux Network Internals](http://shop.oreilly.com/product/9780596002558.do)
-    - [ ] [What happens when ...](https://github.com/sunyuding/what-happens-when)
-
 ## System Design, Scalability, Data Handling
 - **You can expect system design questions if you have 4+ years of experience.**
 - Scalability and System Design are very large topics with many topics and resources, since
@@ -1513,13 +1492,83 @@ Book - Advanced Programming in the Unix Environment: https://play.google.com/sto
 - Know your network protocols and how the browser works, the HTTP protocol, cookies, general web troubleshooting (ability to diagnose issues step-by-step), Javascript and HTML.
 - Brush up on HTTP Protocol basics: [PartI​](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177),​ [PartII](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-2--net-31155)
 
+## Networking
+- **if you have networking experience or want to be a reliability engineer or operations engineer, expect questions**
+- otherwise, this is just good to know
+- S​how off yourdepthofknowledgeandunderstandingofnetworktheory, like different protocols (TCP/IP, UDP, ICMP, etc), MAC addresses, IP packets, DNS, OSI layers, and load balancing. 
+- [ ] Check out [C​omputer Networking: A Top-Down Approach](https://www.bau.edu.jo/UserPortal/UserProfile/PostsAttach/10617_1870_1.pdf).
+- [ ] [Khan Academy](https://www.khanacademy.org/computing/computer-science/internet-intro)
+- [ ] [UDP and TCP: Comparison of Transport Protocols](https://www.youtube.com/watch?v=Vdc8TCESIg8)
+- [ ] [TCP/IP and the OSI Model Explained!](https://www.youtube.com/watch?v=e5DEVa9eSN0)
+- [ ] [Packet Transmission across the Internet. Networking & TCP/IP tutorial.](https://www.youtube.com/watch?v=nomyRJehhnM)
+- [ ] [HTTP](https://www.youtube.com/watch?v=WGJrLqtX7As)
+- [ ] [SSL and HTTPS](https://www.youtube.com/watch?v=S2iBR2ZlZf0)
+- [ ] [SSL/TLS](https://www.youtube.com/watch?v=Rp3iZUvXWlM)
+- [ ] [HTTP 2.0](https://www.youtube.com/watch?v=E9FxNzv1Tr8)
+- [ ] [Video Series (21 videos)](https://www.youtube.com/playlist?list=PLEbnTDJUr_IegfoqO4iPnPYQui46QqT0j)
+- [ ] [Subnetting Demystified - Part 5 CIDR Notation](https://www.youtube.com/watch?v=t5xYI0jzOf4)
+- [ ] Sockets:
+    - [ ] [Java - Sockets - Introduction (video)](https://www.youtube.com/watch?v=6G_W54zuadg&t=6s)
+    - [ ] [Socket Programming (video)](https://www.youtube.com/watch?v=G75vN2mnJeQ)
+- [ ] (Book) [Understanding Linux Network Internals](http://shop.oreilly.com/product/9780596002558.do)
+- [X] [What happens when ...](https://github.com/sunyuding/what-happens-when)
+    - The "g" key is pressed
+        - auto-complete dropbox
+    - Parse URL
+        - Protocol
+            - http
+            - https
+        - Resource   
+    - DNS lookup
+        - browser cache
+        - the ISP's caching DNS server
+    - Opening of a socket
+        - TCP socket stream
+    - HTTP protocol
+    - HTTP Server Request Handle
+        - HTTP Request Method
+            - GET
+            - HEAD
+            - POST
+            - PUT
+            - DELETE
+            - CONNECT
+            - OPTIONS
+            - TRACE
+        - Domain
+        - Requested path/page
+    - Browser
+    - HTML parsing
+    - CSS interpretation
+    - Page rendering
+
 ## Non-Tech Skills
 In addition to your technical skills, when you meet with your interviewer, they’ll be assessing you based on four attributes using a mix of behavioral and hypothetical questions:
-- General Cognitive Ability: W​e ask open-ended questions to learn how you approach and solve problems. And there’s no one right answer—your ability to explain your thought process and how you use data to inform decisions is what’s most important.
-- Leadership:​ ​Be prepared to discuss how you have used your communication and decision-making skills to mobilize others. This might be by stepping up to a leadership role at work or with an organization, or by helping a team succeed even when you weren’t officially the leader.
-- Role-related knowledge:​ ​We’re interested in how your individual strengths combine with your experience to drive impact. We don’t just look for how you can contribute today, but how you can grow into different roles—including ones that haven’t even been invented yet.
-- Googleyness:​ Share how you work individually and on a team, how you help others, how you navigate ambiguity, and how you push yourself to grow outside of your comfort zone.
-- [Google Interview Prep Guide Business Interviews](https://drive.google.com/drive/u/1/folders/1EexCycNQOgdiMg-DEmC-iVq7iVRWYOSS)
+- General Cognitive Ability: 
+    - W​e ask open-ended questions to learn how you approach and solve problems. 
+    - And there’s no one right answer—your ability to explain your thought process and how you use data to inform decisions is what’s most important.
+- Leadership:​ ​
+    - Be prepared to discuss how you have used your communication and decision-making skills to mobilize others. 
+    - This might be by stepping up to a leadership role at work or with an organization, or by helping a team succeed even when you weren’t officially the leader.
+- Role-related knowledge:​ ​
+    - We’re interested in how your individual strengths combine with your experience to drive impact. 
+    - We don’t just look for how you can contribute today, but how you can grow into different roles—including ones that haven’t even been invented yet.
+- Googleyness:​ 
+    - Share how you work individually and on a team, how you help others, how you navigate ambiguity, and how you push yourself to grow outside of your comfort zone.
+### What's a behavioral question?
+Using a behavioral interview technique like the STAR approach can help structure your answers.
+- Situation
+    - Describe the situation you were in or the task you needed to accomplish.
+- Task
+    - Explain the goal you were working toward.
+- Activity
+    - Detail the specific steps you took and the role(s) you played.
+- Result
+    - Describe your accomplishments and the overall outcome.
+### What's a hypothetical question?
+While behavioral questions assess your past performance, hypothetical (also known as situational) questions evaluate how you would handle a challenge you may not have encountered yet.
+
+[Google Interview Prep Guide Business Interviews](https://drive.google.com/drive/u/1/folders/1EexCycNQOgdiMg-DEmC-iVq7iVRWYOSS)
 
 ## Once you're closer to the interview
 
