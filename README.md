@@ -49,7 +49,8 @@ If you want to be a Cloud/DevOps/Infrastructure/SRE Engineer, study more from th
   - [What you won't see covered](#what-you-wont-see-covered)
   - [The Daily Plan](#the-daily-plan)
   - [Prerequisite Knowledge](#prerequisite-knowledge)
-  - [Algorithmic complexity / Big-O / Asymptotic analysis](#algorithmic-complexity--big-o--asymptotic-analysis)
+  - [Coding/OO](#codingoo)
+  - [Algorithms](#algorithms)
   - [Data Structures](#data-structures)
   - [More Knowledge](#more-knowledge)
   - [Trees](#trees)
@@ -61,6 +62,7 @@ If you want to be a Cloud/DevOps/Infrastructure/SRE Engineer, study more from th
   - [Coding Question Practice](#coding-question-practice)
   - [Coding exercises/challenges](#coding-exerciseschallenges)
   - [Troubleshooting](#troubleshooting)
+    - [Monitoring and Logging](#monitoring-and-logging)
   - [Operating Systems](#operating-systems)
   - [Unix/Linux Internals](#unixlinux-internals)
   - [Web Technologies](#web-technologies)
@@ -81,7 +83,6 @@ If you want to be a Cloud/DevOps/Infrastructure/SRE Engineer, study more from th
 - [Automation](#automation)
 - [Distributed Systems](#distributed-systems)
 - [Production Web App](#production-web-app)
-- [Monitoring and Logging](#monitoring-and-logging)
 - [Continuous Integration | Continuous Delivery](#continuous-integration--continuous-delivery)
 - [Containers](#containers)
 - [Web Servers](#web-servers)
@@ -122,7 +123,8 @@ If you want to be a Cloud/DevOps/Infrastructure/SRE Engineer, study more from th
   - [What you won't see covered](#what-you-wont-see-covered)
   - [The Daily Plan](#the-daily-plan)
   - [Prerequisite Knowledge](#prerequisite-knowledge)
-  - [Algorithmic complexity / Big-O / Asymptotic analysis](#algorithmic-complexity--big-o--asymptotic-analysis)
+  - [Coding/OO](#codingoo)
+  - [Algorithms](#algorithms)
   - [Data Structures](#data-structures)
   - [More Knowledge](#more-knowledge)
   - [Trees](#trees)
@@ -134,6 +136,7 @@ If you want to be a Cloud/DevOps/Infrastructure/SRE Engineer, study more from th
   - [Coding Question Practice](#coding-question-practice)
   - [Coding exercises/challenges](#coding-exerciseschallenges)
   - [Troubleshooting](#troubleshooting)
+    - [Monitoring and Logging](#monitoring-and-logging)
   - [Operating Systems](#operating-systems)
   - [Unix/Linux Internals](#unixlinux-internals)
   - [Web Technologies](#web-technologies)
@@ -154,7 +157,6 @@ If you want to be a Cloud/DevOps/Infrastructure/SRE Engineer, study more from th
 - [Automation](#automation)
 - [Distributed Systems](#distributed-systems)
 - [Production Web App](#production-web-app)
-- [Monitoring and Logging](#monitoring-and-logging)
 - [Continuous Integration | Continuous Delivery](#continuous-integration--continuous-delivery)
 - [Containers](#containers)
 - [Web Servers](#web-servers)
@@ -482,8 +484,21 @@ Write code on a whiteboard or paper, not a computer. Test with some sample input
     - [ ] [How does CPU execute program (video)](https://www.youtube.com/watch?v=42KTvGYQYnA)
     - [ ] [Machine Code Instructions (video)](https://www.youtube.com/watch?v=Mv2XQgpbTNE)
 
-## Algorithmic complexity / Big-O / Asymptotic analysis
-- nothing to implement
+## Coding/OO
+- Be prepared to write around 20-30 lines of code in your strongest language. 
+- You will be expected to design APIs, and use appropriate Object-Oriented Design and Programming. 
+- Be sure to think about how to test your code, as well as come up with corner cases and edge cases. 
+- Note that we focus on conceptual understanding, not memorization. 
+- Our most successful candidates have spent time writing actual code using interview preparation websites like HackerRank, leet code, firecode.io or "​ ​[mycodeschool​](https://www.youtube.com/user/mycodeschool)"​. 
+- Sample Question: Given a single page of a book, find the longest word on that page.
+
+## Algorithms
+- A​pproach the problem from both bottom-up and top-down algorithms.
+- Know Big-O notations (e.g. run time). 
+- Algorithms that are used to solve Google problems include sorting (plus searching and binary search), greediness, dynamic programming/memorization, divide-and-conquer, recursion or algorithms linked to a specific data structure.
+
+    nothing to implement
+
 - [ ] [Harvard CS50 - Asymptotic Notation (video)](https://www.youtube.com/watch?v=iOq5kSKqeR4)
 - [ ] [Big O Notations (general quick tutorial) (video)](https://www.youtube.com/watch?v=V6mKVRU1evU)
 - [ ] [Big O Notation (and Omega and Theta) - best mathematical explanation (video)](https://www.youtube.com/watch?v=ei-A_wy5Yxw&index=2&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN)
@@ -1015,47 +1030,6 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
         - [ ] [MIT 6.004 L15: The Memory Hierarchy (video)](https://www.youtube.com/watch?v=vjYF_fAZI5E&list=PLrRW1w6CGAcXbMtDFj205vALOGmiRc82-&index=24)
         - [ ] [MIT 6.004 L16: Cache Issues (video)](https://www.youtube.com/watch?v=ajgC3-pyGlk&index=25&list=PLrRW1w6CGAcXbMtDFj205vALOGmiRc82-)
 
-
-
-
-
-- ### Processes and Threads
-    - [ ] Computer Science 162 - Operating Systems (25 videos):
-        - for processes and threads see videos 1-11
-        - [Operating Systems and System Programming (video)](https://www.youtube.com/playlist?list=PL-XXv-cvA_iBDyz-ba4yDskqMDY6A1w_c)
-    - [What Is The Difference Between A Process And A Thread?](https://www.quora.com/What-is-the-difference-between-a-process-and-a-thread)
-    - Covers:
-        - Processes, Threads, Concurrency issues
-            - difference between processes and threads
-            - processes
-            - threads
-            - locks
-            - mutexes
-            - semaphores
-            - monitors
-            - how they work
-            - deadlock
-            - livelock
-        - CPU activity, interrupts, context switching
-        - Modern concurrency constructs with multicore processors
-        - [Paging, segmentation and virtual memory (video)](https://www.youtube.com/watch?v=LKe7xK0bF7o&list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8&index=2)
-        - [Interrupts (video)](https://www.youtube.com/watch?v=uFKi2-J-6II&list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8&index=3)
-        - [Scheduling (video)](https://www.youtube.com/watch?v=-Gu5mYdKbu4&index=4&list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8)
-        - Process resource needs (memory: code, static storage, stack, heap, and also file descriptors, i/o)
-        - Thread resource needs (shares above (minus stack) with other threads in the same process but each has its own pc, stack counter, registers, and stack)
-        - Forking is really copy on write (read-only) until the new process writes to memory, then it does a full copy.
-        - Context switching
-            - How context switching is initiated by the operating system and underlying hardware
-    - [ ] [threads in C++ (series - 10 videos)](https://www.youtube.com/playlist?list=PL5jc9xFGsL8E12so1wlMS0r0hTQoJL74M)
-    - [ ] concurrency in Python (videos):
-        - [ ] [Short series on threads](https://www.youtube.com/playlist?list=PL1H1sBF1VAKVMONJWJkmUh6_p8g4F2oy1)
-        - [ ] [Python Threads](https://www.youtube.com/watch?v=Bs7vPNbB9JM)
-        - [ ] [Understanding the Python GIL (2010)](https://www.youtube.com/watch?v=Obt-vMVdM8s)
-            - [reference](http://www.dabeaz.com/GIL)
-        - [ ] [David Beazley - Python Concurrency From the Ground Up: LIVE! - PyCon 2015](https://www.youtube.com/watch?v=MCs5OvhV9S4)
-        - [ ] [Keynote David Beazley - Topics of Interest (Python Asyncio)](https://www.youtube.com/watch?v=ZzfHjytDceU)
-        - [ ] [Mutex in Python](https://www.youtube.com/watch?v=0zaPs8OtyKY)
-
 - ### Papers
     - Reading all from end to end with full comprehension will likely take more time than you have. I recommend being selective on papers and their sections.
     - [Love classic papers?](https://www.cs.cmu.edu/~crary/819-f09/)
@@ -1421,18 +1395,60 @@ Mock Interviews:
 - [Refdash: Mock interviews and expedited interviews](https://refdash.com/) - also help candidates fast track by skipping multiple interviews with tech companies.
 
 ## Troubleshooting
-["A distributed system is one in which the failure of a computer you didn’t even know existed can render your own computer unusable." - Leslie Lamport](https://www.microsoft.com/en-us/research/publication/distribution/)
--  Interviewers are looking for a logical and structured approach to problem solving through distributed systems, network and web scenarios. Make sure you understand the questions and ask appropriate follow-up questions to the interviewer when needed. A big part is finding out what the actual problem is and breaking it down into specifics. Check out [Life in App Engine Production​](https://www.youtube.com/watch?v=rgQm1KEIIuc) for a troubleshooting example.
-- Master/Slave
-- "Truse, but verify."
-  - Strong checksums at many layers of the stack are best
-- Any given datacenter can be rendered unreachable or unfit for serving at any time, without warning
-  - Un-isolated traffic can degrade performance
-  - Power failure
-  - Network partition
-  - Infrastructure corrupts or isolates data
-- “To expect the unexpected shows a thoroughly modern intellect.” - Oscar Wilde
-- A service running in a given datacenter can be no more reliable than the least reliable component it utilizes
+-  Interviewers are looking for a logical and structured approach to problem solving through distributed systems, network and web scenarios. 
+-  Make sure you understand the questions and ask appropriate follow-up questions to the interviewer when needed. 
+-  A big part is finding out what the actual problem is and breaking it down into specifics. 
+-  Check out [Life in App Engine Production​](https://www.youtube.com/watch?v=rgQm1KEIIuc) for a troubleshooting example.
+   - ["A distributed system is one in which the failure of a computer you didn’t even know existed can render your own computer unusable." - Leslie Lamport](https://www.microsoft.com/en-us/research/publication/distribution/)
+   - Master/Slave
+   - "Truse, but verify."
+     - Strong checksums at many layers of the stack are best
+   - Any given datacenter can be rendered unreachable or unfit for serving at any time, without warning
+     - Un-isolated traffic can degrade performance
+     - Power failure
+     - Network partition
+     - Infrastructure corrupts or isolates data
+   - “To expect the unexpected shows a thoroughly modern intellect.” - Oscar Wilde
+   - A service running in a given datacenter can be no more reliable than the least reliable component it utilizes
+- [Troubleshooting Ubuntu Server](http://www.informit.com/articles/article.aspx?p=1381889)
+  - Divide the Problem Space
+  - Favor Quick, Simple Tests over Slow, Complex Tests
+  - Favor Past Solutions
+  - Good Communication Is Critical When Collaborating
+  - Understand How Systems Work
+  - Document Your Problems and Solutions
+  - Localhost Troubleshooting
+  - Host is Sluggish or Unresponsible
+    - System Load
+    - What Is a High Load Average?
+    - top
+    - Diagnose High User Time
+    - Diagnose Out-of-Memory Issues
+    - Out of Disk Space
+    - Out of Inodes
+  - Nerwork Troubleshooting
+    - Server A Can't Talk to Server B
+      - Client or Server Problem
+      - Is It Plugged In?
+      - Is DNS Working? 
+```
+$ nslookup
+```
+  - Hardware Troubleshooting
+    - Network Card Errors
+
+
+  ```
+  $ sudo ifconfig eth0
+  ```
+    - Test Hard Drives
+    - Test RAM
+
+
+- [DevOps Troubleshooting: Linux® Server Best Practices](https://www.comcol.nl/code/inkijkexemplaar/9780321832047/devops-troubleshooting-engels-kyle-rankin.pdf)
+### Monitoring and Logging
+  - (Course) Monitoring and Alerting with Prometheus - https://www.udemy.com/monitoring-and-alerting-with-prometheus/landing-page/
+  - (Book) Prometheus UP and Running - https://www.amazon.com/Prometheus-Infrastructure-Application-Performance-Monitoring/dp/1492034142
 
 ## Operating Systems
 - You should understand processes, threads, concurrency issues, locks, mutexes, semaphores, monitors and how they all work. 
@@ -1440,6 +1456,44 @@ Mock Interviews:
 - Know what resources a process needs and a thread needs. 
 - Understand how context switching works, how it's initiated by the operating system and underlying hardware. 
 - Know about scheduling and the fundamentals of "modern" concurrency constructs.
+
+- ### Processes and Threads
+    - [ ] Computer Science 162 - Operating Systems (25 videos):
+        - for processes and threads see videos 1-11
+        - [Operating Systems and System Programming (video)](https://www.youtube.com/playlist?list=PL-XXv-cvA_iBDyz-ba4yDskqMDY6A1w_c)
+    - [What Is The Difference Between A Process And A Thread?](https://www.quora.com/What-is-the-difference-between-a-process-and-a-thread)
+    - Covers:
+        - Processes, Threads, Concurrency issues
+            - difference between processes and threads
+            - processes
+            - threads
+            - locks
+            - mutexes
+            - semaphores
+            - monitors
+            - how they work
+            - deadlock
+            - livelock
+        - CPU activity, interrupts, context switching
+        - Modern concurrency constructs with multicore processors
+        - [Paging, segmentation and virtual memory (video)](https://www.youtube.com/watch?v=LKe7xK0bF7o&list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8&index=2)
+        - [Interrupts (video)](https://www.youtube.com/watch?v=uFKi2-J-6II&list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8&index=3)
+        - [Scheduling (video)](https://www.youtube.com/watch?v=-Gu5mYdKbu4&index=4&list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8)
+        - Process resource needs (memory: code, static storage, stack, heap, and also file descriptors, i/o)
+        - Thread resource needs (shares above (minus stack) with other threads in the same process but each has its own pc, stack counter, registers, and stack)
+        - Forking is really copy on write (read-only) until the new process writes to memory, then it does a full copy.
+        - Context switching
+            - How context switching is initiated by the operating system and underlying hardware
+    - [ ] [threads in C++ (series - 10 videos)](https://www.youtube.com/playlist?list=PL5jc9xFGsL8E12so1wlMS0r0hTQoJL74M)
+    - [ ] concurrency in Python (videos):
+        - [ ] [Short series on threads](https://www.youtube.com/playlist?list=PL1H1sBF1VAKVMONJWJkmUh6_p8g4F2oy1)
+        - [ ] [Python Threads](https://www.youtube.com/watch?v=Bs7vPNbB9JM)
+        - [ ] [Understanding the Python GIL (2010)](https://www.youtube.com/watch?v=Obt-vMVdM8s)
+            - [reference](http://www.dabeaz.com/GIL)
+        - [ ] [David Beazley - Python Concurrency From the Ground Up: LIVE! - PyCon 2015](https://www.youtube.com/watch?v=MCs5OvhV9S4)
+        - [ ] [Keynote David Beazley - Topics of Interest (Python Asyncio)](https://www.youtube.com/watch?v=ZzfHjytDceU)
+        - [ ] [Mutex in Python](https://www.youtube.com/watch?v=0zaPs8OtyKY)
+
 - (Course) Introduction to Operating Systems - https://br.udacity.com/course/introduction-to-operating-systems--ud923/
 - (Course) Advanced Operating Systems - https://br.udacity.com/course/advanced-operating-systems--ud189/
 - [Linux](/Linux.md)
@@ -1456,7 +1510,7 @@ Book - Advanced Programming in the Unix Environment: https://play.google.com/sto
 - Check out these online books:​ [The Art of UNIX Programming​​](https://books.google.ie/books/about/The_Art_of_UNIX_Programming.html?id=H4q1t-jAcBIC&hl=en) and​ [Advanced Programming in the Unix Environment](https://books.google.ie/books/about/Advanced_Programming_in_the_Unix_Environ.html?id=D_VQAAAAMAAJ&redir_esc=y)
 
 ## Web Technologies
-- Know your network protocols and how the browser works, the HTTP protocol, cookies, general web troubleshooting (ability to diagnose issues step-by-step), JavascriptandHTML.
+- Know your network protocols and how the browser works, the HTTP protocol, cookies, general web troubleshooting (ability to diagnose issues step-by-step), Javascript and HTML.
 - Brush up on HTTP Protocol basics: [PartI​](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177),​ [PartII](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-2--net-31155)
 
 ## Non-Tech Skills
@@ -2042,10 +2096,6 @@ Sit back and enjoy. "Netflix and skill" :P
 - (Tutorial) https://www.digitalocean.com/community/tutorial_series/building-for-production-web-applications
 
 - (Book) Production Ready Microservices - https://www.amazon.com/gp/product/1491965975/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1491965975&linkCode=as2&tag=susanfowler-20&linkId=8e434210b002d00be8507454a75c11ff
-
-# Monitoring and Logging
-- (Course) Monitoring and Alerting with Prometheus - https://www.udemy.com/monitoring-and-alerting-with-prometheus/landing-page/
-- (Book) Prometheus UP and Running - https://www.amazon.com/Prometheus-Infrastructure-Application-Performance-Monitoring/dp/1492034142
 
 # Continuous Integration | Continuous Delivery
 - (Course) Continuous Deliver Better Software - https://www.udemy.com/learn-devops-continuously-deliver-better-software
