@@ -1426,26 +1426,66 @@ Mock Interviews:
     - Diagnose Out-of-Memory Issues
     - Out of Disk Space
     - Out of Inodes
-  - Nerwork Troubleshooting
+  - [Nerwork Troubleshooting](http://www.informit.com/articles/article.aspx?p=1381889&seqNum=3)
     - Server A Can't Talk to Server B
       - Client or Server Problem
       - Is It Plugged In?
       - Is DNS Working? 
-```
-$ nslookup
-```
+        ```
+        $ nslookup
+        ```
+      - Can I Route to the Remote Host?
+        ```
+        $ traceroute 10.1.2.5
+        raceroute to 10.1.2.5 (10.1.2.5), 30 hops max, 40 byte packets
+        1  10.1.1.1 (10.1.1.1)  5.432 ms  5.206 ms  5.472 ms
+        2  web1 (10.1.2.5)  8.039 ms  8.348 ms  8.643 ms
+        ```  
+        ```
+        $ traceroute 10.1.2.5
+        traceroute to 10.1.2.5 (10.1.2.5), 30 hops max, 40 byte packets
+        1  10.1.1.1 (10.1.1.1)  5.432 ms  5.206 ms  5.472 ms
+        2  * * *
+        3  * * *
+        ```  
+        ```
+        $ traceroute 10.1.2.5
+        traceroute to 10.1.2.5 (10.1.2.5), 30 hops max, 40 byte packets
+        1  10.1.1.1 (10.1.1.1)  5.432 ms  5.206 ms  5.472 ms
+        1  10.1.1.1 (10.1.1.1)  3006.477 ms !H  3006.779 ms !H  3007.072 ms
+        ```  
+      - Is the Remote Port Open?
+        ```
+        $ telnet 10.1.2.5 80
+        Trying 10.1.2.5...
+        telnet: Unable to connect to remote host: Connection refused
+        ```  
+        ```
+        $ nmap -p 80 10.1.2.5
+
+        Starting Nmap 4.62 ( http://nmap.org ) at 2009-02-05 18:49 PST
+        Interesting ports on web1 (10.1.2.5):
+        PORT   STATE  SERVICE
+        80/tcp filtered http
+        ```  
+      - Test the Remote Host Locally
+        - Test for Listening Ports
+            ```
+            [centos@app001 ~]$ sudo netstat -lnp | grep :80
+            tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      4060/haproxy
+            ```  
+        - Firewall Rules
   - Hardware Troubleshooting
     - Network Card Errors
-
-
-  ```
-  $ sudo ifconfig eth0
-  ```
+        ```
+        $ sudo ifconfig eth0
+        ```
     - Test Hard Drives
     - Test RAM
 
-
 - [DevOps Troubleshooting: Linux® Server Best Practices](https://www.comcol.nl/code/inkijkexemplaar/9780321832047/devops-troubleshooting-engels-kyle-rankin.pdf)
+- [ ] 5% API fail, how to troubleshoot
+  
 ### Monitoring and Logging
   - (Course) Monitoring and Alerting with Prometheus - https://www.udemy.com/monitoring-and-alerting-with-prometheus/landing-page/
   - (Book) Prometheus UP and Running - https://www.amazon.com/Prometheus-Infrastructure-Application-Performance-Monitoring/dp/1492034142
@@ -1460,8 +1500,12 @@ $ nslookup
 - ### Processes and Threads
     - [ ] Computer Science 162 - Operating Systems (25 videos):
         - for processes and threads see videos 1-11
-        - [Operating Systems and System Programming (video)](https://www.youtube.com/playlist?list=PL-XXv-cvA_iBDyz-ba4yDskqMDY6A1w_c)
-    - [What Is The Difference Between A Process And A Thread?](https://www.quora.com/What-is-the-difference-between-a-process-and-a-thread)
+        - [Operating Systems and System Programming (video)](https://www.youtube.com/watch?v=hry_qqXLej8&list=PLRdybCcWDFzCag9A0h1m9QYaujD0xefgM)
+    - [ ] [What Is The Difference Between A Process And A Thread?](https://www.quora.com/What-is-the-difference-between-a-process-and-a-thread)
+        - Processes are the abstraction of running programs.
+        - Threads are the unit of execution in a process.
+        - A process contains one or more threads.
+        - Virtualized memory is associated with the process and not the thread. Thus, threads share one memory address space. 
     - Covers:
         - Processes, Threads, Concurrency issues
             - difference between processes and threads
@@ -1512,7 +1556,40 @@ Book - Advanced Programming in the Unix Environment: https://play.google.com/sto
 ## Web Technologies
 - Know your network protocols and how the browser works, the HTTP protocol, cookies, general web troubleshooting (ability to diagnose issues step-by-step), Javascript and HTML.
 - Brush up on HTTP Protocol basics: [PartI​](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177),​ [PartII](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-2--net-31155)
-
+- [ ] HTTP
+  - Each HTTP request includes 5 key elements/core components:
+    - HTTP methods: GET, PUT, POST, DELETE, OPTIONS,
+    - URI(Uniform Resource Identifier)
+    - HTTP version
+    - Request Heander/metadata
+    - Request Body
+  - Each HTTP response includes 5 key elements/core components:
+    - Status/Response Code: 200, 404, 503
+    - HTTP Version: HTTP v1.1
+    - Response Header
+    - Response Body
+- [x] Cookies
+  - Why? 
+    - HTTP protocol has been implemented as stateless protocol, so there is a need of some featrues in web technology to maintain state of user either at client or at server.
+    - Record user session state
+  - Ads
+  - Disadvantages
+    - Cookies are maintianed at client system, so that they are not secure
+    - Limited number of cookies are allowed for website (Max 20)
+    - Limited amount of data can be maintained (Max 4KB)
+    - Only plain text can be maintained
+    - Privacy/security
+  - Usage
+    - To maintain authentication details we can make use of authentication cookie
+    - To transmit session ID between client and server
+  - [x] [Cookies interview questions and answers - programmingcrackers](http://programmingcrackers.blogspot.com/p/cookies-1.html)
+- [ ] RESRful API
+  - REpresentational State Transfer
+  - vs SOAP (Simaple Object Access Protocol)
+  - protocol: HTTP
+  - resource: JSON, XML
+  - [ ] [Top 20 REST API Interview Questions and Answers](https://www.techbeamers.com/rest-api-interview-questions-answers/)
+    
 ## Non-Tech Skills
 In addition to your technical skills, when you meet with your interviewer, they’ll be assessing you based on four attributes using a mix of behavioral and hypothetical questions:
 - General Cognitive Ability: W​e ask open-ended questions to learn how you approach and solve problems. And there’s no one right answer—your ability to explain your thought process and how you use data to inform decisions is what’s most important.
