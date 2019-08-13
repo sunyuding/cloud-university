@@ -66,7 +66,11 @@ If you want to be a Cloud/DevOps/Infrastructure/SRE Engineer, study more from th
   - [Operating Systems](#operating-systems)
   - [Unix/Linux Internals](#unixlinux-internals)
   - [Web Technologies](#web-technologies)
+  - [Networking](#networking)
+  - [Database](#database)
   - [Non-Tech Skills](#non-tech-skills)
+    - [What's a behavioral question?](#whats-a-behavioral-question)
+    - [What's a hypothetical question?](#whats-a-hypothetical-question)
   - [Once you're closer to the interview](#once-youre-closer-to-the-interview)
   - [Your Resume](#your-resume)
   - [Be thinking of for when the interview comes](#be-thinking-of-for-when-the-interview-comes)
@@ -140,7 +144,11 @@ If you want to be a Cloud/DevOps/Infrastructure/SRE Engineer, study more from th
   - [Operating Systems](#operating-systems)
   - [Unix/Linux Internals](#unixlinux-internals)
   - [Web Technologies](#web-technologies)
+  - [Networking](#networking)
+  - [Database](#database)
   - [Non-Tech Skills](#non-tech-skills)
+    - [What's a behavioral question?](#whats-a-behavioral-question)
+    - [What's a hypothetical question?](#whats-a-hypothetical-question)
   - [Once you're closer to the interview](#once-youre-closer-to-the-interview)
   - [Your Resume](#your-resume)
   - [Be thinking of for when the interview comes](#be-thinking-of-for-when-the-interview-comes)
@@ -1390,29 +1398,22 @@ Mock Interviews:
    - “To expect the unexpected shows a thoroughly modern intellect.” - Oscar Wilde
    - A service running in a given datacenter can be no more reliable than the least reliable component it utilizes
 - [Troubleshooting Ubuntu Server](http://www.informit.com/articles/article.aspx?p=1381889)
-  - Divide the Problem Space
-  - Favor Quick, Simple Tests over Slow, Complex Tests
-  - Favor Past Solutions
-  - Good Communication Is Critical When Collaborating
-  - Understand How Systems Work
-  - Document Your Problems and Solutions
-  - Localhost Troubleshooting
-  - Host is Sluggish or Unresponsible
-    - System Load
-    - What Is a High Load Average?
-    - top
-    - Diagnose High User Time
-    - Diagnose Out-of-Memory Issues
-    - Out of Disk Space
-    - Out of Inodes
+  - [General Troubleshooting Philosophy](http://www.informit.com/articles/article.aspx?p=1381889)
+  - [Localhost Troubleshooting](http://www.informit.com/articles/article.aspx?p=1381889&seqNum=2)
   - [Nerwork Troubleshooting](http://www.informit.com/articles/article.aspx?p=1381889&seqNum=3)
     - Server A Can't Talk to Server B
       - Client or Server Problem
       - Is It Plugged In?
+        ```
+        [centos@app001 ~]$ sudo ethtool eth0
+        Settings for eth0:
+	    Link detected: yes
+        ```
+      - Is My Interface Up?
       - Is DNS Working? 
-```
-$ nslookup
-```
+        ```
+        $ nslookup
+        ```
       - Can I Route to the Remote Host?
         ```
         $ traceroute 10.1.2.5
@@ -1454,17 +1455,9 @@ $ nslookup
             tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      4060/haproxy
             ```  
         - Firewall Rules
-  - Hardware Troubleshooting
-    - Network Card Errors
-
-
-  ```
-  $ sudo ifconfig eth0
-  ```
-    - Test Hard Drives
-    - Test RAM
-
-
+  - [Hardware Troubleshooting](http://www.informit.com/articles/article.aspx?p=1381889&seqNum=4)
+   
+  
 - [DevOps Troubleshooting: Linux® Server Best Practices](https://www.comcol.nl/code/inkijkexemplaar/9780321832047/devops-troubleshooting-engels-kyle-rankin.pdf)
 - [ ] 5% API fail, how to troubleshoot
 ### Monitoring and Logging
@@ -1533,6 +1526,7 @@ Book - Advanced Programming in the Unix Environment: https://play.google.com/sto
 - Know what’s happening under the hood. 
 - Understand kernels, libraries, system calls, memory management, permissions, file systems, client-server protocols and the shell.
 - Check out these online books:​ [The Art of UNIX Programming​​](https://books.google.ie/books/about/The_Art_of_UNIX_Programming.html?id=H4q1t-jAcBIC&hl=en) and​ [Advanced Programming in the Unix Environment](https://books.google.ie/books/about/Advanced_Programming_in_the_Unix_Environ.html?id=D_VQAAAAMAAJ&redir_esc=y)
+- [Top 50 Linux Interview Questions For Beginners In 2019](https://www.edureka.co/blog/interview-questions/linux-interview-questions-for-beginners/#ScenarioBasedQuestions)
 
 ## Web Technologies
 - Know your network protocols and how the browser works, the HTTP protocol, cookies, general web troubleshooting (ability to diagnose issues step-by-step), Javascript and HTML.
@@ -1622,7 +1616,12 @@ Book - Advanced Programming in the Unix Environment: https://play.google.com/sto
   - [ ] [Top 20 REST API Interview Questions and Answers](https://www.techbeamers.com/rest-api-interview-questions-answers/)
     
 ## Database
-[w3schools SQL Tutorial](https://www.w3schools.com/sql/)
+- [w3schools SQL Tutorial](https://www.w3schools.com/sql/)
+  - A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+  - (INNER) JOIN: Returns records that have matching values in both tables
+  - LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
+  - RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+  - FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
 
 ## Non-Tech Skills
 In addition to your technical skills, when you meet with your interviewer, they’ll be assessing you based on four attributes using a mix of behavioral and hypothetical questions: 
