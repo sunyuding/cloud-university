@@ -119,7 +119,7 @@ I'm using Github's special markdown flavor, including tasks lists to check progr
 
 `git checkout -b progress`
 
-`git remote add jwasham https://github.com/jwasham/coding-interview-university`
+`git remote add ...`
 
 `git fetch --all`
 
@@ -129,7 +129,7 @@ I'm using Github's special markdown flavor, including tasks lists to check progr
 
 `git commit -m "Marked x" `
 
-`git rebase jwasham/master `
+`git rebase .../master `
 
 `git push --force `
 
@@ -1064,7 +1064,7 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
         - Very technical talk for kernel devs. Don't worry if most is over your head.
         - The first half is enough.
 
-## System Design, Scalability, Data Handling
+# System Design, Scalability, Data Handling
 - **You can expect system design questions if you have 4+ years of experience.**
 - Scalability and System Design are very large topics with many topics and resources, since
       there is a lot to consider when designing a software/hardware system that can scale.
@@ -1187,8 +1187,74 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
         - [Design a key-value database](http://www.slideshare.net/dvirsky/introduction-to-redis)
         - [Design a picture sharing system](http://highscalability.com/blog/2011/12/6/instagram-architecture-14-million-users-terabytes-of-photos.html)
         - [Design a recommendation system](http://ijcai13.org/files/tutorial_slides/td3.pdf)
-        - [Design a URL-shortener system: copied from above](http://www.hiredintech.com/system-design/the-system-design-process/)
         - [Design a cache system](https://www.adayinthelifeof.nl/2011/02/06/memcache-internals/)
+
+## Tiny URL
+Design a URL shortening service, like bit.ly
+### Step 1: Constraints and use cases
+#### Use Cases
+1. Shortening: take a URL => return a much shorter URL
+2. Redirection: take a short URL => redirect to the original URL
+3. Custom URL
+4. High avaiability of the system
+#### Constraints
+Math:
+1. New URLs per month: 100 Million 
+2. 1 Billion requests per month 
+3. 10% from shortening and 90% from redirection
+4. Requests Per Second: 400+ (40: shortens, 360: redirects) 
+5. Total URLs: 6 Billion URLs in 5 years 
+6. 500 Bytes per URL 
+7. 6 bytes per hash
+8. 3TBs for all URLs, 36GB for all hashes (over 5 years)
+9. New data written per second: 40 * (500 + 6): 20 KB
+10. Data read per second: 360 * 506 bytes: 180 KB
+### Step 2: Abstract design
+1. Application service layer (serves the requests)
+* Shortening service
+* Redirection service
+2. Data storage layer (keeps track of the hash => URL mappings)
+* Acts like a big hash table: stores new mappings, and retrieves a value given a key.
+```
+hashed_url = convert_to_base62(md5(original_url + random_salt))[:6]
+```
+### Step 3: Understanding bottlenecks
+Traffic is probably not goint ot be very hard, data - more interesting.
+
+### Step 4: Scaling your abstract design
+1. Application Service Layer
+* Start with one machine
+* Measure how far it takes us (load tests)
+* Add a load balancer + a cluster of machines over time: to deal with spike-y traffic, to increase availability
+2. Data Storage
+1) Billions of objects
+2) Each object is fairly small (< 1 KB)
+3) There are no relationships between the objects
+4) Reads are 9x more frequent than writes (360 reads, 40 writes per second)
+5) 3 TB of URLs, 36 GB of hashes
+
+MySQL:
+* Widely used
+* Mature technology
+* Clear scaling paradigms (sharding, master/slave replication, master/master replication)
+* Used by Facebook, Twitter, Google, etc.
+* Index lookups are very fast
+
+Tables:
+```
+mappings
+    hash:varchar(6)
+    original_url: varchar(512)
+```
+2. Data Storage
+* Use one MySQL table with two varchar fields.
+* Create a unique index on the hash (36GB+). We want to hold it in memory to speed up lookups.
+* Vertical scaling of the MySQL machine for a while
+* Eventually, partition the data by taking the first char of the hash mod the number of partitions. Think about a master-slave setup(reading from the slaves, writes to the master).
+
+### Read more
+- [Design a URL-shortener system: copied from above](http://www.hiredintech.com/system-design/the-system-design-process/)
+- [ ] [URL shortener system design | tinyurl system design | bitly system design](https://www.youtube.com/watch?v=JQDHz72OA3c)
 
 ---
 
@@ -1341,55 +1407,31 @@ Mock Interviews:
 - Understand how context switching works, how it's initiated by the operating system and underlying hardware. 
 - Know about scheduling and the fundamentals of "modern" concurrency constructs.
 
-- ### Processes and Threads
-    - [ ] Computer Science 162 - Operating Systems (25 videos):
+- [ ] Computer Science 162 - Operating Systems (25 videos):
         - for processes and threads see videos 1-11
                - [Operating Systems and System Programming (video)](https://www.youtube.com/watch?v=hry_qqXLej8&list=PLRdybCcWDFzCag9A0h1m9QYaujD0xefgM)
-    - [ ] [What Is The Difference Between A Process And A Thread?](https://www.quora.com/What-is-the-difference-between-a-process-and-a-thread)
+- [ ] [What Is The Difference Between A Process And A Thread?](https://www.quora.com/What-is-the-difference-between-a-process-and-a-thread)
         - Processes are the abstraction of running programs.
         - Threads are the unit of execution in a process.
         - A process contains one or more threads.
         - Virtualized memory is associated with the process and not the thread. Thus, threads share one memory address space. 
-     - Covers:
-        - Processes, Threads, Concurrency issues
-            - difference between processes and threads
-            - processes
-            - threads
-            - locks
-            - mutexes
-            - semaphores
-            - monitors
-            - how they work
-            - deadlock
-            - livelock
-        - CPU activity, interrupts, context switching
-        - Modern concurrency constructs with multicore processors
-        - [Paging, segmentation and virtual memory (video)](https://www.youtube.com/watch?v=LKe7xK0bF7o&list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8&index=2)
-        - [Interrupts (video)](https://www.youtube.com/watch?v=uFKi2-J-6II&list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8&index=3)
-        - [Scheduling (video)](https://www.youtube.com/watch?v=-Gu5mYdKbu4&index=4&list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8)
-        - Process resource needs (memory: code, static storage, stack, heap, and also file descriptors, i/o)
-        - Thread resource needs (shares above (minus stack) with other threads in the same process but each has its own pc, stack counter, registers, and stack)
-        - Forking is really copy on write (read-only) until the new process writes to memory, then it does a full copy.
-        - Context switching
-            - How context switching is initiated by the operating system and underlying hardware
-    - [ ] [threads in C++ (series - 10 videos)](https://www.youtube.com/playlist?list=PL5jc9xFGsL8E12so1wlMS0r0hTQoJL74M)
-    - [ ] concurrency in Python (videos):
-        - [ ] [Short series on threads](https://www.youtube.com/playlist?list=PL1H1sBF1VAKVMONJWJkmUh6_p8g4F2oy1)
-        - [ ] [Python Threads](https://www.youtube.com/watch?v=Bs7vPNbB9JM)
-        - [ ] [Understanding the Python GIL (2010)](https://www.youtube.com/watch?v=Obt-vMVdM8s)
-            - [reference](http://www.dabeaz.com/GIL)
-        - [ ] [David Beazley - Python Concurrency From the Ground Up: LIVE! - PyCon 2015](https://www.youtube.com/watch?v=MCs5OvhV9S4)
-        - [ ] [Keynote David Beazley - Topics of Interest (Python Asyncio)](https://www.youtube.com/watch?v=ZzfHjytDceU)
-        - [ ] [Mutex in Python](https://www.youtube.com/watch?v=0zaPs8OtyKY)
+- [ ] [Mutex vs Semaphore - GeeksforGeeks](https://www.geeksforgeeks.org/mutex-vs-semaphore/)
+- [ ] [Paging, segmentation and virtual memory (video)](https://www.youtube.com/watch?v=LKe7xK0bF7o&
+- [ ] [Interrupts (video)](https://www.youtube.com/watch?v=uFKi2-J-6II&list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8&index=3)
+- [ ] [Scheduling (video)](https://www.youtube.com/watch?v=-Gu5mYdKbu4&index=4&list=PLCiOXwirraUCBE9i_ukL8_Kfg6XNv7Se8)
+- [ ] [threads in C++ (series - 10 videos)](https://www.youtube.com/playlist?list=PL5jc9xFGsL8E12so1wlMS0r0hTQoJL74M)
+- [ ] concurrency in Python (videos):
+    - [ ] [Short series on threads](https://www.youtube.com/playlist?list=PL1H1sBF1VAKVMONJWJkmUh6_p8g4F2oy1)
+    - [ ] [Python Threads](https://www.youtube.com/watch?v=Bs7vPNbB9JM)
+    - [ ] [Understanding the Python GIL (2010)](https://www.youtube.com/watch?v=Obt-vMVdM8s)
+        - [reference](http://www.dabeaz.com/GIL)
+    - [ ] [David Beazley - Python Concurrency From the Ground Up: LIVE! - PyCon 2015](https://www.youtube.com/watch?v=MCs5OvhV9S4)
+    - [ ] [Keynote David Beazley - Topics of Interest (Python Asyncio)](https://www.youtube.com/watch?v=ZzfHjytDceU)
+    - [ ] [Mutex in Python](https://www.youtube.com/watch?v=0zaPs8OtyKY)
 
 - (Course) Introduction to Operating Systems - https://br.udacity.com/course/introduction-to-operating-systems--ud923/
 - (Course) Advanced Operating Systems - https://br.udacity.com/course/advanced-operating-systems--ud189/
 - [Linux](/Linux.md)
-Unix/Linux Systems:
-Know what's happening under the hood!
-Sample questions: Kernel, Libraries, System Calls, Memory Management
-Online book - The Art of Unix Programming: http://www.faqs.org/docs/artu/index.html
-Book - Advanced Programming in the Unix Environment: https://play.google.com/store/books/details?pcampaignid=books_read_action&id=kCTMFpEcIOwC
 - [Windows](/Windows.md)
 
 ## Unix/Linux Internals
@@ -1420,6 +1462,8 @@ Book - Advanced Programming in the Unix Environment: https://play.google.com/sto
     - [ ] [Java - Sockets - Introduction (video)](https://www.youtube.com/watch?v=6G_W54zuadg&t=6s)
     - [ ] [Socket Programming (video)](https://www.youtube.com/watch?v=G75vN2mnJeQ)
 - [ ] (Book) [Understanding Linux Network Internals](http://shop.oreilly.com/product/9780596002558.do)
+- [ ] [OSI Reference Model Layer Mnemonics](http://www.tcpipguide.com/free/t_OSIReferenceModelLayerMnemonics.htm)
+- [ ] [Top 60 Networking Interview Questions And Answers](https://www.softwaretestinghelp.com/networking-interview-questions-2/)
 - [x] [What happens when ...](https://github.com/sunyuding/what-happens-when)
     - The "g" key is pressed
         - auto-complete dropbox
@@ -1492,6 +1536,8 @@ Book - Advanced Programming in the Unix Environment: https://play.google.com/sto
   - LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
   - RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
   - FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
+- [ ] [Top SQL Interview Questions You must Prepare For 2019 | Edureka
+](https://www.edureka.co/blog/interview-questions/sql-interview-questions/)
 
 ## Non-Tech Skills
 In addition to your technical skills, when you meet with your interviewer, they’ll be assessing you based on four attributes using a mix of behavioral and hypothetical questions: 
