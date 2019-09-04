@@ -2133,6 +2133,36 @@ Sit back and enjoy. "Netflix and skill" :P
 - [Git](/Git.md)
 - [Apache Subversion](/Subversion.md)
 
+# CI/CD
+## Continuous Integration (CI)
+- Code
+    - Cloud Source Repositories
+    - GitHub
+    - BitBucket
+- Build
+    - Container Builder
+    - Jenkins
+    - CircleCI
+- Deploy
+    - Deployment Manager
+    - Spinnaker
+    - Chef
+    - Puppet
+    - Ansible
+    - Terraform
+- Test
+
+## Continuous Delivery (CD)
+- Code
+- Build 
+- Deploy
+- Test
+- Release
+    - Canary
+    - Blue/green
+- Monitor
+    - Stackdriver
+
 # Automation 
 - (Tutorial) Ansible - https://www.digitalocean.com/community/tutorials/configuration-management-101-writing-ansible-playbooks
 - (Course) Terraform - https://www.udemy.com/learn-devops-infrastructure-automation-with-terraform/learn
