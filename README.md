@@ -1,4 +1,4 @@
-# Cloud/DevOps/Infrastructure/SRE University
+# Cloud University
 
 > I created this as a study plan of topics for becoming a Cloud/DevOps/Infrastructure/SRE Engineer. 
 >
@@ -1446,67 +1446,8 @@ Mock Interviews:
 ## Networking
 - **if you have networking experience or want to be a reliability engineer or operations engineer, expect questions**
 - otherwise, this is just good to know
-- S​how off yourdepthofknowledgeandunderstandingofnetworktheory, like different protocols (TCP/IP, UDP, ICMP, etc), MAC addresses, IP packets, DNS, OSI layers, and load balancing. 
-- [ ] Check out [C​omputer Networking: A Top-Down Approach](https://www.bau.edu.jo/UserPortal/UserProfile/PostsAttach/10617_1870_1.pdf).
-- [x] [Khan Academy](https://www.khanacademy.org/computing/computer-science/internet-intro)
-- [ ] [UDP and TCP: Comparison of Transport Protocols](https://www.youtube.com/watch?v=Vdc8TCESIg8)
-- [ ] [TCP/IP and the OSI Model Explained!](https://www.youtube.com/watch?v=e5DEVa9eSN0)
-- [ ] [Packet Transmission across the Internet. Networking & TCP/IP tutorial.](https://www.youtube.com/watch?v=nomyRJehhnM)
-- [ ] [HTTP](https://www.youtube.com/watch?v=WGJrLqtX7As)
-- [ ] [SSL and HTTPS](https://www.youtube.com/watch?v=S2iBR2ZlZf0)
-- [ ] [SSL/TLS](https://www.youtube.com/watch?v=Rp3iZUvXWlM)
-- [ ] [HTTP 2.0](https://www.youtube.com/watch?v=E9FxNzv1Tr8)
-- [ ] [Video Series (21 videos)](https://www.youtube.com/playlist?list=PLEbnTDJUr_IegfoqO4iPnPYQui46QqT0j)
-- [ ] [Subnetting Demystified - Part 5 CIDR Notation](https://www.youtube.com/watch?v=t5xYI0jzOf4)
-- [ ] Sockets:
-    - [ ] [Java - Sockets - Introduction (video)](https://www.youtube.com/watch?v=6G_W54zuadg&t=6s)
-    - [ ] [Socket Programming (video)](https://www.youtube.com/watch?v=G75vN2mnJeQ)
-- [ ] (Book) [Understanding Linux Network Internals](http://shop.oreilly.com/product/9780596002558.do)
-- [ ] [OSI Reference Model Layer Mnemonics](http://www.tcpipguide.com/free/t_OSIReferenceModelLayerMnemonics.htm)
-- [ ] [Top 60 Networking Interview Questions And Answers](https://www.softwaretestinghelp.com/networking-interview-questions-2/)
-- [x] [What happens when ...](https://github.com/sunyuding/what-happens-when)
-    - The "g" key is pressed
-        - auto-complete dropbox
-    - Parse URL
-        - Protocol
-            - http
-            - https
-        - Resource   
-    - DNS lookup
-        - browser cache
-        - the ISP's caching DNS server
-    - Opening of a socket
-        - TCP socket stream
-    - HTTP protocol
-    - HTTP Server Request Handle
-        - HTTP Request Method
-            - GET
-            - HEAD
-            - POST
-            - PUT
-            - DELETE
-            - CONNECT
-            - OPTIONS
-            - TRACE
-        - Domain
-        - Requested path/page
-    - HTTPS
-    - Browser
-    - HTML parsing
-    - CSS interpretation
-    - Page rendering
-- [ ] HTTP
-  - Each HTTP request includes 5 key elements/core components:
-    - HTTP methods: GET, PUT, POST, DELETE, OPTIONS,
-    - URI(Uniform Resource Identifier)
-    - HTTP version
-    - Request Heander/metadata
-    - Request Body
-  - Each HTTP response includes 5 key elements/core components:
-    - Status/Response Code: 200, 404, 503
-    - HTTP Version: HTTP v1.1
-    - Response Header
-    - Response Body
+- [Link](/Networking.md)
+
 - [x] Cookies
   - Why? 
     - HTTP protocol has been implemented as stateless protocol, so there is a need of some featrues in web technology to maintain state of user either at client or at server.
@@ -1599,7 +1540,7 @@ Have a story, not just data, about something you accomplished.
 
 ## Have questions for the interviewer
 
-    Some of mine (I already may know answer to but want their opinion or team perspective):
+Some of mine (I already may know answer to but want their opinion or team perspective):
 
 - How large is your team?
 - What does your dev cycle look like? Do you do waterfall/sprints/agile?
@@ -1682,11 +1623,11 @@ software engineer, and to be aware of certain technologies and algorithms, so yo
 - ### Unix command line tools
     - I filled in the list below from good tools.
     - [ ] bash
-    - [ ] cat
+    - [x] cat
     - [ ] grep
     - [ ] sed
     - [ ] awk
-    - [ ] curl or wget
+    - [x] curl or wget
     - [ ] sort
     - [ ] tr
     - [ ] uniq
@@ -2194,8 +2135,8 @@ Sit back and enjoy. "Netflix and skill" :P
 
 # Cloud
 - [Amazon Web Service](/AWS.md)
-- [Microsoft Azure](Azure.md)
-- [Google Cloud Platform](GCP.md)
+- [Microsoft Azure](/Azure.md)
+- [Google Cloud Platform](/GCP.md)
 
 # Post-Mortem
 
@@ -2204,7 +2145,7 @@ Sit back and enjoy. "Netflix and skill" :P
 - https://medium.com/production-ready
 
 # DevOps | SRE Roadmap
-<img src="https://github.com/sunyuding/sre-university/blob/master/images/devops_roadmap.png">  
+<img src="https://github.com/kamranahmedse/developer-roadmap/blob/master/images/devops.png">  
 
 Image Credits: https://github.com/kamranahmedse/developer-roadmap
 
