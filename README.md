@@ -1369,34 +1369,10 @@ Mock Interviews:
 - [Pramp: Mock interviews from/with peers](https://www.pramp.com/) - peer-to-peer model of practice interviews
 - [Refdash: Mock interviews and expedited interviews](https://refdash.com/) - also help candidates fast track by skipping multiple interviews with tech companies.
 
-## Troubleshooting
--  Interviewers are looking for a logical and structured approach to problem solving through distributed systems, network and web scenarios. 
--  Make sure you understand the questions and ask appropriate follow-up questions to the interviewer when needed. 
--  A big part is finding out what the actual problem is and breaking it down into specifics. 
--  Check out [Life in App Engine Production​](https://www.youtube.com/watch?v=rgQm1KEIIuc) for a troubleshooting example.
-   - ["A distributed system is one in which the failure of a computer you didn’t even know existed can render your own computer unusable." - Leslie Lamport](https://www.microsoft.com/en-us/research/publication/distribution/)
-   - Master/Slave
-   - "Truse, but verify."
-     - Strong checksums at many layers of the stack are best
-   - Any given datacenter can be rendered unreachable or unfit for serving at any time, without warning
-     - Un-isolated traffic can degrade performance
-     - Power failure
-     - Network partition
-     - Infrastructure corrupts or isolates data
-   - “To expect the unexpected shows a thoroughly modern intellect.” - Oscar Wilde
-   - A service running in a given datacenter can be no more reliable than the least reliable component it utilizes
-- [Troubleshooting Ubuntu Server](http://www.informit.com/articles/article.aspx?p=1381889)
-  - [General Troubleshooting Philosophy](http://www.informit.com/articles/article.aspx?p=1381889)
-  - [Localhost Troubleshooting](http://www.informit.com/articles/article.aspx?p=1381889&seqNum=2)
-  - [Nerwork Troubleshooting](http://www.informit.com/articles/article.aspx?p=1381889&seqNum=3)
-  - [Hardware Troubleshooting](http://www.informit.com/articles/article.aspx?p=1381889&seqNum=4)   
-  
-- [DevOps Troubleshooting: Linux® Server Best Practices](https://www.comcol.nl/code/inkijkexemplaar/9780321832047/devops-troubleshooting-engels-kyle-rankin.pdf)
-- [Troubleshooting API requests | Postman Learning Center
-](https://learning.getpostman.com/docs/postman/sending_api_requests/troubleshooting_api_requests)
-- [REST API Troubleshooting Guide | Kinvey]()
-- 5% API fail, how to troubleshoot
-### Monitoring and Logging
+## [Troubleshooting]
+[Link](/Troubleshooting.md)
+
+## Monitoring and Logging
   - (Course) Monitoring and Alerting with Prometheus - https://www.udemy.com/monitoring-and-alerting-with-prometheus/landing-page/
   - (Book) Prometheus UP and Running - https://www.amazon.com/Prometheus-Infrastructure-Application-Performance-Monitoring/dp/1492034142
 
@@ -1441,44 +1417,18 @@ Mock Interviews:
 - [Top 50 Linux Interview Questions For Beginners In 2019](https://www.edureka.co/blog/interview-questions/linux-interview-questions-for-beginners/#ScenarioBasedQuestions)
 
 ## Web Technologies
+[Link](/Web.md)
 - Know your network protocols and how the browser works, the HTTP protocol, cookies, general web troubleshooting (ability to diagnose issues step-by-step), Javascript and HTML.
 - Brush up on HTTP Protocol basics: [PartI​](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177),​ [PartII](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-2--net-31155)
+
+
 ## Networking
 - **if you have networking experience or want to be a reliability engineer or operations engineer, expect questions**
 - otherwise, this is just good to know
 - [Link](/Networking.md)
-
-- [x] Cookies
-  - Why? 
-    - HTTP protocol has been implemented as stateless protocol, so there is a need of some featrues in web technology to maintain state of user either at client or at server.
-    - Record user session state
-  - Ads
-  - Disadvantages
-    - Cookies are maintianed at client system, so that they are not secure
-    - Limited number of cookies are allowed for website (Max 20)
-    - Limited amount of data can be maintained (Max 4KB)
-    - Only plain text can be maintained
-    - Privacy/security
-  - Usage
-    - To maintain authentication details we can make use of authentication cookie
-    - To transmit session ID between client and server
-  - [x] [Cookies interview questions and answers - programmingcrackers](http://programmingcrackers.blogspot.com/p/cookies-1.html)
-- [ ] RESRful API
-  - REpresentational State Transfer
-  - vs SOAP (Simaple Object Access Protocol)
-  - protocol: HTTP
-  - resource: JSON, XML
-  - [ ] [Top 20 REST API Interview Questions and Answers](https://www.techbeamers.com/rest-api-interview-questions-answers/)
     
 ## Database
-- [w3schools SQL Tutorial](https://www.w3schools.com/sql/)
-  - A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
-  - (INNER) JOIN: Returns records that have matching values in both tables
-  - LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
-  - RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
-  - FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
-- [ ] [Top SQL Interview Questions You must Prepare For 2019 | Edureka
-](https://www.edureka.co/blog/interview-questions/sql-interview-questions/)
+[Link](/Database.md)
 
 ## Non-Tech Skills
 In addition to your technical skills, when you meet with your interviewer, they’ll be assessing you based on four attributes using a mix of behavioral and hypothetical questions: 
@@ -2132,6 +2082,8 @@ Sit back and enjoy. "Netflix and skill" :P
 ## Kubernetes 
 - (Tutorial) Kubernetes Bootcamp - https://kubernetesbootcamp.github.io/kubernetes-bootcamp/index.html
 - (Course) Scalable Microservices with Kubernetes - https://br.udacity.com/course/scalable-microservices-with-kubernetes--ud615/
+- https://kubernetes.io/docs/tutorials/kubernetes-basics/
+- Command reference: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
 
 # Cloud
 - [Amazon Web Service](/AWS.md)

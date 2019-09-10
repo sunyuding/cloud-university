@@ -195,3 +195,24 @@ International Standards Organization Open Systems Interconnect. Please Do Not Ta
     - HTML parsing
     - CSS interpretation
     - Page rendering
+- [x] Cookies
+  - Why? 
+    - HTTP protocol has been implemented as stateless protocol, so there is a need of some featrues in web technology to maintain state of user either at client or at server.
+    - Record user session state
+  - Ads
+  - Disadvantages
+    - Cookies are maintianed at client system, so that they are not secure
+    - Limited number of cookies are allowed for website (Max 20)
+    - Limited amount of data can be maintained (Max 4KB)
+    - Only plain text can be maintained
+    - Privacy/security
+  - Usage
+    - To maintain authentication details we can make use of authentication cookie
+    - To transmit session ID between client and server
+  - [x] [Cookies interview questions and answers - programmingcrackers](http://programmingcrackers.blogspot.com/p/cookies-1.html)
+- [ ] RESRful API
+  - REpresentational State Transfer
+  - vs SOAP (Simaple Object Access Protocol)
+  - protocol: HTTP
+  - resource: JSON, XML
+  - [ ] [Top 20 REST API Interview Questions and Answers](https://www.techbeamers.com/rest-api-interview-questions-answers/)
