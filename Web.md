@@ -15,3 +15,34 @@
 # Reference
 - Know your network protocols and how the browser works, the HTTP protocol, cookies, general web troubleshooting (ability to diagnose issues step-by-step), Javascript and HTML.
 - Brush up on HTTP Protocol basics: [PartI​](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-1--net-31177),​ [PartII](https://code.tutsplus.com/tutorials/http-the-protocol-every-web-developer-must-know-part-2--net-31155)
+- [x] [What happens when ...](https://github.com/alex/what-happens-when)
+    - The "g" key is pressed
+        - auto-complete dropbox
+    - Parse URL
+        - Protocol
+            - http
+            - https
+        - Resource   
+    - DNS lookup
+        - browser cache
+        - the ISP's caching DNS server
+    - Opening of a socket
+        - TCP socket stream
+    - HTTP protocol
+    - HTTP Server Request Handle
+        - HTTP Request Method
+            - GET
+            - HEAD
+            - POST
+            - PUT
+            - DELETE
+            - CONNECT
+            - OPTIONS
+            - TRACE
+        - Domain
+        - Requested path/page
+    - HTTPS
+    - Browser
+    - HTML parsing
+    - CSS interpretation
+    - Page rendering

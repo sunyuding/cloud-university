@@ -1,3 +1,5 @@
+Welcome to the cloud-university wiki!
+
 # Cloud University
 
 > I created this as a study plan of topics for becoming a Cloud/DevOps/Infrastructure/SRE Engineer. 
@@ -24,10 +26,10 @@ If you want to be a Cloud/DevOps/Infrastructure/SRE Engineer, study more from th
 
 ## Table of Contents
 
-- [Cloud University](#clouddevopsinfrastructuresre-university)
+- [Cloud/DevOps/Infrastructure/SRE University](#clouddevopsinfrastructuresre-university)
   - [What is it?](#what-is-it)
   - [Table of Contents](#table-of-contents)
-  - [Reference](#reference)
+  - [- Reference](#reference)
   - [Why use it?](#why-use-it)
   - [How to use it](#how-to-use-it)
   - [Don't feel you aren't smart enough](#dont-feel-you-arent-smart-enough)
@@ -580,6 +582,14 @@ You should study up on as many data structures as possible. Data structures most
 
 ## More Knowledge
 
+- ### Binary search
+    - [ ] [Binary Search (video)](https://www.youtube.com/watch?v=D5SrAga1pno)
+    - [ ] [Binary Search (video)](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
+    - [ ] [detail](https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/)
+    - [ ] Implement:
+        - binary search (on sorted array of integers)
+        - binary search using recursion
+
 - ### Bitwise operations
     - [ ] [Bits cheat sheet](https://github.com/jwasham/coding-interview-university/blob/master/extras/cheat%20sheets/bits-cheat-cheet.pdf) - you should know many of the powers of 2 from (2^1 to 2^16 and 2^32)
     - [ ] Get a really good understanding of manipulating bits with: &, |, ^, ~, >>, <<
@@ -1079,6 +1089,7 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
 - [ ] [How Do I Prepare To Answer Design Questions In A Technical Inverview?](https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview?redirected_qid=1500023)
 - [ ] [8 Things You Need to Know Before a System Design Interview](http://blog.gainlo.co/index.php/2015/10/22/8-things-you-need-to-know-before-system-design-interviews/)
 - [ ] [Algorithm design](http://www.hiredintech.com/algorithm-design/)
+- [ ] [Database Normalization - 1NF, 2NF, 3NF and 4NF (video)](https://www.youtube.com/watch?v=UrYLYV7WSHM)
 - [ ] [System Design Interview](https://github.com/checkcheckzz/system-design-interview) - There are a lot of resources in this one. Look through the articles and examples. I put some of them below.
 - [ ] [How to ace a systems design interview](http://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview/)
 - [ ] [Numbers Everyone Should Know](http://everythingisdata.wordpress.com/2009/10/17/numbers-everyone-should-know/)
@@ -1090,10 +1101,12 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
     - [extended video with use case and multi-paxos](https://www.youtube.com/watch?v=JEpsBg0AO6o)
     - [paper](http://research.microsoft.com/en-us/um/people/lamport/pubs/paxos-simple.pdf)
 - [ ] [Consistent Hashing](http://www.tom-e-white.com/2007/11/consistent-hashing.html)
+- [ ] [NoSQL Patterns](http://horicky.blogspot.com/2009/11/nosql-patterns.html)
 - [ ] Scalability:
     - [ ] [Great overview (video)](https://www.youtube.com/watch?v=-W9F__D3oY4)
     - [ ] Short series:
         - [Clones](http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
+        - [Database](http://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database)
         - [Cache](http://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache)
         - [Asynchronism](http://www.lecloud.net/post/9699762917/scalability-for-dummies-part-4-asynchronism)
     - [ ] [Scalable Web Architecture and Distributed Systems](http://www.aosabook.org/en/distsys.html)
@@ -1418,6 +1431,36 @@ Mock Interviews:
     
 ## Database
 [Link](/Database.md)
+
+## Non-Tech Skills
+In addition to your technical skills, when you meet with your interviewer, they’ll be assessing you based on four attributes using a mix of behavioral and hypothetical questions: 
+- General Cognitive Ability: 
+    - W​e ask open-ended questions to learn how you approach and solve problems. 
+    - And there’s no one right answer—your ability to explain your thought process and how you use data to inform decisions is what’s most important. 
+- Leadership:​ ​
+    - Be prepared to discuss how you have used your communication and decision-making skills to mobilize others. 
+    - This might be by stepping up to a leadership role at work or with an organization, or by helping a team succeed even when you weren’t officially the leader.
+- Role-related knowledge:​ ​
+    - We’re interested in how your individual strengths combine with your experience to drive impact. 
+    - We don’t just look for how you can contribute today, but how you can grow into different roles—including ones that haven’t even been invented yet.
+- Googleyness:​ 
+    - Share how you work individually and on a team, how you help others, how you navigate ambiguity, and how you push yourself to grow outside of your comfort zone.
+
+### What's a behavioral question?
+Using a behavioral interview technique like the STAR approach can help structure your answers.
+- Situation
+    - Describe the situation you were in or the task you needed to accomplish.
+- Task
+    - Explain the goal you were working toward.
+- Activity
+    - Detail the specific steps you took and the role(s) you played.
+- Result
+    - Describe your accomplishments and the overall outcome.
+
+### What's a hypothetical question?
+While behavioral questions assess your past performance, hypothetical (also known as situational) questions evaluate how you would handle a challenge you may not have encountered yet.
+
+[Google Interview Prep Guide Business Interviews](https://drive.google.com/drive/u/1/folders/1EexCycNQOgdiMg-DEmC-iVq7iVRWYOSS)
 
 ## Once you're closer to the interview
 
@@ -1754,6 +1797,7 @@ software engineer, and to be aware of certain technologies and algorithms, so yo
                 - covers cache-oblivious B-Trees, very interesting data structures
                 - the first 37 minutes are very technical, may be skipped (B is block size, cache line size)
 
+
 - ### k-D Trees
     - great for finding number of points in a rectangle or higher dimension object
     - a good fit for k-nearest neighbors
@@ -1966,6 +2010,7 @@ Sit back and enjoy. "Netflix and skill" :P
 ## Computer Science Courses
 - [Directory of Online CS Courses](https://github.com/open-source-society/computer-science)
 - [Directory of CS Courses (many with online lectures)](https://github.com/prakhar1989/awesome-courses)
+
 
 # Introduction
 - [Description](/Description.md)
