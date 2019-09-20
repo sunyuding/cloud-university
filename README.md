@@ -1,24 +1,21 @@
 # Cloud University
 
-> I created this as a study plan of topics for becoming a Cloud/DevOps/Infrastructure/SRE Engineer. 
->
-> The items listed here will prepare you well for in an interview at just about any software company,
-> including the giants: Facebook, LinkedIn, Amazon/Apple, Netflex, Google.
+> I created this as a study plan of topics for becoming an engineer in the Cloud Age. 
 >
 > *Best of luck to you!*
 
 ## What is it?
 
-This is a study plan for going from a new grad to a Cloud/DevOps/Infrastructure/SRE Engineer for a large company.
+This is a study plan for going from a new grad to an engineer working on Cloud.
 
 This is meant for **new software engineers** or those switching from
-software/web development to Cloud/DevOps/Infrastructure/SRE Engineer (where a wide range of computer science knowledge is required). If you have
-many years of experience and are claiming many years of software engineering experience, expect a harder interview.
+software/web development to a Cloud Engineer (where a wide range of computer science knowledge is required). If you have
+many years of experience and are claiming many years of software engineering experience, expect a harder requirement.
 
 If you have many years of software/web development experience, note that large software companies like Google, Amazon,
 Facebook and Microsoft view software engineering as different from software/web development, and they require computer science knowledge.
 
-If you want to be a Cloud/DevOps/Infrastructure/SRE Engineer, study more from the optional list (networking, security).
+If you want to be a Cloud Engineer, study more from the optional list (networking, security).
 
 ---
 
@@ -88,7 +85,7 @@ If you want to be a Cloud/DevOps/Infrastructure/SRE Engineer, study more from th
 - [Automation](#automation)
 - [Distributed Systems](#distributed-systems)
 - [Production Web App](#production-web-app)
-- [Continuous Integration | Continuous Delivery](#continuous-integration--continuous-delivery)
+- [CI/CD](#continuous-integration--continuous-delivery)
 - [Containers](#containers)
 - [Web Servers](#web-servers)
   - [Nginx](#nginx)
@@ -101,10 +98,6 @@ If you want to be a Cloud/DevOps/Infrastructure/SRE Engineer, study more from th
 - [Questions to ask](#questions-to-ask)
 - [Reference](#reference)
 ---
-
-## Why use it?
-
-It's a long plan. It may take you months. If you are familiar with a lot of this already it will take you a lot less time.
 
 ## How to use it
 
@@ -168,7 +161,10 @@ Sometimes the classes are not in session so you have to wait a couple of months,
     - [ ] [Python for Data Structures, Algorithms, and Interviews! (paid course)](https://www.udemy.com/python-for-data-structures-algorithms-and-interviews/):
         - A Python centric interview prep course which covers data structures, algorithms, mock interviews and much more.
 
-## Pick One Language for the Interview
+## DevOps | SRE Roadmap
+[DevOps Roadmap](https://roadmap.sh/devops)
+
+## Pick One Language 
 
 You can use a language you are comfortable in to do the coding part of the interview, but for large companies, these are solid choices:
 
@@ -972,7 +968,7 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
     - [ ] [2006: Bigtable: A Distributed Storage System for Structured Data](https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf)
         - [An Inside Look at Google BigQuery](https://cloud.google.com/files/BigQueryTechnicalWP.pdf)
     - [ ] [2006: The Chubby Lock Service for Loosely-Coupled Distributed Systems](https://research.google.com/archive/chubby-osdi06.pdf)
-    - [ ] [2007: Dynamo: Amazon’s Highly Available Key-value Store](http://s3.amazonaws.com/AllThingsDistributed/sosp/amazon-dynamo-sosp2007.pdf)
+
         - The Dynamo paper kicked off the NoSQL revolution
     - [ ] [2007: What Every Programmer Should Know About Memory (very long, and the author encourages skipping of some sections)](https://www.akkadia.org/drepper/cpumemory.pdf)
     - [ ] [2010: Dapper, a Large-Scale Distributed Systems Tracing Infrastructure](https://research.google.com/pubs/archive/36356.pdf)
@@ -1135,7 +1131,7 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
     - [ ] [Tinder: How Does One Of The Largest Recommendation Engines Decide Who You'll See Next?](http://highscalability.com/blog/2016/1/27/tinder-how-does-one-of-the-largest-recommendation-engines-de.html)
     - [ ] [Design Of A Modern Cache](http://highscalability.com/blog/2016/1/25/design-of-a-modern-cache.html)
     - [ ] [Live Video Streaming At Facebook Scale](http://highscalability.com/blog/2016/1/13/live-video-streaming-at-facebook-scale.html)
-    - [ ] [A Beginner's Guide To Scaling To 11 Million+ Users On Amazon's AWS](http://highscalability.com/blog/2016/1/11/a-beginners-guide-to-scaling-to-11-million-users-on-amazons.html)
+
     - [ ] [How Does The Use Of Docker Effect Latency?](http://highscalability.com/blog/2015/12/16/how-does-the-use-of-docker-effect-latency.html)
     - [ ] [Does AMP Counter An Existential Threat To Google?](http://highscalability.com/blog/2015/12/14/does-amp-counter-an-existential-threat-to-google.html)
     - [ ] [A 360 Degree View Of The Entire Netflix Stack](http://highscalability.com/blog/2015/11/9/a-360-degree-view-of-the-entire-netflix-stack.html)
@@ -1655,8 +1651,8 @@ software engineer, and to be aware of certain technologies and algorithms, so yo
         - [gRPC 101 for Java Developers (video)](https://www.youtube.com/watch?v=5tmPvSe7xXQ&list=PLcTqM9n_dieN0k1nSeN36Z_ppKnvMJoly&index=1)
     - [ ] [Redis](http://redis.io/)
         - [Tutorial](http://try.redis.io/)
-    - [ ] [Amazon SQS (queue)](https://aws.amazon.com/sqs/)
-    - [ ] [Amazon SNS (pub-sub)](https://aws.amazon.com/sns/)
+    
+   
     - [ ] [RabbitMQ](https://www.rabbitmq.com/)
         - [Get Started](https://www.rabbitmq.com/getstarted.html)
     - [ ] [Celery](http://www.celeryproject.org/)
@@ -2062,6 +2058,12 @@ Sit back and enjoy. "Netflix and skill" :P
 
 - (Book) Production Ready Microservices - https://www.amazon.com/gp/product/1491965975/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1491965975&linkCode=as2&tag=susanfowler-20&linkId=8e434210b002d00be8507454a75c11ff
 
+# Infrastructure as Code
+
+## [Kubernetes](Kubernetes.md)
+
+## [Ansible](Ansible.md)
+
 # Continuous Integration | Continuous Delivery
 - (Course) Continuous Deliver Better Software - https://www.udemy.com/learn-devops-continuously-deliver-better-software
 
@@ -2088,14 +2090,24 @@ Sit back and enjoy. "Netflix and skill" :P
 
 # Post-Mortem
 
+# Tools
+- OhMyZSH 
+
+Free at https://github.com/robbyrussell/oh-my-zsh
+
+- LastPass / 1Password /PassPack
+
+The average person wastes hours each year resetting passwords they’ve forgotten. Password tools like these save time and mental energy by storing and autofilling your passwords. They also allow you to have long, unique passwords for each site, making it almost impossible for hackers to crack your password.
+Free at https://lastpass.com/ or https://agilebits.com/onepassword or https://www.passpack.com/
+
+- Flux
+
+If you’ve ever had trouble sleeping after a long night of staring at your computer screen, Flux is for you! Your circadian rhythm can’t tell the difference between sunlight and the glow of a monitor. This free tool gradually changes your computer’s colors during and after sunset.
+Free at https://justgetflux.com/
+
 # Blogs
 - http://highscalability.com
 - https://medium.com/production-ready
-
-# DevOps | SRE Roadmap
-<img src="https://github.com/kamranahmedse/developer-roadmap/blob/master/images/devops.png">  
-
-Image Credits: https://github.com/kamranahmedse/developer-roadmap
 
 # Questions to ask
 - [Questions to ask](https://github.com/sunyuding/sre-interview/blob/master/questions-to-ask-interviewers.md)
