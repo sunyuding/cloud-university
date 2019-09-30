@@ -1,30 +1,35 @@
+Welcome to the cloud-university wiki!
+
 # Cloud University
 
-> I created this as a study plan of topics for becoming an engineer in the Cloud Age. 
+> I created this as a study plan of topics for becoming a Cloud/DevOps/Infrastructure/SRE Engineer. 
 >
-> *Happy Codingd*
+> The items listed here will prepare you well for in an interview at just about any software company,
+> including the giants: Facebook, LinkedIn, Amazon/Apple, Netflex, Google.
+>
+> *Best of luck to you!*
 
 ## What is it?
 
-This is a study plan for going from a new grad to an engineer working on Cloud.
+This is a study plan for going from a new grad to a Cloud/DevOps/Infrastructure/SRE Engineer for a large company.
 
 This is meant for **new software engineers** or those switching from
-software/web development to a Cloud Engineer (where a wide range of computer science knowledge is required). If you have
-many years of experience and are claiming many years of software engineering experience, expect a harder requirement.
+software/web development to Cloud/DevOps/Infrastructure/SRE Engineer (where a wide range of computer science knowledge is required). If you have
+many years of experience and are claiming many years of software engineering experience, expect a harder interview.
 
 If you have many years of software/web development experience, note that large software companies like Google, Amazon,
 Facebook and Microsoft view software engineering as different from software/web development, and they require computer science knowledge.
 
-If you want to be a Cloud Engineer, study more from the optional list (networking, security).
+If you want to be a Cloud/DevOps/Infrastructure/SRE Engineer, study more from the optional list (networking, security).
 
 ---
 
 ## Table of Contents
 
-- [Cloud University](#clouddevopsinfrastructuresre-university)
+- [Cloud/DevOps/Infrastructure/SRE University](#clouddevopsinfrastructuresre-university)
   - [What is it?](#what-is-it)
   - [Table of Contents](#table-of-contents)
-  - [Reference](#reference)
+  - [- Reference](#reference)
   - [Why use it?](#why-use-it)
   - [How to use it](#how-to-use-it)
   - [Don't feel you aren't smart enough](#dont-feel-you-arent-smart-enough)
@@ -36,7 +41,7 @@ If you want to be a Cloud Engineer, study more from the optional list (networkin
     - [Computer Architecture](#computer-architecture)
     - [Language Specific](#language-specific)
     - [C++](#c)
-    - [Java](/java.md)
+    - [Java](#java)
     - [Python](#python)
     - [Optional Books](#optional-books)
   - [Before you Get Started](#before-you-get-started)
@@ -59,6 +64,8 @@ If you want to be a Cloud Engineer, study more from the optional list (networkin
   - [Final Review](#final-review)
   - [Coding Question Practice](#coding-question-practice)
   - [Coding exercises/challenges](#coding-exerciseschallenges)
+  - [Troubleshooting](#troubleshooting)
+    - [Monitoring and Logging](#monitoring-and-logging)
   - [Operating Systems](#operating-systems)
   - [Unix/Linux Internals](#unixlinux-internals)
   - [Web Technologies](#web-technologies)
@@ -83,29 +90,23 @@ If you want to be a Cloud Engineer, study more from the optional list (networkin
 - [Automation](#automation)
 - [Distributed Systems](#distributed-systems)
 - [Production Web App](#production-web-app)
-- [CI/CD](#continuous-integration--continuous-delivery)
-- Infrastructure as Code
-- [Kubernetes](Kubernetes.md)
-- [Ansible](Ansible.md)
+- [Continuous Integration | Continuous Delivery](#continuous-integration--continuous-delivery)
 - [Containers](#containers)
 - [Web Servers](#web-servers)
-    - [Nginx](#nginx)
-    - [Cluster Management](#cluster-management)
-    - [Kubernetes](#kubernetes)
-- [Cloud]
-    - [Amazon Web Service](/AWS.md)
-    - [Microsoft Azure](/Azure.md)
-    - [Google Cloud Platform](/gcp.md)
-- [Data]
-    - [Tableau](/tableau.md)
-- [Troubleshooting](#troubleshooting.md)
-    - [Monitoring and Logging](#monitoring-and-logging)
+  - [Nginx](#nginx)
+  - [Cluster Management](#cluster-management)
+  - [Kubernetes](#kubernetes)
+- [Cloud](#cloud)
 - [Post-Mortem](#post-mortem)
 - [Blogs](#blogs)
 - [DevOps | SRE Roadmap](#devops--sre-roadmap)
 - [Questions to ask](#questions-to-ask)
 - [Reference](#reference)
 ---
+
+## Why use it?
+
+It's a long plan. It may take you months. If you are familiar with a lot of this already it will take you a lot less time.
 
 ## How to use it
 
@@ -169,10 +170,7 @@ Sometimes the classes are not in session so you have to wait a couple of months,
     - [ ] [Python for Data Structures, Algorithms, and Interviews! (paid course)](https://www.udemy.com/python-for-data-structures-algorithms-and-interviews/):
         - A Python centric interview prep course which covers data structures, algorithms, mock interviews and much more.
 
-## DevOps | SRE Roadmap
-[DevOps Roadmap](https://roadmap.sh/devops)
-
-## Pick One Language 
+## Pick One Language for the Interview
 
 You can use a language you are comfortable in to do the coding part of the interview, but for large companies, these are solid choices:
 
@@ -255,6 +253,20 @@ I haven't read these two, but they are highly rated and written by Sedgewick. He
 - [ ] [Algorithms in C++ Part 5: Graph Algorithms](https://www.amazon.com/Algorithms-Part-Graph-3rd-Pt-5/dp/0201361183/)
 
 If you have a better recommendation for C++, please let me know. Looking for a comprehensive resource.
+
+### Java
+
+- [ ] [Algorithms (Sedgewick and Wayne)](https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X/)
+    - videos with book content (and Sedgewick!):
+        - [Algorithms I](https://www.youtube.com/user/algorithmscourses/playlists?view=50&sort=dd&shelf_id=2)
+        - [Algorithms II](https://www.youtube.com/user/algorithmscourses/playlists?shelf_id=3&view=50&sort=dd)
+
+OR:
+
+- [ ] [Data Structures and Algorithms in Java](https://www.amazon.com/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/)
+    - by Goodrich, Tamassia, Goldwasser
+    - used as optional text for CS intro course at UC Berkeley
+    - see my book report on the Python version below. This book covers the same topics.
 
 ### Python
 
@@ -569,6 +581,14 @@ You should study up on as many data structures as possible. Data structures most
         - remove(key)
 
 ## More Knowledge
+
+- ### Binary search
+    - [ ] [Binary Search (video)](https://www.youtube.com/watch?v=D5SrAga1pno)
+    - [ ] [Binary Search (video)](https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search)
+    - [ ] [detail](https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/)
+    - [ ] Implement:
+        - binary search (on sorted array of integers)
+        - binary search using recursion
 
 - ### Bitwise operations
     - [ ] [Bits cheat sheet](https://github.com/jwasham/coding-interview-university/blob/master/extras/cheat%20sheets/bits-cheat-cheet.pdf) - you should know many of the powers of 2 from (2^1 to 2^16 and 2^32)
@@ -954,7 +974,7 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
     - [ ] [2006: Bigtable: A Distributed Storage System for Structured Data](https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf)
         - [An Inside Look at Google BigQuery](https://cloud.google.com/files/BigQueryTechnicalWP.pdf)
     - [ ] [2006: The Chubby Lock Service for Loosely-Coupled Distributed Systems](https://research.google.com/archive/chubby-osdi06.pdf)
-
+    - [ ] [2007: Dynamo: Amazon’s Highly Available Key-value Store](http://s3.amazonaws.com/AllThingsDistributed/sosp/amazon-dynamo-sosp2007.pdf)
         - The Dynamo paper kicked off the NoSQL revolution
     - [ ] [2007: What Every Programmer Should Know About Memory (very long, and the author encourages skipping of some sections)](https://www.akkadia.org/drepper/cpumemory.pdf)
     - [ ] [2010: Dapper, a Large-Scale Distributed Systems Tracing Infrastructure](https://research.google.com/pubs/archive/36356.pdf)
@@ -1069,6 +1089,7 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
 - [ ] [How Do I Prepare To Answer Design Questions In A Technical Inverview?](https://www.quora.com/How-do-I-prepare-to-answer-design-questions-in-a-technical-interview?redirected_qid=1500023)
 - [ ] [8 Things You Need to Know Before a System Design Interview](http://blog.gainlo.co/index.php/2015/10/22/8-things-you-need-to-know-before-system-design-interviews/)
 - [ ] [Algorithm design](http://www.hiredintech.com/algorithm-design/)
+- [ ] [Database Normalization - 1NF, 2NF, 3NF and 4NF (video)](https://www.youtube.com/watch?v=UrYLYV7WSHM)
 - [ ] [System Design Interview](https://github.com/checkcheckzz/system-design-interview) - There are a lot of resources in this one. Look through the articles and examples. I put some of them below.
 - [ ] [How to ace a systems design interview](http://www.palantir.com/2011/10/how-to-rock-a-systems-design-interview/)
 - [ ] [Numbers Everyone Should Know](http://everythingisdata.wordpress.com/2009/10/17/numbers-everyone-should-know/)
@@ -1080,10 +1101,12 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
     - [extended video with use case and multi-paxos](https://www.youtube.com/watch?v=JEpsBg0AO6o)
     - [paper](http://research.microsoft.com/en-us/um/people/lamport/pubs/paxos-simple.pdf)
 - [ ] [Consistent Hashing](http://www.tom-e-white.com/2007/11/consistent-hashing.html)
+- [ ] [NoSQL Patterns](http://horicky.blogspot.com/2009/11/nosql-patterns.html)
 - [ ] Scalability:
     - [ ] [Great overview (video)](https://www.youtube.com/watch?v=-W9F__D3oY4)
     - [ ] Short series:
         - [Clones](http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
+        - [Database](http://www.lecloud.net/post/7994751381/scalability-for-dummies-part-2-database)
         - [Cache](http://www.lecloud.net/post/9246290032/scalability-for-dummies-part-3-cache)
         - [Asynchronism](http://www.lecloud.net/post/9699762917/scalability-for-dummies-part-4-asynchronism)
     - [ ] [Scalable Web Architecture and Distributed Systems](http://www.aosabook.org/en/distsys.html)
@@ -1117,7 +1140,7 @@ You'll get more graph practice in Skiena's book (see Books section below) and th
     - [ ] [Tinder: How Does One Of The Largest Recommendation Engines Decide Who You'll See Next?](http://highscalability.com/blog/2016/1/27/tinder-how-does-one-of-the-largest-recommendation-engines-de.html)
     - [ ] [Design Of A Modern Cache](http://highscalability.com/blog/2016/1/25/design-of-a-modern-cache.html)
     - [ ] [Live Video Streaming At Facebook Scale](http://highscalability.com/blog/2016/1/13/live-video-streaming-at-facebook-scale.html)
-
+    - [ ] [A Beginner's Guide To Scaling To 11 Million+ Users On Amazon's AWS](http://highscalability.com/blog/2016/1/11/a-beginners-guide-to-scaling-to-11-million-users-on-amazons.html)
     - [ ] [How Does The Use Of Docker Effect Latency?](http://highscalability.com/blog/2015/12/16/how-does-the-use-of-docker-effect-latency.html)
     - [ ] [Does AMP Counter An Existential Threat To Google?](http://highscalability.com/blog/2015/12/14/does-amp-counter-an-existential-threat-to-google.html)
     - [ ] [A 360 Degree View Of The Entire Netflix Stack](http://highscalability.com/blog/2015/11/9/a-360-degree-view-of-the-entire-netflix-stack.html)
@@ -1409,6 +1432,36 @@ Mock Interviews:
 ## Database
 [Link](/Database.md)
 
+## Non-Tech Skills
+In addition to your technical skills, when you meet with your interviewer, they’ll be assessing you based on four attributes using a mix of behavioral and hypothetical questions: 
+- General Cognitive Ability: 
+    - W​e ask open-ended questions to learn how you approach and solve problems. 
+    - And there’s no one right answer—your ability to explain your thought process and how you use data to inform decisions is what’s most important. 
+- Leadership:​ ​
+    - Be prepared to discuss how you have used your communication and decision-making skills to mobilize others. 
+    - This might be by stepping up to a leadership role at work or with an organization, or by helping a team succeed even when you weren’t officially the leader.
+- Role-related knowledge:​ ​
+    - We’re interested in how your individual strengths combine with your experience to drive impact. 
+    - We don’t just look for how you can contribute today, but how you can grow into different roles—including ones that haven’t even been invented yet.
+- Googleyness:​ 
+    - Share how you work individually and on a team, how you help others, how you navigate ambiguity, and how you push yourself to grow outside of your comfort zone.
+
+### What's a behavioral question?
+Using a behavioral interview technique like the STAR approach can help structure your answers.
+- Situation
+    - Describe the situation you were in or the task you needed to accomplish.
+- Task
+    - Explain the goal you were working toward.
+- Activity
+    - Detail the specific steps you took and the role(s) you played.
+- Result
+    - Describe your accomplishments and the overall outcome.
+
+### What's a hypothetical question?
+While behavioral questions assess your past performance, hypothetical (also known as situational) questions evaluate how you would handle a challenge you may not have encountered yet.
+
+[Google Interview Prep Guide Business Interviews](https://drive.google.com/drive/u/1/folders/1EexCycNQOgdiMg-DEmC-iVq7iVRWYOSS)
+
 ## Once you're closer to the interview
 
 - [ ] Cracking The Coding Interview Set 2 (videos):
@@ -1607,8 +1660,8 @@ software engineer, and to be aware of certain technologies and algorithms, so yo
         - [gRPC 101 for Java Developers (video)](https://www.youtube.com/watch?v=5tmPvSe7xXQ&list=PLcTqM9n_dieN0k1nSeN36Z_ppKnvMJoly&index=1)
     - [ ] [Redis](http://redis.io/)
         - [Tutorial](http://try.redis.io/)
-    
-   
+    - [ ] [Amazon SQS (queue)](https://aws.amazon.com/sqs/)
+    - [ ] [Amazon SNS (pub-sub)](https://aws.amazon.com/sns/)
     - [ ] [RabbitMQ](https://www.rabbitmq.com/)
         - [Get Started](https://www.rabbitmq.com/getstarted.html)
     - [ ] [Celery](http://www.celeryproject.org/)
@@ -1743,6 +1796,7 @@ software engineer, and to be aware of certain technologies and algorithms, so yo
         - [ ] [MIT 6.851 - Memory Hierarchy Models (video)](https://www.youtube.com/watch?v=V3omVLzI0WE&index=7&list=PLUl4u3cNGP61hsJNdULdudlRL493b-XZf)
                 - covers cache-oblivious B-Trees, very interesting data structures
                 - the first 37 minutes are very technical, may be skipped (B is block size, cache line size)
+
 
 - ### k-D Trees
     - great for finding number of points in a rectangle or higher dimension object
@@ -1957,6 +2011,7 @@ Sit back and enjoy. "Netflix and skill" :P
 - [Directory of Online CS Courses](https://github.com/open-source-society/computer-science)
 - [Directory of CS Courses (many with online lectures)](https://github.com/prakhar1989/awesome-courses)
 
+
 # Introduction
 - [Description](/Description.md)
 - (Book) Site Reliability Engineering - https://landing.google.com/sre/books/
@@ -1970,19 +2025,6 @@ Sit back and enjoy. "Netflix and skill" :P
 # Version Control
 - [Git](/Git.md)
 - [Apache Subversion](/Subversion.md)
-- [ ] [phabricator](https://www.phacility.com/phabricator/)
-```
-Setup Arcanist
-# Choose an installation directory (the directory instructions are optional, you can configure it where you want to save the configuration on your local)
-$ cd $HOME
- 
-# git clone necessary repos
-$ git clone https://github.com/phacility/libphutil.git
-$ git clone https://github.com/phacility/arcanist.git
- 
-# Update your ~/.bash_profile file to update PATH environment variable to include arcanist bin directory
-export PATH="$PATH:<arcanist_installation_directory>/arcanist/bin/"
-```
 
 # CI/CD
 ## Continuous Integration (CI)
@@ -2030,33 +2072,36 @@ export PATH="$PATH:<arcanist_installation_directory>/arcanist/bin/"
 - (Course) Continuous Deliver Better Software - https://www.udemy.com/learn-devops-continuously-deliver-better-software
 
 # Containers
-- [Docker](/docker.md)
+- [Docker](/Docker.md)
 
 # Web Servers
 
 ## Nginx
 - (Course) Nginx Fundamentals - https://www.udemy.com/nginx-fundamentals/
 
-## Post-Mortem
+## Cluster Management
 
-## Tools
-- OhMyZSH 
+## Kubernetes 
+- (Tutorial) Kubernetes Bootcamp - https://kubernetesbootcamp.github.io/kubernetes-bootcamp/index.html
+- (Course) Scalable Microservices with Kubernetes - https://br.udacity.com/course/scalable-microservices-with-kubernetes--ud615/
+- https://kubernetes.io/docs/tutorials/kubernetes-basics/
+- Command reference: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
 
-Free at https://github.com/robbyrussell/oh-my-zsh
+# Cloud
+- [Amazon Web Service](/AWS.md)
+- [Microsoft Azure](/Azure.md)
+- [Google Cloud Platform](/GCP.md)
 
-- LastPass / 1Password /PassPack
-
-The average person wastes hours each year resetting passwords they’ve forgotten. Password tools like these save time and mental energy by storing and autofilling your passwords. They also allow you to have long, unique passwords for each site, making it almost impossible for hackers to crack your password.
-Free at https://lastpass.com/ or https://agilebits.com/onepassword or https://www.passpack.com/
-
-- Flux
-
-If you’ve ever had trouble sleeping after a long night of staring at your computer screen, Flux is for you! Your circadian rhythm can’t tell the difference between sunlight and the glow of a monitor. This free tool gradually changes your computer’s colors during and after sunset.
-Free at https://justgetflux.com/
+# Post-Mortem
 
 # Blogs
 - http://highscalability.com
 - https://medium.com/production-ready
+
+# DevOps | SRE Roadmap
+<img src="https://github.com/kamranahmedse/developer-roadmap/blob/master/images/devops.png">  
+
+Image Credits: https://github.com/kamranahmedse/developer-roadmap
 
 # Questions to ask
 - [Questions to ask](https://github.com/sunyuding/sre-interview/blob/master/questions-to-ask-interviewers.md)

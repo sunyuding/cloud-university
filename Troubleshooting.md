@@ -2,6 +2,25 @@
 -  Make sure you understand the questions and ask appropriate follow-up questions to the interviewer when needed. 
 -  A big part is finding out what the actual problem is and breaking it down into specifics. 
 
+1. Identify the problem
+    - Step1: what exactly is the problem?
+        - listen or read carefully and take notes
+        - who, what, and when
+        - try repeating your understanding of the problem
+2. Find the root cause
+    - Step2: Gather more details, eliminate variables
+        - Error messages
+        - Events logs
+        - Screenshots, video, or other supporting information
+        - Diagnostics results
+        - Monitoring
+    - Step 3: Reproduce the problem, develop hypothesis of root cause
+
+3. Provide solution
+    - Step 4: Attempt a fix based on findings
+    - Prepare for future issues
+Read more: https://www.spiceworks.com/it-articles/troubleshooting-steps/
+
 # GCP
 For example if your web server goes down over the weekend, how do you get notified? Or how do you identify which IP address to blacklist, for your HTTP load balancer?
 - What if your server goes down in the middle of the night or over the weekend? Do you expect someone to always look at dashboards to determine whether your servers are available? Or have enough capacity or bandwidth? 

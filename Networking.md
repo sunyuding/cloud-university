@@ -40,6 +40,18 @@ S​how off your depth of knowledge and understanding of network theory, like di
     - HTTP Version: HTTP v1.1
     - Response Header
     - Response Body
+### HTTP response status codes
+1. Informational responses (100–199),
+2. Successful responses (200–299),
+    - 200 OK
+3. Redirects (300–399),
+4. Client errors (400–499),
+    - 403 Forbidden
+    - 404 Not Found
+5. and Server errors (500–599).
+    - 503 Service Unavailable
+
+Readmore: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 
 # MAC addresses
 
@@ -165,37 +177,7 @@ International Standards Organization Open Systems Interconnect. Please Do Not Ta
 - [ ] [OSI Reference Model Layer Mnemonics](http://www.tcpipguide.com/free/t_OSIReferenceModelLayerMnemonics.htm)
 - [ ] [Top 60 Networking Interview Questions And Answers](https://www.softwaretestinghelp.com/networking-interview-questions-2/)
 
-- [x] [What happens when ...](https://github.com/sunyuding/what-happens-when)
-    - The "g" key is pressed
-        - auto-complete dropbox
-    - Parse URL
-        - Protocol
-            - http
-            - https
-        - Resource   
-    - DNS lookup
-        - browser cache
-        - the ISP's caching DNS server
-    - Opening of a socket
-        - TCP socket stream
-    - HTTP protocol
-    - HTTP Server Request Handle
-        - HTTP Request Method
-            - GET
-            - HEAD
-            - POST
-            - PUT
-            - DELETE
-            - CONNECT
-            - OPTIONS
-            - TRACE
-        - Domain
-        - Requested path/page
-    - HTTPS
-    - Browser
-    - HTML parsing
-    - CSS interpretation
-    - Page rendering
+
 - [x] Cookies
   - Why? 
     - HTTP protocol has been implemented as stateless protocol, so there is a need of some featrues in web technology to maintain state of user either at client or at server.
