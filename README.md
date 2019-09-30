@@ -2,7 +2,7 @@
 
 > I created this as a study plan of topics for becoming an engineer in the Cloud Age. 
 >
-> *Best of luck to you!*
+> *Happy Codingd*
 
 ## What is it?
 
@@ -36,7 +36,7 @@ If you want to be a Cloud Engineer, study more from the optional list (networkin
     - [Computer Architecture](#computer-architecture)
     - [Language Specific](#language-specific)
     - [C++](#c)
-    - [Java](#java)
+    - [Java](/java.md)
     - [Python](#python)
     - [Optional Books](#optional-books)
   - [Before you Get Started](#before-you-get-started)
@@ -59,8 +59,6 @@ If you want to be a Cloud Engineer, study more from the optional list (networkin
   - [Final Review](#final-review)
   - [Coding Question Practice](#coding-question-practice)
   - [Coding exercises/challenges](#coding-exerciseschallenges)
-  - [Troubleshooting](#troubleshooting)
-    - [Monitoring and Logging](#monitoring-and-logging)
   - [Operating Systems](#operating-systems)
   - [Unix/Linux Internals](#unixlinux-internals)
   - [Web Technologies](#web-technologies)
@@ -86,12 +84,22 @@ If you want to be a Cloud Engineer, study more from the optional list (networkin
 - [Distributed Systems](#distributed-systems)
 - [Production Web App](#production-web-app)
 - [CI/CD](#continuous-integration--continuous-delivery)
+- Infrastructure as Code
+- [Kubernetes](Kubernetes.md)
+- [Ansible](Ansible.md)
 - [Containers](#containers)
 - [Web Servers](#web-servers)
-  - [Nginx](#nginx)
-  - [Cluster Management](#cluster-management)
-  - [Kubernetes](#kubernetes)
-- [Cloud](#cloud)
+    - [Nginx](#nginx)
+    - [Cluster Management](#cluster-management)
+    - [Kubernetes](#kubernetes)
+- [Cloud]
+    - [Amazon Web Service](/AWS.md)
+    - [Microsoft Azure](/Azure.md)
+    - [Google Cloud Platform](/gcp.md)
+- [Data]
+    - [Tableau](/tableau.md)
+- [Troubleshooting](#troubleshooting.md)
+    - [Monitoring and Logging](#monitoring-and-logging)
 - [Post-Mortem](#post-mortem)
 - [Blogs](#blogs)
 - [DevOps | SRE Roadmap](#devops--sre-roadmap)
@@ -247,20 +255,6 @@ I haven't read these two, but they are highly rated and written by Sedgewick. He
 - [ ] [Algorithms in C++ Part 5: Graph Algorithms](https://www.amazon.com/Algorithms-Part-Graph-3rd-Pt-5/dp/0201361183/)
 
 If you have a better recommendation for C++, please let me know. Looking for a comprehensive resource.
-
-### Java
-
-- [ ] [Algorithms (Sedgewick and Wayne)](https://www.amazon.com/Algorithms-4th-Robert-Sedgewick/dp/032157351X/)
-    - videos with book content (and Sedgewick!):
-        - [Algorithms I](https://www.youtube.com/user/algorithmscourses/playlists?view=50&sort=dd&shelf_id=2)
-        - [Algorithms II](https://www.youtube.com/user/algorithmscourses/playlists?shelf_id=3&view=50&sort=dd)
-
-OR:
-
-- [ ] [Data Structures and Algorithms in Java](https://www.amazon.com/Data-Structures-Algorithms-Michael-Goodrich/dp/1118771338/)
-    - by Goodrich, Tamassia, Goldwasser
-    - used as optional text for CS intro course at UC Berkeley
-    - see my book report on the Python version below. This book covers the same topics.
 
 ### Python
 
@@ -2015,6 +2009,19 @@ Sit back and enjoy. "Netflix and skill" :P
 # Version Control
 - [Git](/Git.md)
 - [Apache Subversion](/Subversion.md)
+- [ ] [phabricator](https://www.phacility.com/phabricator/)
+```
+Setup Arcanist
+# Choose an installation directory (the directory instructions are optional, you can configure it where you want to save the configuration on your local)
+$ cd $HOME
+ 
+# git clone necessary repos
+$ git clone https://github.com/phacility/libphutil.git
+$ git clone https://github.com/phacility/arcanist.git
+ 
+# Update your ~/.bash_profile file to update PATH environment variable to include arcanist bin directory
+export PATH="$PATH:<arcanist_installation_directory>/arcanist/bin/"
+```
 
 # CI/CD
 ## Continuous Integration (CI)
@@ -2058,39 +2065,20 @@ Sit back and enjoy. "Netflix and skill" :P
 
 - (Book) Production Ready Microservices - https://www.amazon.com/gp/product/1491965975/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1491965975&linkCode=as2&tag=susanfowler-20&linkId=8e434210b002d00be8507454a75c11ff
 
-# Infrastructure as Code
-
-## [Kubernetes](Kubernetes.md)
-
-## [Ansible](Ansible.md)
-
 # Continuous Integration | Continuous Delivery
 - (Course) Continuous Deliver Better Software - https://www.udemy.com/learn-devops-continuously-deliver-better-software
 
 # Containers
-- [Docker](/Docker.md)
+- [Docker](/docker.md)
 
 # Web Servers
 
 ## Nginx
 - (Course) Nginx Fundamentals - https://www.udemy.com/nginx-fundamentals/
 
-## Cluster Management
+## Post-Mortem
 
-## Kubernetes 
-- (Tutorial) Kubernetes Bootcamp - https://kubernetesbootcamp.github.io/kubernetes-bootcamp/index.html
-- (Course) Scalable Microservices with Kubernetes - https://br.udacity.com/course/scalable-microservices-with-kubernetes--ud615/
-- https://kubernetes.io/docs/tutorials/kubernetes-basics/
-- Command reference: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
-
-# Cloud
-- [Amazon Web Service](/AWS.md)
-- [Microsoft Azure](/Azure.md)
-- [Google Cloud Platform](/GCP.md)
-
-# Post-Mortem
-
-# Tools
+## Tools
 - OhMyZSH 
 
 Free at https://github.com/robbyrussell/oh-my-zsh

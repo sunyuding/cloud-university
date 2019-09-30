@@ -573,7 +573,10 @@ Now that you have a better understanding of Kubernetes, you can continue your jo
 [Kubernetes commands reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 
 
-
+- (Tutorial) Kubernetes Bootcamp - https://kubernetesbootcamp.github.io/kubernetes-bootcamp/index.html
+- (Course) Scalable Microservices with Kubernetes - https://br.udacity.com/course/scalable-microservices-with-kubernetes--ud615/
+- https://kubernetes.io/docs/tutorials/kubernetes-basics/
+- Command reference: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
 
 
 
