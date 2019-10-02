@@ -61,12 +61,11 @@ Please also note the following:
 of specific plugins (e.g., “Build Pipeline plugin”).
 * Various UI elements in Jenkins will be referred to using the following terms:
 
-![Rustem Certified Jenkins Engineer](https://github.com/smartrus/certified-jenkins-engineer-study-guide/blob/master/images/rustem_certified_jenkins_engineer1.png)
+![Rustem Certified Jenkins Engineer](/images/rustem_certified_jenkins_engineer1.png)
 
+![Rustem Certified Jenkins Engineer](/images/rustem_certified_jenkins_engineer2.png)
 
-![Rustem Certified Jenkins Engineer](https://github.com/smartrus/certified-jenkins-engineer-study-guide/blob/master/images/rustem_certified_jenkins_engineer2.png)
-
-![Rustem Certified Jenkins Engineer](https://github.com/smartrus/certified-jenkins-engineer-study-guide/blob/master/images/rustem_certified_jenkins_engineer3.png)
+![Rustem Certified Jenkins Engineer](/images/rustem_certified_jenkins_engineer3.png)
 
 ## 1. Key CI/CD/Jenkins Concepts - 18%
 
@@ -76,11 +75,11 @@ topics:
 * Continuous Delivery/Continuous Integration Concepts
   * Define continuous integration, continuous delivery, continuous deployment
 
-_Continuous Integration is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible. Many teams find that this approach leads to significantly reduced integration problems and allows a team to develop cohesive software more rapidly. This article is a quick overview of Continuous Integration summarizing the technique and its current usage._
+_**Continuous Integration** is a software development practice where members of a team integrate their work frequently, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is verified by an automated build (including test) to detect integration errors as quickly as possible. Many teams find that this approach leads to significantly reduced integration problems and allows a team to develop cohesive software more rapidly. This article is a quick overview of Continuous Integration summarizing the technique and its current usage._
 
-_Continuous Delivery is a software development discipline where you build software in such a way that the software can be released to production at any time._
+_**Continuous Delivery** is a software development discipline where you build software in such a way that the software can be released to production at any time._
 
-_Continuous Deployment means that every change goes through the pipeline and automatically gets put into production, resulting in many production deployments every day._
+_**Continuous Deployment** means that every change goes through the pipeline and automatically gets put into production, resulting in many production deployments every day._
 
   * Difference between CI and CD
 
@@ -129,17 +128,17 @@ _Now this is where Continuous Delivery and Continuous Deployment will start to d
 
 _When and what to promote is a choice. Promotion typically happens when a build is considered to be “good enough”. QA has run their tests, the Product Owner has signed off, etc. This means that not all artifacts make it to production!_
 
-_Continuous Deployment gets rid of the manual gate and fully relies on automatic verification of the acceptance environment to determine whether the pipeline can continue on to production. Production, in turn, is verified in the same way._
+_**Continuous Deployment** gets rid of the manual gate and fully relies on automatic verification of the acceptance environment to determine whether the pipeline can continue on to production. Production, in turn, is verified in the same way._
 
-![Rustem Certified Jenkins Engineer](https://github.com/smartrus/certified-jenkins-engineer-study-guide/blob/master/images/rustem_ci_cd_pipeline2.png)
+![Rustem Certified Jenkins Engineer](/images/rustem_ci_cd_pipeline2.png)
 
-_Automation in general, and test automation specifically, is a crucial aspect of any CI/CD process and pipeline. Automatic verification is used in all stages, to validate artifacts, deployments, etc._
+_**Automation** in general, and test automation specifically, is a crucial aspect of any CI/CD process and pipeline. Automatic verification is used in all stages, to validate artifacts, deployments, etc._
 
 _The goal of test automation is to catch known problems. Exploratory testing, usability reports, customer feedback, etc. helps us to identify the unknown issues, at which point automated tests can be adjusted to cover whatever’s been found._
 
   * Continuous delivery versus continuous deployment
 
-_Continuous Delivery just means that you are able to do frequent deployments but may choose not to do it, usually due to businesses preferring a slower rate of deployment. In order to do Continuous Deployment you must be doing Continuous Delivery._
+_**Continuous Delivery** just means that you are able to do frequent deployments but may choose not to do it, usually due to businesses preferring a slower rate of deployment. In order to do **Continuous Deployment** you must be doing **Continuous Delivery**._
 
 * Jobs
   * What are jobs in Jenkins?
