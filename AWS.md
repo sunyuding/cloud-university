@@ -29,8 +29,6 @@ Answer: C
 ### Setup permissions
 https://youtu.be/W-SM4m19JMA
 
-### 
-
 ## ECR
 Amazon Elastic Container Registry (ECR) is a fully-managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images.c
 
