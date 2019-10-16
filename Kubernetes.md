@@ -1,4 +1,33 @@
 # Kubernetes
+
+## Kubernetes Journey
+- Introduction to Kubernetes by the linux foundation on EDX (free).
+
+Now that you have a better understanding of Kubernetes, you can continue your journey by:
+
+- Participating in activities and discussions organized by the Kubernetes community
+- Attending events organized by the **Cloud Native Computing Foundation** and **The Linux Foundation**
+- Expanding your Kubernetes knowledge and skills by enrolling in the self-paced [LFS258 - Kubernetes Fundamentals](https://training.linuxfoundation.org/training/kubernetes-fundamentals/),  [LFD259 - Kubernetes for - Developers](https://training.linuxfoundation.org/training/kubernetes-for-developers/), or the instructor-led [LFS458 - Kubernetes Administration](https://training.linuxfoundation.org/training/kubernetes-administration/) and [LFD459 - Kubernetes for App Developers](https://training.linuxfoundation.org/training/kubernetes-for-app-developers/), paid courses offered by The Linux Foundation 
+- Preparing for the [Certified Kubernetes Administrator](https://www.cncf.io/certification/cka/) or the [Certified Kubernetes Application Developer](https://www.cncf.io/certification/ckad/) exams, offered by the Cloud Native Computing Foundation
+  - [Certified Kubernetes Administrator AND Certified Kubernetes Application Developer Candidate Handbook](https://training.linuxfoundation.org/wp-content/uploads/2019/08/CKA-CKAD-Candidate-Handbook-8.5.19.pdf)
+  - [My Feedback about CKA and CKAD](https://medium.com/@ikaboubi/my-feedback-about-cka-and-ckad-e82a35585fe9)
+    - [Scalable Microservices with Kubernetes
+by Google (free)](https://www.udacity.com/course/scalable-microservices-with-kubernetes--ud615).
+    - Kubernetes Fundamentals (paid).
+    - [Kuberntes The Hard Way by Kelsey Hightower(free)](https://github.com/kelseyhightower/kubernetes-the-hard-way)
+    - Documentation kubernetes.io (free).
+  - [https://talkcloudlytome.com/thoughts-on-the-kubernetes-cka-and-ckad-certifications/](https://talkcloudlytome.com/thoughts-on-the-kubernetes-cka-and-ckad-certifications/)
+    - ["Kubernetes In Action" by Marko Lukša](https://www.manning.com/books/kubernetes-in-action)
+  - [How I passed the CKA (Certified Kubernetes Administrator) Exam](https://medium.com/platformer-blog/how-i-passed-the-cka-certified-kubernetes-administrator-exam-8943aa24d71d)
+    - https://linuxacademy.com/course/cloud-native-certified-kubernetes-administrator-cka/
+    - https://github.com/dgkanatsios/CKAD-exercises?source=post_page-----8943aa24d71d----------------------
+    - https://github.com/walidshaari/Kubernetes-Certified-Administrator?source=post_page-----8943aa24d71d----------------------
+    - Kubectl cheatsheet that would help you right out with most questions in your exams. https://kubernetes.io/docs/reference/kubectl/cheatsheet
+    - Community discussion page is also accessible to you since it comes under the kubernetes.io domain, which is a great place to search for some problems you may get. https://discuss.kubernetes.io
+    - If you are unsure of the spec or parameters of a yaml, always use `kubectl explain <resource>.<key>` which is a great way to get a quick look at the keys available to you.
+  - https://github.com/walidshaari/Kubernetes-Certified-Administrator
+  - [Amazon EKS Workshop](https://eksworkshop.com)
+
 ## Microservice
 **Microservices** can be deployed individually on separate servers provisioned with fewer resources - only what is required by each service and the host system itself.
 
@@ -188,12 +217,6 @@ HTTP API space of Kubernetes can be divided into three independent groups:
 ### kubectl
 There are different methods that can be used to install kubectl, which are mentioned in the [Kubernetes documentation](https://kubernetes.io/docs/tasks/tools/install-kubectl/).
 
-### kubectl Configuration File
-Too look at the connection details, we can either see the content of the `~/.kube/config` file (on Linux) or run the following command:
-```bash
-$ kubectl config view
-```
-
 Once kubectl is installed, we can get information about the Minikube cluster with the command:
 ```bash
 $ kubectl cluster-info
@@ -237,7 +260,17 @@ https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
 
 ```
 $ kubectl get namespaces
+
+NAME          STATUS    AGE
+default       Active    1d
+kube-system   Active    1d
+kube-public   Active    1d
 ```
+
+Kubernetes starts with three **initial namespaces**:
+- **default** The default namespace for objects with no other namespace
+- **kube-system** The namespace for objects created by the Kubernetes system
+- **kube-public** This namespace is created automatically and is readable by all users (including those not authenticated). 
 
 ## Kubernetes Building Blocks
 
@@ -532,13 +565,38 @@ A [Job](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-co
 ## Custom Resources
 
 ## Helm 
-To deploy an application, we use different Kubernetes manifests, such as Deployments, Services, Volume Claims, Ingress, etc. Sometimes, it can be tiresome to deploy them one by one. We can bundle all those manifests after templatizing them into a well-defined format, along with other metadata. Such a bundle is referred to as **Chart**. These **Charts** can then be served via repositories, such as those that we have for **rpm** and **deb** packages.
+To deploy an application, we use different Kubernetes manifests, such as **Deployments**, **Services**, Volume Claims, **Ingress**, etc. Sometimes, it can be tiresome to deploy them one by one. We can bundle all those manifests after templatizing them into a well-defined format, along with other metadata. Such a bundle is referred to as **Chart**. These **Charts** can then be served via repositories, such as those that we have for **rpm** and **deb** packages.
 
-[Helm](https://helm.sh/) is a package manager (analogous to **yum** and **apt** for Linux) for Kubernetes, which can install/update/delete those **Charts** in the Kubernetes cluster.
+[Helm](https://helm.sh/) is a **package manager** (analogous to **yum** and **apt** for Linux) for Kubernetes that packages multiple Kubernetes resources into a single logical deployment unit called **Chart**.
 
 The client **helm** connects to the server **tiller** to manage **Charts**. Charts submitted for Kubernetes are available [here](https://github.com/helm/charts).
 
 ## Ingress
+
+## Configuration
+
+### [The KUBECONFIG environment variable](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/#the-kubeconfig-environment-variable)
+The KUBECONFIG environment variable holds a list of kubeconfig files. If the `KUBECONFIG` environment variable doesn’t exist, `kubectl` uses the default kubeconfig file, `$HOME/.kube/config`.
+
+### kubectl Configuration File
+To look at the connection details, we can either see the content of the `~/.kube/config` file (on Linux) or run the following command:
+```bash
+$ kubectl config view
+```
+
+## Kustomize
+Kubernetes native configuration management
+
+## Sealed Secrets
+https://github.com/bitnami-labs/sealed-secrets
+```
+$ brew install kubeseal
+```
+
+## Flux
+```
+$ brew install fluxctl
+```
 
 ## Kubernetes Community
 With more than [53K GitHub stars](https://github.com/kubernetes/kubernetes/), Kubernetes is one of the most popular open source projects. The community members not only help with the source code, but they also help with sharing the knowledge. The community engages in both online and offline activities.
@@ -560,18 +618,8 @@ Community members are very active on the [Kubernetes Slack](https://kubernetes.s
 **Mailing Lists**
 There are Kubernetes [users](https://groups.google.com/forum/#!forum/kubernetes-users) and [developer](https://groups.google.com/forum/#!forum/kubernetes-users) mailing lists, which can be joined by anybody interested.
 
-## Kubernetes Journey
-Now that you have a better understanding of Kubernetes, you can continue your journey by:
-
-- Participating in activities and discussions organized by the Kubernetes community
-- Attending events organized by the Cloud Native Computing Foundation and The Linux Foundation
-- Expanding your Kubernetes knowledge and skills by enrolling in the self-paced [LFS258 - Kubernetes Fundamentals](https://training.linuxfoundation.org/training/kubernetes-fundamentals/),  [LFD259 - Kubernetes for - Developers](https://training.linuxfoundation.org/training/kubernetes-for-developers/), or the instructor-led [LFS458 - Kubernetes Administration](https://training.linuxfoundation.org/training/kubernetes-administration/) and [LFD459 - Kubernetes for App Developers](https://training.linuxfoundation.org/training/kubernetes-for-app-developers/), paid courses offered by The Linux Foundation 
-- Preparing for the [Certified Kubernetes Administrator](https://www.cncf.io/certification/cka/) or the [Certified Kubernetes Application Developer](https://www.cncf.io/certification/ckad/) exams, offered by the Cloud Native Computing Foundation
-- [Certified Kubernetes Administrator AND Certified Kubernetes Application Developer Candidate Handbook](https://training.linuxfoundation.org/wp-content/uploads/2019/08/CKA-CKAD-Candidate-Handbook-8.5.19.pdf)
-
 ## Commands
-[Kubernetes commands reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
-
+- [Kubernetes commands reference](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
 
 - (Tutorial) Kubernetes Bootcamp - https://kubernetesbootcamp.github.io/kubernetes-bootcamp/index.html
 - (Course) Scalable Microservices with Kubernetes - https://br.udacity.com/course/scalable-microservices-with-kubernetes--ud615/

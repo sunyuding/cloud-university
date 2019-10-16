@@ -107,52 +107,13 @@ If you want to be a Cloud Engineer, study more from the optional list (networkin
 - [Reference](#reference)
 ---
 
-## How to use it
-
-Everything below is an outline, and you should tackle the items in order from top to bottom.
-
-I'm using Github's special markdown flavor, including tasks lists to check progress.
-
-**Create a new branch so you can check items like this, just put an x in the brackets: [x]**
-
-
-    Fork a branch and follow the commands below
-
-`git checkout -b progress`
-
-`git remote add ...`
-
-`git fetch --all`
-
-    Mark all boxes with X after you completed your changes
-
-`git add . `
-
-`git commit -m "Marked x" `
-
-`git rebase .../master `
-
-`git push --force `
-
-[More about Github-flavored markdown](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown)
-
 ## Don't feel you aren't smart enough
 - Successful software engineers are smart, but many have an insecurity that they aren't smart enough.
 - [The myth of the Genius Programmer](https://www.youtube.com/watch?v=0SARbwvhupQ)
 - [It's Dangerous to Go Alone: Battling the Invisible Monsters in Tech](https://www.youtube.com/watch?v=1i8ylq4j_EY)
 - [Believe you can change](http://www.aaronsw.com/weblog/dweck)
 
-## About Video Resources
-
-Some videos are available only by enrolling in a Coursera, EdX, or Lynda.com class. These are called MOOCs.
-Sometimes the classes are not in session so you have to wait a couple of months, so you have no access. Lynda.com courses are not free.
-
-    I'd appreciate your help to add free and always-available public sources, such as YouTube videos to accompany the online course videos.
-    I like using university lectures.
-
-
 ## Interview Process & General Interview Prep
-
 - [ ] [ABC: Always Be Coding](https://medium.com/always-be-coding/abc-always-be-coding-d5f8051afce2#.4heg8zvm4)
 - [ ] [Whiteboarding](https://medium.com/@dpup/whiteboarding-4df873dbba2e#.hf6jn45g1)
 - [ ] [Effective Whiteboarding during Programming Interviews](http://www.coderust.com/blog/2014/04/10/effective-whiteboarding-during-programming-interviews/)
@@ -2054,15 +2015,16 @@ Free at https://lastpass.com/ or https://agilebits.com/onepassword or https://ww
 If you’ve ever had trouble sleeping after a long night of staring at your computer screen, Flux is for you! Your circadian rhythm can’t tell the difference between sunlight and the glow of a monitor. This free tool gradually changes your computer’s colors during and after sunset.
 Free at https://justgetflux.com/
 
-# Blogs
+## Blogs
 - http://highscalability.com
 - https://medium.com/production-ready
 
-# Questions to ask
+## Questions to ask
 - [Questions to ask](https://github.com/sunyuding/sre-interview/blob/master/questions-to-ask-interviewers.md)
 
-# Reference
+## Reference
 - Interested in becoming a Site Reliability Engineer?: https://medium.com/@tammybutow/graduating-from-bootcamp-and-interested-in-becoming-a-site-reliability-engineer-b69a38ce858b
 - So you want to be an SRE?: https://hackernoon.com/so-you-want-to-be-an-sre-34e832357a8c
 - https://github.com/andrealmar/sre-university
 - https://github.com/maruina/devops-university
+- [Linux Academy](https://linuxacademy.com)

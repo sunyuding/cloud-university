@@ -2,6 +2,11 @@
 
 > The outline is copied from [Certified Jenkins Engineer (CJE) 2018 Study Guide](https://www.cloudbees.com/sites/default/files/cje-study-guide-2018.pdf). The rest of information is taken from [Jenkins User Documentation](https://jenkins.io/doc/).
 
+Jenkins:
+- Open source - fork of Hudson
+- Widely used
+- Java servlet-based
+
 The Certified Jenkins Engineer (CJE) exam consists of 60 multiple-choice questions
 testing knowledge of open-source Jenkins.
 
