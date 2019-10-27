@@ -63,5 +63,9 @@ See also [DEFAULT_VAULT_PASSWORD_FILE](https://docs.ansible.com/ansible/latest/r
 
 ### ansible-vault
 
+## Tasks
+
+## Loops
+
 ## Reference
 - [ ] [Ansible Configuration Settings](https://docs.ansible.com/ansible/latest/reference_appendices/config.html?highlight=vault_password_file#default-vault-password-file)

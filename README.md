@@ -17,6 +17,11 @@ Facebook and Microsoft view software engineering as different from software/web 
 
 If you want to be a Cloud Engineer, study more from the optional list (networking, security).
 
+## Copyright
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />
+This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
 ---
 
 ## Table of Contents

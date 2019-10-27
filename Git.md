@@ -128,4 +128,19 @@ If you already cloned the project and forgot `--recurse-submodules`, you can com
 $ git submodule update --init --recursive
 ```
 
+## Fork
+- [Forking Projects](https://guides.github.com/activities/forking/)
+- [Fork a repo](https://help.github.com/en/articles/fork-a-repo)
+
+
 - [ ] https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
+## Diff
+If you want to see what you haven't git added yet:
+```
+$ git diff myfile.txt
+```
+or if you want to see already added changes
+```
+$ git diff --cached myfile.txt
+```

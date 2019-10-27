@@ -4,6 +4,24 @@
 - [Red Hat Certified System Administrator](https://www.redhat.com/en/services/certification/rhcsa)
 
 
+### diff
+[9 Best File Comparison and Difference (Diff) Tools for Linux](https://www.tecmint.com/best-linux-file-diff-tools-comparison/)
+
+
+```
+$ diff -qr directory-1/ directory-2/
+```
+
+### monit
+[monit(1) - Linux man page](https://linux.die.net/man/1/monit)
+
+### source
+**source** is a shell built-in command which is used to read and execute the content of a file(generally set of commands), passed as an argument in the current shell script.
+
+```
+$ source FILENAME [arguments]
+```
+
 ## Resource
 
 - [Computer Science from the Bottom Up](https://www.bottomupcs.com/) :books:
