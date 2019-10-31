@@ -22,8 +22,10 @@ $ diff -qr directory-1/ directory-2/
 $ source FILENAME [arguments]
 ```
 
-## Resource
+### Symlink
+https://unix.stackexchange.com/questions/151999/how-to-change-where-a-symlink-points
 
+## Resource
 - [Computer Science from the Bottom Up](https://www.bottomupcs.com/) :books:
 - [Understanding the Linux kernel](http://shop.oreilly.com/product/9780596005658.do) :books:
 - [Advanced Linux Programming](http://advancedlinuxprogramming.com/alp-folder/) :books:
