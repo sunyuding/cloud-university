@@ -67,3 +67,15 @@ following? (Choose 3 answers)
 - F. No outbound traffic will be allowed from the five Amazon EC2 instances.
 
 Answer: A, D, and E. If a security group is not specified at launch, then an Amazon EC2 instance will be launched into the default security group for the Amazon VPC. The default security group allows communication between all resources within the security group, allows all outbound traffic, and denies all other traffic.
+
+
+## Network Address Translation (NAT) Instances and NAT Gateways
+
+### NAT Instance
+A [network address translation (NAT) instance](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_NAT_Instance.html) is an Amazon Linux Amazon Machine Image (AMI) that is designed to accept traffic from instances within a private subnet, translate the source IP address to the public IP address of the NAT instance, and forward the traffic to the IGW.
+
+### NAT Gateway
+A [NAT gateway](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html) is an Amazon managed resource that is designed to operate just like a NAT instance, but it is simpler to manage and highly available within an Availability Zone.
+
+## Virtual Private Gateways (VPGs), Customer Gateways (CGWs), and Virtual Private Networks (VPNs)
+

@@ -78,3 +78,5 @@ There are 2 ways
 
 What is the recommended method to update EKS worker nodes to a new version of Kubernetes?
 - Replace the nodes with the new AMI and migrate your pods to the new group.
+
+### [Updating an Amazon EKS Cluster Kubernetes Version](https://docs.aws.amazon.com/eks/latest/userguide/update-cluster.html)

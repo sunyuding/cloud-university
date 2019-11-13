@@ -1,3 +1,5 @@
+# Troubleshooting
+
 -  Are looking for a logical and structured approach to problem solving through distributed systems, network and web scenarios. 
 -  Make sure you understand the questions and ask appropriate follow-up questions to the interviewer when needed. 
 -  A big part is finding out what the actual problem is and breaking it down into specifics. 

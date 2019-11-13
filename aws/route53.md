@@ -1,4 +1,6 @@
 # Amazon Route 53
+Amazon Route 53 is a highly available and scalable cloud DNS web service that is designed to give developers and businesses an extremely reliable and cost-effective way to route end users to Internet applications.
+
 - Route53 also has 100% uptime SLA, Elastic Load Balancing and VPC can also provide a level of resilience if required
 
 Routing Policy:
@@ -33,4 +35,13 @@ Q. Which routing policy should you choose in order to achieve this?
 
 Q. Why is referencing an Application Load Balancer or Classic Load Balancer by its DNS CNAME recommended?
 - IP addresses may change as the load balancer scales
+
+Question: Which DNS record should you use to configure the transmission of email to your intended mail server?
+1. SOA records
+2. A records
+3. MX records
+4. CNAME records
+
+Answer: 3.
+
 

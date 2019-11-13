@@ -144,3 +144,12 @@ or if you want to see already added changes
 ```
 $ git diff --cached myfile.txt
 ```
+
+## Notes
+### [git discard all changes and pull from upstream](https://stackoverflow.com/questions/13781388/git-discard-all-changes-and-pull-from-upstream/46220797)
+```
+git reset --hard origin/master
+git pull origin master
+```
+
+

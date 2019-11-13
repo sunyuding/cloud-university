@@ -1,4 +1,5 @@
 # Amazon CloudWatch
+[Amazon CloudWatch]() is a service that you can use to monitor your AWS resources and your applications in real time.
 - Collect and track metrics
 - Collect and monitor log files
 - Set alarms

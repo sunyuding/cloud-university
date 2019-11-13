@@ -4,11 +4,20 @@
 >
 > *Happy Codingd*
 
-## What is it?
+## What Is Cloud Computing?
+**Cloud computing** is the on-demand delivery of IT resources and applications via the Internet with pay-as-you-go pricing. Whether you run applications that share photos to millions of mobile users or deliver services that support the critical operations of your business, the cloud provides rapid access to flexible and low-cost IT resources. With cloud computing, you don’t need to make large up-front investments in hardware and spend a lot of time managing that hardware. Instead, you can provision exactly the right type and size of computing resources you need to power your newest bright idea or operate your IT department. With cloud computing, you can access as many resources as you need, almost instantly, and only
+pay for what you use.
+
+In its simplest form, cloud computing provides an easy way to access servers, storage,
+databases, and a broad set of application services over the Internet. Cloud computing
+providers such as AWS own and maintain the network-connected hardware required for these
+application services, while you provision and use what you need for your workloads.
+
+## What is Cloud University?
 
 This is a study plan for going from a new grad to an engineer working on Cloud.
 
-This is meant for **new software engineers** or those switching from
+This is meant for software engineers or those switching from
 software/web development to a Cloud Engineer (where a wide range of computer science knowledge is required). If you have
 many years of experience and are claiming many years of software engineering experience, expect a harder requirement.
 

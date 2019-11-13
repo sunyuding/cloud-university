@@ -3,25 +3,34 @@
 > The outline is copied from [Certified Jenkins Engineer (CJE) 2018 Study Guide](https://www.cloudbees.com/sites/default/files/cje-study-guide-2018.pdf). The rest of information is taken from [Jenkins User Documentation](https://jenkins.io/doc/).
 
 Jenkins:
-- Open source - fork of Hudson
+- Open source - fork of [Hudson]()
 - Widely used
 - Java servlet-based
 
-The Certified Jenkins Engineer (CJE) exam consists of 60 multiple-choice questions
-testing knowledge of open-source Jenkins.
+The Certified Jenkins Engineer (CJE) exam consists of 60 multiple-choice questions testing knowledge of open-source Jenkins.
 
-Jenkins package relays on Java.
+Jenkins package relays on **Java**.
+
+https://medium.com/faun/certified-jenkins-engineer-2019-3114784be71a
+- Linux Academy
+  - I consider [Linux Academy]() as the most advanced e-learning platform not only for Linux, but also for cloud, containers, DevOps, and, of course, Jenkins. Information needed for the CJE exam, can be obtained from multiple courses.
+  - If you are completely new to the subject, you can start with DevOps Essentials and [Jenkins Quick Start]().
+  - You may skip the basic courses and jump right into the Certified Jenkins Engineer course. It covers a lot but does not dig very deep on some topics.
+  - After you have done with that, consider taking the practical courses such as [Implementing a Full CI/CD Pipeline]() and [Learn Jenkins By Doing]().
+  - The platform isn’t free, but the resources are plenty: videos, quizzes, flashcards, and even several servers as a lab environment.
+- CloudBees University
+  - CloudBees, the company that provides this certification, has several useful online materials. Some of them are free, some of them are very pricey. To supplement my study, I reviewed their free courses such as [Jenkins — Fundamentals](), [Jenkins Pipeline — Fundamentals](), and [Jenkins Administration — Fundamentals](). If you are low on budget, these three courses may be a perfect option for you.
+- [CJE Exam Study Guide](https://www.cloudbees.com/sites/default/files/cje-study-guide-2018.pdf)
+
+[Jenkins User Handbook](https://jenkins.io/user-handbook.pdf)
 
 ## Introduction
 
-This document is intended to help you prepare for the Certified Jenkins Engineer (CJE)
-exam.
+This document is intended to help you prepare for the Certified Jenkins Engineer (CJE) exam.
 
-The exam consists of 60 multiple-choice questions, divided into 4 sections, which will
-test your skills as a Jenkins Engineer.
+The exam consists of 60 multiple-choice questions, divided into 4 sections, which will test your skills as a Jenkins Engineer.
 
-In this guide, you will find a list of the topics tested on the exam, links to external
-references, and sample questions.
+In this guide, you will find a list of the topics tested on the exam, links to external references, and sample questions.
 
 ## Structure
 
@@ -34,8 +43,7 @@ This exam is comprised of 4 sections:
 
 All questions are based on version [2.19.4](https://jenkins.io/changelog-stable/#v2.19.4) [new] of the Jenkins core and apply to Jenkins versions through 2.121.2.
 
-All questions are based on an out-of-the-box standard installation of Jenkins ("base"
-Jenkins), with the default recommended plugin set installed ("Suggested plugins").
+All questions are based on an out-of-the-box standard installation of Jenkins ("base" Jenkins), with the default recommended plugin set installed ("Suggested plugins").
 
 See section "Plugins" for more information.
 
@@ -43,12 +51,9 @@ See section "Plugins" for more information.
 
 ## Plugins
 
-Questions in sections 1–4 primarily cover questions about a "base" Jenkins installation,
-but knowledge of the "suggested" plugins will also be covered. Candidates are expected
-to know the functionality/uses of these plugins but will not be tested on detailed usage.
+Questions in sections 1–4 primarily cover questions about a "base" Jenkins installation, but knowledge of the "suggested" plugins will also be covered. Candidates are expected to know the functionality/uses of these plugins but will not be tested on detailed usage.
 
-[new] The "suggested" plugins are the default plugins installed by the "Setup Wizard" on
-a fresh new Jenkins installation. You can find the exhaustive list, bound to a fixed Jenkins version, by following this link: [Jenkins 2.19.4 suggested plugin list](https://github.com/jenkinsci/jenkins/blob/jenkins-2.19.4/core/src/main/resources/jenkins/install/platform-plugins.json).
+[new] The "suggested" plugins are the default plugins installed by the "Setup Wizard" on a fresh new Jenkins installation. You can find the exhaustive list, bound to a fixed Jenkins version, by following this link: [Jenkins 2.19.4 suggested plugin list](https://github.com/jenkinsci/jenkins/blob/jenkins-2.19.4/core/src/main/resources/jenkins/install/platform-plugins.json).
 
 [new] Please note that the "[Pipeline Plugin](https://plugins.jenkins.io/workflow-aggregator)" is itself an aggregation of plugins implementing the Pipeline and related features. It includes the following capabilities:
 
@@ -61,8 +66,7 @@ a fresh new Jenkins installation. You can find the exhaustive list, bound to a f
 Please also note the following:
 
 * SCM stands for “source code management” unless otherwise specified.
-* Pipeline refers to the job type created by the Pipeline plugin (formerly known as the
-“Workflow plugin”), except where used generically (e.g., “CD pipelines”) or in the names
+* Pipeline refers to the job type created by the Pipeline plugin (formerly known as the “Workflow plugin”), except where used generically (e.g., “CD pipelines”) or in the names
 of specific plugins (e.g., “Build Pipeline plugin”).
 * Various UI elements in Jenkins will be referred to using the following terms:
 
@@ -74,8 +78,7 @@ of specific plugins (e.g., “Build Pipeline plugin”).
 
 ## 1. Key CI/CD/Jenkins Concepts - 18%
 
-This topic comprises approximately 18% of the exam. Questions cover the following
-topics:
+This topic comprises approximately 18% of the exam. Questions cover the following topics:
 
 * Continuous Delivery/Continuous Integration Concepts
   * Define continuous integration, continuous delivery, continuous deployment
@@ -121,7 +124,7 @@ _CD stages:_
 
 _The actual list of steps depends highly on the language and platform used, but typically consists of (at least) checkout, compilation and running unit tests. Some pipelines also add steps to perform code analysis and run additional tests (such as integration tests)._
 
-![Rustem Certified Jenkins Engineer](https://github.com/smartrus/certified-jenkins-engineer-study-guide/blob/master/images/rustem_ci_cd_pipeline1.png)
+![Rustem Certified Jenkins Engineer](images/rustem_ci_cd_pipeline1.png)
 
 _When all these steps are successful, a unique artifact is built, packaged, and published to a repository. This can be a JAR, .tar.gz file, a container image, or whatever is applicable to the chosen language and platform._
 

@@ -1,4 +1,6 @@
 # Grafana
+
+
 ```bash
 $ kubectl create namespace grafana
 $ helm install stable/grafana \

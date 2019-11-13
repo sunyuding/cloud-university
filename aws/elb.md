@@ -1,4 +1,5 @@
 # Elastic Load Balancer 
+
 Q. What is the difference between an Internet-facing load balancer and an internal-facing load balancer?
 - The DNS name of an Internet-facing load balancer resolves to a public IP address while an internal-facing load balancer resolves to a private IP address. 
 

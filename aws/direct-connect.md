@@ -1,4 +1,9 @@
 # AWS Direct Connect
+AWS Direct Connect allows organizations to establish a dedicated network connection from
+their data center to AWS. Using AWS Direct Connect, organizations can establish private
+connectivity between AWS and their data center, office, or colocation environment, which in
+many cases can reduce network costs, increase bandwidth throughput, and provide a more
+consistent network experience than Internet-based VPN connections.
 
 Q. Your company has recources in the cloud with AWS and in a data center, connected via [AWS Direct Connect](https://aws.amazon.com/directconnect/). You have applications in both locations that generate logs as messages and you wish to capture them and process them inside your AWS environment. How can you minimize effort and maintian security?
 - Use AWS DirectSync over AWS Direct Connect to stream messagers to an Amazon S3 bucket. Use an Amazon Kinesis agent to process the messages.

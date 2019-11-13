@@ -52,3 +52,40 @@ Question: Under a single AWS account, you have set up an [Auto Scaling](https://
 
 Answer: D. Auto Scaling may cause you to reach limits of other services, such as the default number of Amazon EC2 instances you can currently launch within a region, which is 20.
 
+Question: Which Amazon Elastic Compute Cloud (Amazon EC2) pricing model allows you to pay a set hourly price for compute, giving you full control over when the instance launches and terminates?
+- A. Spot instances
+- B. Reserved instance
+- C. On Demand instances
+- D. Dedicated instances
+
+Answer: C. You pay a set hourly price for an On Demand instance from when you launch it until you explicitly stop or terminate it. Spot instances can be terminated when the spot price goes above your bid price. Reserved instances involve paying for an instance over a oneor three-year term. Dedicated instances run on hardware dedicated to your account and are not a pricing model.
+
+Question: Under what circumstances will Amazon Elastic Compute Cloud (Amazon EC2) instance store data not be preserved?
+- A. The associated security groups are changed.
+- B. The instance is stopped or rebooted.
+- C. The instance is rebooted or terminated.
+- D. The instance is stopped or terminated.
+- E. None of the above
+
+Answer: D. The data in an instance store persists only during the lifetime of its associated instance. If an instance is stopped or terminated, then the instance store does not persist. Rebooting an instance does not shut down the instance; if an instance reboots (intentionally or unintentionally), data on the instance store persists. Security groups have nothing to do with the lifetime of an instance and have no effect here.
+
+Question: Your web application needs 4 Amazon EC2 instances to support steady traffic nearly all of the time. On the last day of each month, the traffic triples.
+
+What is the most cost effective way to handle this traffic pattern?
+- Run 4 Researved Instances constantly, then add 8 On-Demand Instances on the last day of each month
+
+Question: Which of the following are the minimum required elements to create an **Auto Scaling** launch configuration?
+1. Launch configuration name, Amazon Machine Image (AMI), instance type
+2. Launch configuration name, Amazon Machine Image (AMI), instance type, key pair
+3. Launch configuration name, Amazon Machine Image (AMI), instance type, key pair, security group
+4. Launch configuration name, Amazon Machine Image (AMI), instance type, key pair, security group, block device mapping
+
+Answer: 1.
+
+Question: An Amazon EC2 instance is being underutilized so you decide to down-size the instance. You Stop the instance and change its Instance Type. However, you are unable to Start the instance again because it is now in a Terminated state,. What caused the instance to Terminate?
+1. It was using Instance Store for the boot volume
+2. It was a Spot Instance
+3. The instance had been launched using Auto Scaling
+4. It was using a capacity reservation that was no longer available
+
+Answer: 3.

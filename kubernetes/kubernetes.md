@@ -1,10 +1,7 @@
 # Kubernetes
 
 ## Kubernetes Journey
-- Introduction to Kubernetes by the linux foundation on EDX (free).
-
-Now that you have a better understanding of Kubernetes, you can continue your journey by:
-
+- [Introduction to Kubernetes]() by the linux foundation on EDX (free).
 - Participating in activities and discussions organized by the Kubernetes community
 - Attending events organized by the **Cloud Native Computing Foundation** and **The Linux Foundation**
 - Expanding your Kubernetes knowledge and skills by enrolling in the self-paced [LFS258 - Kubernetes Fundamentals](https://training.linuxfoundation.org/training/kubernetes-fundamentals/),  [LFD259 - Kubernetes for - Developers](https://training.linuxfoundation.org/training/kubernetes-for-developers/), or the instructor-led [LFS458 - Kubernetes Administration](https://training.linuxfoundation.org/training/kubernetes-administration/) and [LFD459 - Kubernetes for App Developers](https://training.linuxfoundation.org/training/kubernetes-for-app-developers/), paid courses offered by The Linux Foundation 
@@ -378,6 +375,8 @@ Authorization modules:
 
 ### Admission Control
 
+---
+
 ## Services
 **Services**, used to group Pods to provide common access points from the external world to the containerized applications. 
 
@@ -495,7 +494,9 @@ Basically, the RBAC model is based on three components:
 While deploying an application, we may need to pass such runtime parameters like configuration details, permissions, passwords, tokens, etc. Let's assume we need to deploy ten different applications for our customers, and for each customer, we need to display the name of the company in the UI. Then, instead of creating ten different Docker images for each customer, we may just use the template image and pass customers' names as runtime parameters. In such cases, we can use the **ConfigMap API** resource. Similarly, when we want to pass sensitive information, we can use the **Secret API** resource.
 
 ### ConfigMaps
-[ConfigMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/) allow us to decouple the configuration details from the container image. 
+- [ConfigMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/) allow us to decouple the configuration details from the container image. 
+- [ConfigMap | Kubernetes Engine Documentation | Google Cloud](https://cloud.google.com/kubernetes-engine/docs/concepts/configmap)
+- [Ultimate Guide to ConfigMaps in Kubernetes](https://matthewpalmer.net/kubernetes-app-developer/articles/ultimate-configmap-guide-kubernetes.html)
 
 ### Secrets
 It is important to keep in mind that the **Secret** data is stored as plain text inside **etcd**, therefore administrators must limit access to the API server and **etcd**.
@@ -509,33 +510,7 @@ They do not reveal the content of the Secret. The type is listed as **Opaque**.
 - Using Secrets as Environment Variables
 - Using Secrets as Files from a Pod
 
-## Ingress
-- [ ] https://kubernetes.io/docs/concepts/services-networking/ingress/ 
-- [ ] [LinuxFoundationX: LFS158x - Introduction to Kubernetes]
-(https://courses.edx.org/courses/course-v1:LinuxFoundationX+LFS158x+2T2019/course/)
-
-According to [kubernetes.io](https://kubernetes.io/docs/concepts/services-networking/ingress/),
-```
-"An Ingress is a collection of rules that allow inbound connections to reach the cluster Services."
-```
-![Image of Ingress](ingress_updated.png)
-
-![Image of Ingress URL Mapping](ingress_URL_mapping.png)
-
-### Ingress Controller
-An [Ingress Controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/) is an application watching the Master Node's API server for changes in the **Ingress** resources and updates the Layer 7 Load Balancer accordingly. 
-
-Start the Ingress Controller with Minikube
-```bash
-$ minikube addons enable ingress
-```
-
-### Deploy an Ingress Resource
-```bash
-$ kubectl create -f virtual-host-ingress.yaml
-```
-
-### Access Services Using Ingress
+## [Ingress](ingress.md)
 
 ## Annotations
 With [Annotations](https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/), we can attach arbitrary non-identifying metadata to any objects, in a key-value format:
@@ -565,22 +540,20 @@ A [Job](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-co
 
 ## Autoscaling
 
-## DaemonSets
+## Service
 
-## StatefulSets
+
+## [Controllers](https://kubernetes.io/docs/concepts/workloads/controllers)
+### StatefulSets
+[StatefulSet Basics - Kubernetes](https://kubernetes.io/docs/tutorials/stateful-application/basic-stateful-set/)
+
+### DaemonSets
 
 ## Kubernetes Federation
 
 ## Custom Resources
 
-## Helm 
-To deploy an application, we use different Kubernetes manifests, such as **Deployments**, **Services**, Volume Claims, **Ingress**, etc. Sometimes, it can be tiresome to deploy them one by one. We can bundle all those manifests after templatizing them into a well-defined format, along with other metadata. Such a bundle is referred to as **Chart**. These **Charts** can then be served via repositories, such as those that we have for **rpm** and **deb** packages.
-
-[Helm](https://helm.sh/) is a **package manager** (analogous to **yum** and **apt** for Linux) for Kubernetes that packages multiple Kubernetes resources into a single logical deployment unit called **Chart**.
-
-The client **helm** connects to the server **tiller** to manage **Charts**. Charts submitted for Kubernetes are available [here](https://github.com/helm/charts).
-
-## Ingress
+## [Helm](helm.md) 
 
 ## Configuration
 
@@ -635,8 +608,52 @@ There are Kubernetes [users](https://groups.google.com/forum/#!forum/kubernetes-
 - https://kubernetes.io/docs/tutorials/kubernetes-basics/
 - Command reference: https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
 
+---
+
 ## Amazon EKS
 
+### Configure Liveness, Readiness and Startup Probes
+#### Liveness Probe
+The kubelet uses **liveness probes** to know when to restart a Container.
 
+#### Readiness Probe
+The kubelet uses **readiness probes** to know when a Container is ready to start accepting traffic.
 
+#### Startup Probe
+The kubelet uses **startup probes** to know when a Container application has started.
 
+---
+
+## Troubleshooting
+### [Error: incompatible versions client[v2.14.3] server[v2.12.3]](https://github.com/helm/charts/issues/5239)
+
+`helm init --upgrade` upgraded the server version
+
+### [forbidden: User "system:serviceaccount:kube-system:default" cannot get namespaces in the namespace "default](https://github.com/fnproject/fn-helm/issues/21)
+
+```
+$ kubectl create serviceaccount --namespace kube-system tiller
+$ kubectl create clusterrolebinding tiller-cluster-rule --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
+$ kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
+```
+
+### CrashLoopBackOff
+**CrashLoopBackOff** indicates that a container is repeatedly crashing after restarting. A container might crash for many reasons, and checking a Pod's logs might aid in troubleshooting the root cause.
+
+```
+kubectl get sts
+
+kubectl describe sts concourse-postgresql
+
+helm install stable/concourse --dry-run --debug
+```
+
+### [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/)
+
+```
+kubectl get storageClass
+
+kubectl edit storageClass gp2
+```
+
+[Amazon EBS Volume Types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html): The default volume type is **General Purpose SSD (gp2)**.

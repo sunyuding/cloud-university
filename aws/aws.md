@@ -11,7 +11,8 @@ Which of the following examples best demonstrates the agility that cloud computi
 - https://aws.amazon.com/training/learning-paths
 
 - [A curated list of AWS resources to prepare for the AWS Certifications](https://gist.github.com/leonardofed/bbf6459ad154ad5215d354f3825435dc)
-- [AWS Cert Quiz Show](https://www.aws.training/LearningLibrary?&search=CQ&tab=digital_courses)
+
+- [CQ: The AWS Certification Quiz Show](https://www.aws.training/LearningLibrary?&search=CQ&tab=digital_courses)
 
 ### AWS Certified Cloud Practitioner
 - https://aws.amazon.com/training/path-cloudpractitioner/
@@ -22,10 +23,13 @@ Which of the following examples best demonstrates the agility that cloud computi
 
 ### AWS Certified Architect
 - https://aws.amazon.com/training/path-architecting/
-- [ ] [AWS Certified Solution Architect - Associate 2019 Exam Notes](https://github.com/AlessioCasco/AWS-CSA-2019-study-notes)
+- [AWS Certified Solution Architect - Associate 2019 Exam Notes](https://github.com/AlessioCasco/AWS-CSA-2019-study-notes)
 - [https://cliffordandrewboyd.com/wordpress/wp-content/uploads/2018/10/eBook.pdf](https://cliffordandrewboyd.com/wordpress/wp-content/uploads/2018/10/eBook.pdf)
 - [AWS Certified Solutions Architect Associate Exam Blueprint](https://d0.awsstatic.com/training-and-certification/docs-sa-assoc/AWS_certified_solutions_architect_associate_blueprint.pdf)
+- [Exam Readiness: AWS Certified Solutions Architect – Associate (Digital)](https://www.aws.training/Details/Curriculum?id=20685)
 
+### AWS Certified DevOps Engineer - Professional
+- [Exam Readiness: AWS Certified DevOps Engineer – Professional (Simplified Chinese)](https://www.aws.training/Details/eLearning?id=40861)
 
 Three ways to use AWS
 1. AWS Management Console
@@ -49,21 +53,26 @@ aws ecr get-login --region us-west-2 --no-include-email --profile=engineering
 
 ### [Amazon Elastic Kubernetes Service (EKS)](eks.md)
 
+### [AWS Elastic Beanstalk](beanstalk.md)
+
+### AWS Lambda
+Fulling managed serverless.
+
+Q. You have configured an AWS Lambda function to launch an Amazon EC2 Linux instance each Sunday night to run a 30-minute batch job.
+
+What would be the most reliable way to terminate the instance after it has completed the batch job?
+- [x] Have the instance run "sudo shutdown now -h"
+- Create an AWS Batch job configured to run once per week to terminate the instance with a known Tag
+
+
 ## Storage
 ### [Amazon Simple Storage Service (S3)](s3.md)
 
 ### [Amazon Elastic Block Store (EBS)](ebs.md)
 
-### Storage Gateway
-Three different types of gateways 
-– [Tape Gateway](https://aws.amazon.com/storagegateway/vtl/) 
-- [File Gateway](https://aws.amazon.com/storagegateway/file/)
-- [Volume Gateway](https://aws.amazon.com/storagegateway/volume/)
+### [Storage Gateway](storage-gateway.md)
 
-Q. Your company needs to store 200TB of oproduct videos. The videos were created over the last several years, with the most recent being accessed the most often. The data must be accessed locally, but there is insufficient space in the data center to install sufficient local sotrage devices to store this data. What service will meet these requirements? 
-- [AWS Storage Gateway - Cached volumes]
-
-### Amazon Glacier Storage
+### [Amazon Glacier Storage](glacier.md)
 
 
 ## AWS Regions
@@ -94,6 +103,22 @@ Q. How would you configure a VPC to accept VPN connections so that many users co
 ### [Elastic Load Balancer](elb.md) 
 
 ### Elastic IP Address
+Question: Which of the following is true if you stop an **Amazon Elastic Compute Cloud (Amazon EC2)** instance with an Elastic IP address in an **Amazon Virtual Private Cloud (Amazon VPC)**?
+- A. The instance is disassociated from its Elastic IP address and must be re-attached
+when the instance is restarted.
+- B. The instance remains associated with its Elastic IP address.
+- C. The Elastic IP address is released from your account.
+- D. The instance is disassociated from the Elastic IP address temporarily while you restart the instance.
+
+Answer: B. In an Amazon VPC, an instance's Elastic IP address remains associated with an instance when the instance is stopped.
+
+Question: How are you billed for an Elastic IP address?
+- 1. Per second when associated with a running Amazon EC2 instance
+- 2. Per hour when not associated with an Amazon EC2 instance
+- 3. Per GiB for the amount of data that flows through them
+- 4. Per network adapter based on the Amazon EC2 instance type
+
+Answer: 2
 
 ### Auto Scaling
 Create resources on demand.
@@ -118,78 +143,25 @@ What are characteristics of the Amazon EC2 Auto Scaling service?
 
 ### [AWS Direct Connect](direct-connect.md)
 
-### Amazon Relational Database Services (RDS)
-- MySQL
-- Amazon Aurora
-- SQL Server
-- PostgreSQL
-- MariaDB
-- Oracle
+## Database
+Question: You are designing an e-commerce web application that will scale to potentially hundreds of thousands concurrent users. Which database technology is best suited to hold the session state for large numbers of concurrent users?
+1. Relational database using [Amazon RDS]()
+2. NoSQL database table using [Amazon DynamioDB]()
+3. Data warehouse using [Amazon Redshift]()
+4. [Amazon S3]()
 
-No charge for backup storage of up to 100% of database storage
+Answer: 2. 
 
-750 instance-hours of RDS is available in the free-tier in the 1st year as well as 20GB of SSD general purpose storage and 20 GB of backup storage free per month.
+### [Amazon Relational Database Services (RDS)](rds.md)
 
-What does Amazon manage on my behalf for RDS?
-- Provisioning Infrastructure Capacity, Installing Software, replication of db across multiple AZ's (multi-AZ deployment), backups, patching software, and failovers are managed on behalf of RDS users.
+### [Amazon DynamoDB](dynamodb.md)
 
-It takes away the time consuming tasks of hardware provisioning, setup, patching, and backups so you can focus on your applications.
+### [Amazon Redshift](redshift.md)
 
-When using Amazon RDS Multi-AZ, how can you offload read requests from the primary?
-- Add a read replica DB instance, and configure the client's application logic to use a read-replica.
-- Use [ElastiCache](https://aws.amazon.com/elasticache/) to cache frequently used data. Update the application logic to read/write from the cache.
+### [Amazon ElastiCache](elasticache.md)
 
-Q. If there are multiple Read Replicas for a primary Amazon RDS DB instance and one of them is promoted, what happens to the rest of the Read Replicas?
-- There is no change in their behavior
 
-Q. Your team is building an order processing system that will span multiple Availability Zones. During testing, the team wants to test how the application will react to a database failover. How can you enable this type of test?
-- Reboot the primary instance from the Amazon RDS console.
-
-### Amazon DynamoDB
-Q. Which Amazon DynamoDB operation will you use to retrieve the metadata attributes from the table?
-- Query operation
-
-### AWS Lambda
-Fulling managed serverless.
-
-Q. You have configured an AWS Lambda function to launch an Amazon EC2 Linux instance each Sunday night to run a 30-minute batch job.
-
-What would be the most reliable way to terminate the instance after it has completed the batch job?
-- [x] Have the instance run "sudo shutdown now -h"
-- Create an AWS Batch job configured to run once per week to terminate the instance with a known Tag
-
-### AWS Elastic Beanstalk
-- Platform as a Service(PaaS)
-- Out-of-the-box load balancing and autoscaling
-- Can still access underlying AWS resources with full control
-
-Create application => Upload version => Launch environment => Manage
-
-What is the first step in getting started with AWS Lambda?
-- Upload your code
-
-### [Amazon Simple Queue Service (SQS)](sqs.md)
-
-### Amazon Simple Notification Service (SNS)
-Flexible, fully managed **pub/sub messaging** and mobile communications service.
-
-Q. What is an efficient way to fan-out a single Amazon SNS message to multiple Amazon SQS queues?
-- Create multiple SQS queues that subscribe to the SNS topic.
-
-Q. When can an Amazon SNS message be deleted after being published to a topic?
-- Messages cannot be deleted
-
-### Amazon CloudFront
-CDN. Speeds up the delivery of your content to viewers across the globe.
-
-Q. Your company provides media content via the Internet to customers through a paid subscription model. You leverage **Amazon CloudFront** to distribute content from an Amazon S3 bucket. What approach can you use to serve this private content securely to your paid subscribers?
-1. [x] Provide signed CloudFront URLs to authenticated users.
-2. Add subscriber IP addresses to the CloudFront security group.
-3. Use the geo restriction feature to restrict access to all of the paid subscription media at the country level.
-4. Provide subscribers with an **Origin Access Identity** to grant them access to the CloudFront distribution.
-
-Q. What does Amazon CloudFront do when it uses HTTP Live Streaming(HLS), HTTP Dynamic Streaming (HDS), Smooth Streaming, and MPEG DASH formats for streaming video?
-- Encapsulates video into pull (rather than push) formats that allow clients to adapt to changing conditions for improved performance
+### [Amazon CloudFront](cloudfront.md)
 
 ## CodeCommit
 ### Setup permissions
@@ -210,6 +182,8 @@ Which of the following statements best describes AWS Trusted Advisor?
 ## AWS Transfer for SFTP
 AWS Transfer for SFTP is a fully managed service that enables the transfer of files directly into and out of Amazon S3 using the Secure File Transfer Protocol (SFTP)—also known as Secure Shell (SSH) File Transfer Protocol. 
 
+### [Amazon Elastic MapReduce (Amazon EMR)](emr.md)
+
 ## Security, Identity, & Compliance
 ### [Identity and Access Management (IAM)](iam.md)
 
@@ -217,7 +191,9 @@ AWS Transfer for SFTP is a fully managed service that enables the transfer of fi
 Which of the following statements best describes **Amazon Cognito**?
 - It is a simple user-data synchronization and identity service that helps you securely manage and synchronize app data for your users across their mobile devices.
 
-### Key Management Service (KMS)
+### [Key Management Service (KMS)](kms.md)
+AWS KMS is a managed service that makes it easy for you to create and control the encryption keys used to encrypt your data.
+
 How is Key Management Service (KMS) priced?
 - KMS is priced per customer master key and the number of requests received per month. _Explanation: KMS is priced per two factors: the number of Customer Master Keys maintained in
 KMS and the number of requests received within a month._
@@ -240,25 +216,31 @@ Which statement is true about AWS Config and Regions?
 - AWS Config is a Region specific service, meaning it has to be configured in every region you wish to use it
 
 ### AWS Directory Service
-https://aws.amazon.com/directoryservice/
+[AWS Directory Service](https://aws.amazon.com/directoryservice/) is a managed service offering that provides directories that contain information about your organization, including users, groups, computers, and other resources.
 
-## CloudTrail
-Which other AWS service can you use to enable greater security of your CloudTrail log files?
-- Key Management Service (KMS)
-_The use of AWS KMS is an optional element of CloudTrail, but it allows additional
-encryption to be added to your Log files when stored on S3_
+### AWS Certificate Manager
+AWS Certificate Manager is a service that lets organizations easily provision, manage, and deploy Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS Cloud services.
 
-The AWS CloudTrail service provides which of the following?
-- Logs of the API requests for AWS resources within your account
+### AWS Web Application Firewall (WAF)
+[AWS Web Application Firewall (WAF)]() helps protect web applications from common attacks and exploits that could affect application availability, compromise security, or consume excessive resources.
 
-Q. A third-party security application is making API calls to your AWS account. However, it is failing to operate correctly and returns a generic "Access Denied" message. Where can you look to identity the cause of this error?
-- AWS CloudTrail
+### CloudTrail(cloudtrail.md)
 
-## Edge Locations
+### Edge Locations
 
-## Amazon Kinesis Data Firehose
-What service will enable you to ingest this this stream of data and store it to Amazon S3 for future processing?
-- **Amazon Kinesis Data Firehose**
+## Analytics
+Question: Each month your company processes 200 TB of data in Amazon S3, taking 24 hours to complete. Which method is most cost-effective?
+1. Copy the data to a persistent Amazon EMR cluster and run MapReduce jobs
+2. Create an application that reads the information from  Amazon S3 and runs it through an Amazon Kinesis stream
+3. Run a transient Amazon EMR cluster and run MapReduce jobs against the data directly in Amazon S3
+4. Launch a d2.8xlarge (32 vCPU, 244 GB RAM) Amazon EC2 instance and run an application to read and process each object sequentially.
+
+Answer: 3
+
+### [Amazon Kinesis](kinesis.md)
+
+### AWS Data Pipeline
+AWS Data Pipeline is a web service that helps you reliably process and move data between different AWS compute and storage services, and also on-premises data sources, at specified intervals.
 
 ## Continuous Integration, Delivery, and Deployment
 ### AWS CodeBuild
@@ -275,20 +257,54 @@ integrates all parts of the process with project management tools and JIRA issue
 
 ## Infrastructure as Code
 ### AWS CloudFormation
+AWS CloudFormation is a service that helps you model and set up your AWS resources so that you can spend less time managing those resources and more time focusing on your applications that run in AWS.
+
 Automate AWS resources provisioning.
 
 ### OpsWorks
 IaC with Chef
 
-## Serverless/FaaS
-### AWS Lambda
-run serverless functions on AWS
+[AWS OpsWorks]() is a configuration management service that helps you configure and operate applications using Chef.
 
-Q. Your "www.example.com" domain is pointing to an Amazon EC2 instance. How could you keep this operating, but send requests for "www.example.com/news/" to an AWS Lambda function?
-- Use an **Application Load Balancer** with a separate **Target Group**
+## Serverless/FaaS
+### [AWS Lambda](lambda.md)
 
 ## Monitoring
 ### [Amazon CloudWatch](cloudwatch.md)
+
+## Application Services
+### Amazon API Gateway
+[Amazon API Gateway]() is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.
+
+### Amazon Elastic Transcoder 
+[Amazon Elastic Transcoder]() is media transcoding in the cloud.
+
+### Amazon Simple Notification Service (SNS)
+[Amazon Simple Notification Service (Amazon SNS)]() is a web service that coordinates and manages the delivery or sending of messages to recipients.
+
+Flexible, fully managed **pub/sub messaging** and mobile communications service.
+
+Q. What is an efficient way to fan-out a single Amazon SNS message to multiple Amazon SQS queues?
+- Create multiple SQS queues that subscribe to the SNS topic.
+
+Q. When can an Amazon SNS message be deleted after being published to a topic?
+- Messages cannot be deleted
+
+### Amazon Simple Email Service (Amazon SES)
+[Amazon Simple Email Service (Amazon SES)]() is a cost-effective email service that organizations can use to send transactional email, marketing messages, or any other type of content to their customers.
+
+### Amazon Simple Workflow Service (SWF)
+[Amazon SWF]() makes it easy to build applications that coordinate work across distributed components.
+
+Question: Which process in an [Amazon Simple Workflow Service (Amazon SWF)](https://aws.amazon.com/swf/) workflow implements a task?
+- A. Decider
+- B. Activity worker
+- C. Workflow starter
+- D. Business rule
+
+Answer: B. An activity worker is a process or thread that performs the activity tasks that are part of your workflow. Each activity worker polls Amazon SWF for new tasks that are appropriate for that activity worker to perform; certain tasks can be performed only by certain activity workers. After receiving a task, the activity worker processes the task to completion and then reports to Amazon SWF that the task was completed and provides the result. The activity task represents one of the tasks that you identified in your application.
+
+### [Amazon Simple Queue Service (SQS)](sqs.md)
 
 ## AWS Cloud Development Kit (AWS CDK)
 - [ ] [Infrastructure is Code with the AWS CDK - AWS Online Tech Talks](https://www.youtube.com/watch?v=ZWCvNFUN-sU)
@@ -347,6 +363,19 @@ Answer: B and D. To protect data in transit from the clients to the web applicat
 |Hypervisor    |
 |Network       |
 |Physical      |
+
+Question: Which of the following are true about the AWS shared responsibility model? (Choose 3
+answers)
+- A. AWS is responsible for all infrastructure components (that is, AWS Cloud services) that support customer deployments.
+- B. The customer is responsible for the components from the guest operating system upward (including updates, security patches, and antivirus software).
+- C. The customer may rely on AWS to manage the security of their workloads deployed on AWS.
+- D. While AWS manages security of the cloud, security in the cloud is the responsibility of the customer.
+- E. The customer must audit the AWS data centers personally to confirm the compliance of AWS systems and services.
+
+Answer: A, B, and D. In the AWS shared responsibility model, customers retain control of what
+security they choose to implement to protect their own content, platform, applications,
+systems, and networks, no differently than they would for applications in an on-site data
+center.
 
 ## Security Compliance
 Components of AWS compliance

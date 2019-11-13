@@ -3,7 +3,6 @@
 - [Top 5 Linux Certifications in 2019 [Updated]](https://www.whizlabs.com/blog/top-5-linux-certifications/)
 - [Red Hat Certified System Administrator](https://www.redhat.com/en/services/certification/rhcsa)
 
-
 ### diff
 [9 Best File Comparison and Difference (Diff) Tools for Linux](https://www.tecmint.com/best-linux-file-diff-tools-comparison/)
 
