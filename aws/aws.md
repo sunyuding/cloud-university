@@ -27,6 +27,7 @@ Which of the following examples best demonstrates the agility that cloud computi
 - [https://cliffordandrewboyd.com/wordpress/wp-content/uploads/2018/10/eBook.pdf](https://cliffordandrewboyd.com/wordpress/wp-content/uploads/2018/10/eBook.pdf)
 - [AWS Certified Solutions Architect Associate Exam Blueprint](https://d0.awsstatic.com/training-and-certification/docs-sa-assoc/AWS_certified_solutions_architect_associate_blueprint.pdf)
 - [Exam Readiness: AWS Certified Solutions Architect – Associate (Digital)](https://www.aws.training/Details/Curriculum?id=20685)
+- [AWS Certified Solutions Architect Official Study Guide](https://www.academia.edu/38282456/AWS_Certified_Solutions_Architect_Official_Study_Guide)
 
 ### AWS Certified DevOps Engineer - Professional
 - [Exam Readiness: AWS Certified DevOps Engineer – Professional (Simplified Chinese)](https://www.aws.training/Details/eLearning?id=40861)
@@ -39,23 +40,20 @@ Three ways to use AWS
 Which of the following terms refers to the power of scale computing resources up or down easily?
 - Elasticity
 
-## Computing
-### [Amazon Elastic Cloud Compute (EC2)](ec2.md)
+## Compute
+### [EC2](ec2.md)
 
-### ECR
-Amazon Elastic Container Registry (ECR) is a fully-managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images.
+[Amazon Elastic Block Store (EBS)](ebs.md)
 
-```
-aws ecr get-login --region us-west-2 --no-include-email --profile=engineering
-```
+### Lightsail
 
-[Using the AWS CLI with Amazon ECR](https://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_AWSCLI.html)
+### ECR[/ecr.md]
 
-### [Amazon Elastic Kubernetes Service (EKS)](eks.md)
+### ECS
 
-### [AWS Elastic Beanstalk](beanstalk.md)
+### [EKS](eks.md)
 
-### AWS Lambda
+### Lambda
 Fulling managed serverless.
 
 Q. You have configured an AWS Lambda function to launch an Amazon EC2 Linux instance each Sunday night to run a 30-minute batch job.
@@ -64,16 +62,196 @@ What would be the most reliable way to terminate the instance after it has compl
 - [x] Have the instance run "sudo shutdown now -h"
 - Create an AWS Batch job configured to run once per week to terminate the instance with a known Tag
 
+### Batch
+### [Elastic Beanstalk](beanstalk.md)
 
+### Serverless Application Repository
+ 
 ## Storage
-### [Amazon Simple Storage Service (S3)](s3.md)
-
-### [Amazon Elastic Block Store (EBS)](ebs.md)
-
+### [S3](s3.md)
+### EFS
+### FSx
+### [S3 Glacier](glacier.md)
 ### [Storage Gateway](storage-gateway.md)
+### AWS Backup
+ 
+## Database
+### [RDS](rds.md)
+### [DynamoDB](dynamodb.md)
+### ElastiCache
+### Neptune
+### [Amazon Redshift](redshift.md)
+### Amazon QLDB
+### Amazon DocumentDB
+ 
+## Migration & Transfer 
+### AWS Migration Hub
+### Application Discovery Service
+### Database Migration Service
+### Server Migration Service
+### AWS Transfer for SFTP
+### Snowball
+### DataSync
+ 
+## Networking & Content Delivery 
+### [VPC](vpc.md)
+### [CloudFront](cloudfront.md)
+### [Route 53](route53.md)
+### API Gateway
+### [Direct Connect](direct-connect.md)
+### AWS App Mesh
+### AWS Cloud Map
+### Global Accelerator
 
-### [Amazon Glacier Storage](glacier.md)
+## Developer Tools 
+### CodeStar
+### CodeCommit[codecommit.md]
 
+### CodeBuild
+### CodeDeploy
+### CodePipeline
+### Cloud9
+### X-Ray
+ 
+## Customer Enablement 
+### AWS IQ
+### Support
+### Managed Services
+ 
+## Robotics
+### AWS RoboMaker
+ 
+## Blockchain
+### Amazon Managed Blockchain
+ 
+## Satellite
+### Ground Station
+ 
+## Management & Governance 
+### AWS Organizations
+### [CloudWatch](cloudwatch.md)
+### AWS Auto Scaling
+### CloudFormation
+### CloudTrail
+### Config
+### OpsWorks
+### Service Catalog
+### Systems Manager
+### Trusted Advisor
+### Control Tower
+### AWS License Manager
+### AWS Well-Architected Tool
+### Personal Health Dashboard
+### AWS Chatbot
+### Launch Wizard
+ 
+## Media Services 
+### Elastic Transcoder
+### Kinesis Video Streams
+### MediaConnect
+### MediaConvert
+### MediaLive
+### MediaPackage
+### MediaStore
+### MediaTailor
+### Elemental Appliances & Software
+ 
+## Machine Learning 
+### Amazon SageMaker
+### Amazon Comprehend
+### Amazon Forecast
+### Amazon Lex
+### Amazon Machine Learning
+### Amazon Personalize
+### Amazon Polly
+### Amazon Rekognition
+### Amazon Textract
+### Amazon Transcribe
+### Amazon Translate
+### AWS DeepLens
+### AWS DeepRacer
+ 
+## Analytics
+### Athena
+### EMR
+### CloudSearch
+### Elasticsearch Service
+### Kinesis
+### QuickSight
+### Data Pipeline
+### AWS Data Exchange
+### AWS Glue
+### AWS Lake Formation
+### MSK
+ 
+## Security, Identity, & Compliance 
+### IAM
+### Resource Access Manager
+### Cognito
+### Secrets Manager
+### GuardDuty
+### Inspector
+### Amazon Macie
+### AWS Single Sign-On
+### Certificate Manager
+### Key Management Service
+### CloudHSM
+### Directory Service
+### WAF & Shield
+### Artifact
+### Security Hub
+ 
+## AWS Cost Management 
+### AWS Cost Explorer
+### AWS Budgets
+### AWS Marketplace Subscriptions
+ 
+## Mobile
+### AWS Amplify
+### Mobile Hub
+### AWS AppSync
+### Device Farm
+ 
+## AR & VR 
+### Amazon Sumerian
+ 
+## Application Integration 
+### Step Functions
+### Amazon EventBridge
+### Amazon MQ
+### Simple Notification Service
+### Simple Queue Service
+### SWF
+ 
+## Customer Engagement 
+### Amazon Connect
+### Pinpoint
+### Simple Email Service
+ 
+## Business Applications 
+### Alexa for Business
+### Amazon Chime
+### WorkMail
+ 
+## End User Computing 
+### WorkSpaces
+### AppStream 2.0
+### WorkDocs
+### WorkLink
+ 
+## Internet of Things 
+### IoT Core
+### IoT 1-Click
+### IoT Analytics
+### IoT Device Defender
+### IoT Device Management
+### IoT Events
+### IoT Greengrass
+### IoT SiteWise
+### IoT Things Graph
+ 
+## Game Development 
+### Amazon GameLift
 
 ## AWS Regions
 Your company has deployed resources across several AWS regions. Your CTO has mandated that developers and operations can only use N.Virginia, Frankfurt and Mumbai as regions. She is particularly concerned with ensuring that any solution scales when AWS releases new regions. What should you do?
@@ -82,8 +260,6 @@ Your company has deployed resources across several AWS regions. Your CTO has man
 ## Networking
 What statement is true about Internet gateways?
 - An Internet gateway is needed if you want to connect to AWS services outside of the VPC.
-
-### [Amazon Virtual Private Cloud (VPC)](vpc.md)
 
 ### Security Groups
 Act as built-in **firewalls**. 
@@ -139,10 +315,6 @@ What are characteristics of the Amazon EC2 Auto Scaling service?
 - Responds to changing condifions by Terminating and Launching Amazon EC2 instances
 - Enforces a minimum number of running Amazon EC2 instances
 
-### [Amazon Route 53](route53.md)
-
-### [AWS Direct Connect](direct-connect.md)
-
 ## Database
 Question: You are designing an e-commerce web application that will scale to potentially hundreds of thousands concurrent users. Which database technology is best suited to hold the session state for large numbers of concurrent users?
 1. Relational database using [Amazon RDS]()
@@ -152,20 +324,11 @@ Question: You are designing an e-commerce web application that will scale to pot
 
 Answer: 2. 
 
-### [Amazon Relational Database Services (RDS)](rds.md)
+### 
 
-### [Amazon DynamoDB](dynamodb.md)
-
-### [Amazon Redshift](redshift.md)
+### 
 
 ### [Amazon ElastiCache](elasticache.md)
-
-
-### [Amazon CloudFront](cloudfront.md)
-
-## CodeCommit
-### Setup permissions
-https://youtu.be/W-SM4m19JMA
 
 ## AWS Cloud9
 
@@ -270,7 +433,7 @@ IaC with Chef
 ### [AWS Lambda](lambda.md)
 
 ## Monitoring
-### [Amazon CloudWatch](cloudwatch.md)
+### 
 
 ## Application Services
 ### Amazon API Gateway
@@ -448,3 +611,7 @@ Default output format [None]: text
 
 - [ ] [2007: Dynamo: Amazon’s Highly Available Key-value Store](http://s3.amazonaws.com/AllThingsDistributed/sosp/amazon-dynamo-sosp2007.pdf)
 - [Free Digital Training](https://www.aws.training/LearningLibrary?&search=&tab=digital_courses)
+
+
+
+ 

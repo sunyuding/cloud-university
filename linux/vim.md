@@ -15,3 +15,5 @@ Now press Shift+I, which will put the editor in INSERT mode and then press #.
 3. This will add a hash to the first line.
 4. Then press Esc (give it a second), and it will insert a # character on all other selected lines.
 
+[Search and replace](https://vim.fandom.com/wiki/Search_and_replace)
+- 

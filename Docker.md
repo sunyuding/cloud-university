@@ -15,3 +15,6 @@ Run the `aws ecr get-login --no-include-email` command to get the **docker login
 
 Run the `docker login` command that was returned in the previous step. This command provides an authorization token that is valid for 12 hours.
 
+## docker exec
+https://docs.docker.com/engine/reference/commandline/exec/
+

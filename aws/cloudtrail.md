@@ -9,5 +9,5 @@ encryption to be added to your Log files when stored on S3_
 The AWS CloudTrail service provides which of the following?
 - Logs of the API requests for AWS resources within your account
 
-Q. A third-party security application is making API calls to your AWS account. However, it is failing to operate correctly and returns a generic "Access Denied" message. Where can you look to identity the cause of this error?
+Question: A third-party security application is making API calls to your AWS account. However, it is failing to operate correctly and returns a generic "Access Denied" message. Where can you look to identity the cause of this error?
 - AWS CloudTrail

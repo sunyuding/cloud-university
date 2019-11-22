@@ -166,8 +166,7 @@ _**Continuous Delivery** just means that you are able to do frequent deployments
   * Branch and Merge Strategies
 * Testing
   * Benefits of testing with Jenkins
-  * Define unit test, smoke test, acceptance test, automated verification/functional
-tests
+  * Define unit test, smoke test, acceptance test, automated verification/functional tests
 * Notifications
   * Types of notifications in Jenkins
   * Importance of notifications
@@ -181,7 +180,7 @@ tests
   * How to interact with it
   * Why use it?
 * Security
-  * Authentication versus authorization
+  * [Authentication](https://wiki.jenkins.io/display/JENKINS/Authentication) versus authorization
   * Matrix security
   * Definition of auditing, credentials, and other key security concepts
 * Fingerprints
@@ -326,8 +325,7 @@ topics:
   * How to protect centralized pipelines when multiple groups use same tools
   * Definition of binary reuse, automated deployment, multiple environments
   * Elements of your ideal CI/CD pipeline - tools
-  * Key concepts in building scripts (including security/password, environment
-information, etc.)
+  * Key concepts in building scripts (including security/password, environment information, etc.)
 * Upstream and downstream
   * Triggering jobs from other jobs
   * Setting up the Parameterized Trigger plugin
